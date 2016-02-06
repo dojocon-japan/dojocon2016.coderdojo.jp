@@ -74,15 +74,7 @@ gulp.task('jekyll-build', function (done) {
 /**
  * Rebuild Jekyll & do page reload
  */
-build = ['jekyll-build'];
-
-if (config.tasks.compass) {
-  build.unshift('compass');
-} else if (config.tasks.sass) {
-  build.unshift('sass');
-}
-
-gulp.task('jekyll-rebuild', build, function () {
+gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
   browserSync.notify('Rebuilded Jekyll');
   browserSync.reload();
 });
@@ -189,7 +181,6 @@ gulp.task('watch', ['watchify'], function () {
       '!' + paths.dest + '/**/*',
       '_includes/**/*',
       '_layouts/**/*',
-      '_posts/**/*',
       '*.html',
       './**/*.md',
       paths.posts + '/**/*',
