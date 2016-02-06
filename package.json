@@ -1,0 +1,48 @@
+{
+  "name": "dojocon-japan",
+  "version": "0.2.0",
+  "description": "DojoCon Japan 2016 website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dojocon-japan/dojocon-japan.github.io.git"
+  },
+  "keywords": [
+    "Gulp",
+    "Jekyll",
+    "Sass",
+    "Autoprefixer",
+    "Compass",
+    "Bourbon",
+    "Browserify",
+    "Watchify",
+    "Imagemin",
+    "Browser-sync"
+  ],
+  "author": "Kite",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dojocon-japan/dojocon-japan.github.io/issues"
+  },
+  "homepage": "http://dojocon-japan.github.io",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "browserify": "^13.0.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-newer": "^1.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.1.1",
+    "gulp-uglify": "^1.5.1",
+    "gulp-watch": "^4.3.5",
+    "imagemin-pngquant": "^4.2.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  }
+}

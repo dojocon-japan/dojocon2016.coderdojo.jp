@@ -1,0 +1,49 @@
+{
+  "port": 4000,
+
+  "tasks": {
+    "sass":         true,
+    "compass":      false,
+    "browserify":   true,
+    "imagemin":     true,
+    "jekyll":       true,
+    "watch":        true
+  },
+
+  "paths": {
+    "dest":      "_site",
+    "posts":     "_posts",
+    "assets":    "./assets",
+    "css":       "css",
+    "js":        "js",
+    "images":    "images",
+    "sass":      "_sass",
+    "jsSrc":     "_js",
+    "imagesSrc": "_images"
+  },
+
+  "sass": {
+    "outputStyle": "compressed"
+  },
+
+  "autoprefixer" : {
+    "browsers": [
+      "> 1%",
+      "last 2 versions",
+      "Firefox ESR"
+    ]
+  },
+
+  "compass": {
+    "config":   "./config.rb",
+    "style":    "compressed",
+    "comments": false
+  },
+
+  "js": {
+    "src": [
+      "main.js"
+    ],
+    "dist": "main.js"
+  }
+}
