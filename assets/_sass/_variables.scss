@@ -1,0 +1,28 @@
+// Bourbon
+$em-base: 10px;
+
+// Neat
+$max-width: 940px;
+$column: 60px;
+$gutter: 20px;
+
+// Kyoshin
+$hiragino: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$oswald: "Oswald", sans-serif;
+$raleway: "Raleway", sans-serif;
+$rubik: "Rubik", sans-serif;
+
+$font-size: 14;
+$line-height: 1.75;
+$line-height-px: $line-height * $font-size * 1px;
+
+$blue: #005bac;
+$green: #a0d468;
+$yellow: #ffce54;
+$pink: #ec87c0;
+$sky: #4fc1e9;
+$cloud: #f5f7fa;
+$cloud-dark: #e6e9ed;
+
+$default-font-color: #333;
+$default-border-color: #ddd;

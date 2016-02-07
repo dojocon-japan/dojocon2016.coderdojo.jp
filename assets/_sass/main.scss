@@ -3,3 +3,194 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 // @import "base/base";
+@import "variables";
+@import "reset";
+
+html, body {
+	height: 100%;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	line-height: 1.75;
+	font-size: rem(14);
+}
+
+img {
+	max-width: 100%;
+}
+
+.hero {
+	min-height: 100%;
+	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 71%, #2cb5e8 100%);
+	color: #fff;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.hero-inner {
+		@include pad(80px 0);
+	}
+
+	.coderdojo-logo {
+		margin-bottom: 40px;
+
+		img {
+			width: 100px;
+
+			@include media(min-width 480px) {
+				width: 120px;
+			}
+
+			@include media(min-width 640px) {
+				width: 140px;
+			}
+
+			@include media(min-width 768px) {
+				width: 160px;
+			}
+		}
+	}
+
+	.dojocon-logo {
+		font-family: $oswald;
+		font-size: rem(36);
+		font-weight: 700;
+		letter-spacing: -0.02em;
+		line-height: 1.5;
+
+		@include media(min-width 480px) {
+			font-size: rem(48);
+		}
+
+		@include media(min-width 640px) {
+			font-size: rem(64);
+		}
+
+		@include media(min-width 768px) {
+			font-size: rem(80);
+		}
+
+		@include media(min-width 1024px) {
+			font-size: rem(100);
+		}
+
+		@include media(min-width 1280px) {
+			font-size: rem(120);
+		}
+
+		@include media(min-width 1440px) {
+			font-size: rem(140);
+		}
+
+		@include media(min-width 1600px) {
+			font-size: rem(160);
+		}
+	}
+
+	.dojocon-copy {
+		font-family: $raleway;
+		font-size: rem(10);
+		font-weight: 800;
+		text-transform: uppercase;
+		overflow: hidden;
+
+		@include media(min-width 480px) {
+			font-size: rem(12);
+		}
+
+		@include media(min-width 640px) {
+			font-size: rem(14);
+		}
+
+		@include media(min-width 768px) {
+			font-size: rem(16);
+		}
+
+		@include media(min-width 1024px) {
+			font-size: rem(20);
+		}
+
+		@include media(min-width 1280px) {
+			font-size: rem(24);
+		}
+
+		@include media(min-width 1440px) {
+			font-size: rem(28);
+		}
+
+		@include media(min-width 1600px) {
+			font-size: rem(32);
+		}
+
+		.horizontal-line {
+			position: relative;
+
+			&:before,
+			&:after {
+				content: '';
+				width: 2560px;
+				border-bottom: 1px solid #fff;
+				position: absolute;
+				top: 50%;
+
+				@include media(min-width 768px) {
+					border-bottom-width: 2px;
+					margin-top: -1px;
+				}
+			}
+
+			&:before {
+				right: 100%;
+				margin-right: 1em;
+			}
+
+			&:after {
+				left: 100%;
+				margin-left: 1em;
+			}
+		}
+	}
+
+	.comingsoon {
+		font-family: $rubik;
+		font-size: rem(24);
+		font-weight: 900;
+		font-style: italic;
+		text-transform: uppercase;
+		color: $yellow;
+		margin-top: 40px;
+
+		@include media(min-width 480px) {
+			font-size: rem(28);
+		}
+
+		@include media(min-width 640px) {
+			font-size: rem(32);
+		}
+
+		@include media(min-width 768px) {
+			font-size: rem(36);
+		}
+
+		@include media(min-width 1024px) {
+			font-size: rem(44);
+		}
+
+		@include media(min-width 1280px) {
+			font-size: rem(48);
+		}
+
+		@include media(min-width 1440px) {
+			font-size: rem(56);
+		}
+
+		@include media(min-width 1600px) {
+			font-size: rem(64);
+		}
+	}
+}
