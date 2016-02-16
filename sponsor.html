@@ -1,10 +1,20 @@
 ---
 layout: default
 ---
-
+<style>
+	iframe{
+		width: 760px;
+		height: 70vh;
+	}
+	@media screen and (max-width: 760px){
+		iframe{
+			width: 100%;
+		}
+	}
+</style>
 <div class="hero">
 	<div class="hero-inner">
 		<p class="coderdojo-logo"><img src="{{ site.baseurl }}/assets/images/coderdojo-logo.svg" alt="CoderDojo"></p>
-		<iframe src="https://docs.google.com/forms/d/1mXQ45DxPV9le-_cGRSXaMbF5eSHDt1ipM_duBuUwwJg/viewform?embedded=true" width="760" frameborder="0" marginheight="0" marginwidth="0" style="height: 80vh;">Loading...</iframe>
+		<iframe src="https://docs.google.com/forms/d/1mXQ45DxPV9le-_cGRSXaMbF5eSHDt1ipM_duBuUwwJg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 	</div>
 </div>
