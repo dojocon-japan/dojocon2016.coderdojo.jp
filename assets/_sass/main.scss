@@ -194,3 +194,20 @@ img {
 		}
 	}
 }
+
+.sns-widgets {
+	@include outer-container;
+	margin-top: $gutter * 4;
+
+	.fb-page-plugin {
+		@include span-columns(5);
+		@include shift(0.5);
+	}
+
+	.tw-widget {
+		@include span-columns(5);
+		@include shift(1);
+	}
+
+
+}
