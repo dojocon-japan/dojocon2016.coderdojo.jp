@@ -6,9 +6,19 @@ $max-width: 940px;
 $column: 60px;
 $gutter: 20px;
 
-// Kyoshin
+// Screen size
+$xxs-screen: 480px;
+$xs-screen: 640px;
+$s-screen: 768px;
+$m-screen: 1024px;
+$l-screen: 1280px;
+$xl-screen: 1440px;
+$xxl-screen: 1600px;
+
+// DojoCon Japan
 $hiragino: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 $oswald: "Oswald", sans-serif;
+$roboto: "Roboto", sans-serif;
 $raleway: "Raleway", sans-serif;
 $rubik: "Rubik", sans-serif;
 
@@ -16,13 +26,18 @@ $font-size: 14;
 $line-height: 1.75;
 $line-height-px: $line-height * $font-size * 1px;
 
-$blue: #005bac;
-$green: #a0d468;
+$red: #ed6c63;
+$orange: #fc6e51;
 $yellow: #ffce54;
-$pink: #ec87c0;
+$green: #a0d468;
 $sky: #4fc1e9;
+$blue: #5d9cec;
+$pink: #ec87c0;
 $cloud: #f5f7fa;
 $cloud-dark: #e6e9ed;
 
-$default-font-color: #333;
+$brand-color: #1fc8db;
+
+$default-font-color: #666;
+$dark-font-color: #333;
 $default-border-color: #ddd;

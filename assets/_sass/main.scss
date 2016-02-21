@@ -6,51 +6,57 @@
 @import "variables";
 @import "reset";
 
-html, body {
+html {
+	font-size: 10px;
 	height: 100%;
 }
 
-html {
-	font-size: 10px;
-}
-
 body {
+	min-height: 100%;
+	position: relative;
 	line-height: 1.75;
 	font-size: rem(14);
+	color: $default-font-color;
+}
+
+a {
+	color: $brand-color;
+	text-decoration: none;
 }
 
 img {
 	max-width: 100%;
 }
 
+iframe {
+	vertical-align: top;
+}
+
 .hero {
-	min-height: 100%;
 	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 71%, #2cb5e8 100%);
 	color: #fff;
 	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 
 	.hero-inner {
-		@include pad(80px 0);
+		@include pad(30px 0 10px);
+		display: inline-block;
 	}
 
 	.coderdojo-logo {
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 
 		img {
 			width: 100px;
 
-			@include media(min-width 480px) {
+			@include media(min-width $xxs-screen) {
 				width: 120px;
 			}
 
-			@include media(min-width 640px) {
+			@include media(min-width $xs-screen) {
 				width: 140px;
 			}
 
-			@include media(min-width 768px) {
+			@include media(min-width $s-screen) {
 				width: 160px;
 			}
 		}
@@ -61,34 +67,26 @@ img {
 		font-size: rem(36);
 		font-weight: 700;
 		letter-spacing: -0.02em;
-		line-height: 1.5;
+		line-height: 1;
 
-		@include media(min-width 480px) {
+		@include media(min-width $xxs-screen) {
 			font-size: rem(48);
 		}
 
-		@include media(min-width 640px) {
+		@include media(min-width $xs-screen) {
 			font-size: rem(64);
 		}
 
-		@include media(min-width 768px) {
+		@include media(min-width $s-screen) {
 			font-size: rem(80);
 		}
 
-		@include media(min-width 1024px) {
+		@include media(min-width $m-screen) {
 			font-size: rem(100);
 		}
 
-		@include media(min-width 1280px) {
+		@include media(min-width $l-screen) {
 			font-size: rem(120);
-		}
-
-		@include media(min-width 1440px) {
-			font-size: rem(140);
-		}
-
-		@include media(min-width 1600px) {
-			font-size: rem(160);
 		}
 	}
 
@@ -98,33 +96,27 @@ img {
 		font-weight: 800;
 		text-transform: uppercase;
 		overflow: hidden;
+		line-height: 1;
+		margin-top: 1.5em;
 
-		@include media(min-width 480px) {
+		@include media(min-width $xxs-screen) {
 			font-size: rem(12);
 		}
 
-		@include media(min-width 640px) {
+		@include media(min-width $xs-screen) {
 			font-size: rem(14);
 		}
 
-		@include media(min-width 768px) {
+		@include media(min-width $s-screen) {
 			font-size: rem(16);
 		}
 
-		@include media(min-width 1024px) {
+		@include media(min-width $m-screen) {
 			font-size: rem(20);
 		}
 
-		@include media(min-width 1280px) {
+		@include media(min-width $l-screen) {
 			font-size: rem(24);
-		}
-
-		@include media(min-width 1440px) {
-			font-size: rem(28);
-		}
-
-		@include media(min-width 1600px) {
-			font-size: rem(32);
 		}
 
 		.horizontal-line {
@@ -139,7 +131,7 @@ img {
 				top: 50%;
 				margin-top: -1px;
 
-				@include media(min-width 768px) {
+				@include media(min-width $s-screen) {
 					border-bottom-width: 2px;
 				}
 			}
@@ -156,58 +148,163 @@ img {
 		}
 	}
 
-	.comingsoon {
-		font-family: $rubik;
+}
+
+.below-header {
+	background: $red;
+	color: #fff;
+	@include pad(0 15px);
+}
+
+.comingsoon {
+	font-family: $rubik;
+	font-size: rem(20);
+	font-weight: 900;
+	font-style: italic;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.5;
+
+	@include media(min-width $xxs-screen) {
 		font-size: rem(24);
-		font-weight: 900;
-		font-style: italic;
-		text-transform: uppercase;
-		color: $yellow;
-		margin-top: 40px;
+	}
 
-		@include media(min-width 480px) {
-			font-size: rem(28);
-		}
+	// @include media(min-width $xs-screen) {
+	// 	font-size: rem(32);
+	// }
 
-		@include media(min-width 640px) {
-			font-size: rem(32);
-		}
+	@include media(min-width $s-screen) {
+		font-size: rem(28);
+	}
 
-		@include media(min-width 768px) {
-			font-size: rem(36);
-		}
+	// @include media(min-width $m-screen) {
+	// 	font-size: rem(44);
+	// }
 
-		@include media(min-width 1024px) {
-			font-size: rem(44);
-		}
+	// @include media(min-width $l-screen) {
+	// 	font-size: rem(48);
+	// }
 
-		@include media(min-width 1280px) {
-			font-size: rem(48);
-		}
+	// @include media(min-width $xl-screen) {
+	// 	font-size: rem(56);
+	// }
 
-		@include media(min-width 1440px) {
-			font-size: rem(56);
-		}
+	// @include media(min-width $xxl-screen) {
+	// 	font-size: rem(64);
+	// }
+}
 
-		@include media(min-width 1600px) {
-			font-size: rem(64);
+.teaser-action {
+	@include pad(0 15px);
+	margin-top: $gutter;
+
+	> li {
+		margin-bottom: $gutter / 2;
+		text-align: center;
+
+		a {
+			display: inline-block;
+			// background: $blue;
+			color: #fff;
+			// font-size: rem(14);
+			// font-weight: bold;
+			border: 1px solid #fff;
+			border-radius: 4px;
+			text-align: center;
+			@include pad(0.25em 1em);
 		}
 	}
 }
 
-.sns-widgets {
-	@include outer-container;
-	margin-top: $gutter * 4;
+main {
+	display: block;
+	@include pad($gutter 0 ($gutter + 24px));
+}
 
-	.fb-page-plugin {
-		@include span-columns(5);
-		@include shift(0.5);
+[class^="section-"], [class*=" section-"] {
+	margin-top: $gutter * 2;
+
+	&:first-child {
+		margin-top: 0;
 	}
 
-	.tw-widget {
-		@include span-columns(5);
-		@include shift(1);
+	.section-title {
+		text-align: center;
+		color: $dark-font-color;
+		font-family: $roboto;
+		font-size: rem(24);
+		font-weight: 700;
+		padding-bottom: 5px;
+		position: relative;
+
+		@include media(min-width $s-screen) {
+			font-size: rem(28);
+		}
+
+		&:after {
+			content: '';
+			height: 2px;
+			width: 20px;
+			background: $brand-color;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
 	}
 
+	.sns-widgets {
+		@include outer-container;
+		margin-top: $gutter;
+		@include pad(0 15px);
+		text-align: center;
 
+		> li {
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+			margin-bottom: $gutter;
+			border-radius: 4px;
+			overflow: hidden;
+			background: $cloud;
+			box-shadow: 0 3px 0 rgba(8, 1, 2, 0.03);
+
+			@include media(min-width $xxs-screen) {
+				width: 450px;
+			}
+
+			@include media(min-width $xs-screen) {
+				@include span-columns(6);
+			}
+		}
+
+		.fb-page-plugin {
+			// @include span-columns(5);
+			// @include shift(0.5);
+		}
+
+		.tw-widget {
+			// @include span-columns(5);
+			// @include shift(1);
+		}
+	}
+}
+
+.footer {
+	background: $cloud;
+	// @include pad(5px 15px);
+	position: absolute;
+	height: 24px;
+	// width: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	.copyright {
+		text-align: center;
+		font-family: $roboto;
+		font-size: rem(12);
+		line-height: 24px;
+	}
 }
