@@ -37,10 +37,10 @@ iframe {
 	// @include pad(5px 15px);
 	position: absolute;
 	height: 24px;
-	// width: 100%;
 	bottom: 0;
 	left: 0;
 	right: 0;
+	border-top: 1px solid $default-border-color;
 
 	.copyright {
 		text-align: center;
