@@ -61,7 +61,7 @@ iframe {
 	}
 
 	.hero-inner {
-		@include pad(30px 0);
+		@include pad(30px 0 10px);
 		display: inline-block;
 	}
 
@@ -169,12 +169,6 @@ iframe {
 				margin-left: 1em;
 			}
 		}
-	}
-
-	.dojocon-info {
-		font-weight: bold;
-		margin-top: $gutter;
-		@include pad(0 15px);
 	}
 
 	.teaser-action {
@@ -324,7 +318,7 @@ main {
 	padding-top: $gutter * 2;
 
 	.pdf-link {
-		@include pad(20px 15px 0);
+		padding-top: 20px;
 		position: relative;
 		z-index: 9;
 	}
