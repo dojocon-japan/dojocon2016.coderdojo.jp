@@ -1,5 +1,5 @@
-markdown: redcarpet
-highlighter: pygments # or rouge or null
+# markdown: redcarpet
+# highlighter: pygments # or rouge or null
 exclude:
   - node_modules
   - gulpfile.js
