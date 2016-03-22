@@ -313,6 +313,12 @@ main {
 	overflow: hidden;
 	padding-top: $gutter * 2;
 
+	.pdf-link {
+		padding-top: 20px;
+		position: relative;
+		z-index: 9;
+	}
+
 	.google-form {
 		width: 100%;
 		height: 2900px;
