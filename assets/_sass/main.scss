@@ -306,6 +306,10 @@ main {
 			@include media(min-width $xs-screen) {
 				@include span-columns(6);
 			}
+
+			&.tw-widget {
+				border: 1px solid #e2e9ec;
+			}
 		}
 	}
 }
