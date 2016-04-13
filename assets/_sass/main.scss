@@ -331,11 +331,11 @@ main {
 
 	.google-form {
 		width: 100%;
-		height: 2900px;
+		height: 3100px;
 		margin-top: -40px;
 
 		@include media(min-width $xxs-screen) {
-			height: 2800px;
+			height: 3000px;
 		}
 
 		@include media(min-width $s-screen) {
