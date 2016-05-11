@@ -1,22 +1,26 @@
 {
-  "name": "dojocon-japan",
-  "version": "0.2.0",
-  "description": "DojoCon Japan 2016 website",
+  "name": "frasco",
+  "version": "0.3.0",
+  "description": "Jekyll starter project for Gulp with Bourbon/Neat/Bitters, etc.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "start": "gulp",
+    "browserify": "gulp browserify",
+    "imagemin": "gulp imagemin",
+    "sass": "gulp sass",
+    "server": "gulp server",
+    "test": "gulp test",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dojocon-japan/dojocon-japan.github.io.git"
+    "url": "https://github.com/ixkaito/frasco.git"
   },
   "keywords": [
     "Gulp",
     "Jekyll",
     "Sass",
     "Autoprefixer",
-    "Compass",
     "Bourbon",
     "Browserify",
     "Watchify",
@@ -26,22 +30,21 @@
   "author": "Kite",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dojocon-japan/dojocon-japan.github.io/issues"
+    "url": "https://github.com/ixkaito/frasco/issues"
   },
-  "homepage": "http://dojocon-japan.github.io",
+  "homepage": "https://github.com/ixkaito/frasco",
   "devDependencies": {
-    "browser-sync": "^2.11.1",
-    "browserify": "^13.0.0",
-    "gulp": "^3.9.0",
+    "browser-sync": "^2.12.5",
+    "browserify": "^13.0.1",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-compass": "^2.1.0",
-    "gulp-imagemin": "^2.4.0",
+    "gulp-imagemin": "^3.0.0",
     "gulp-newer": "^1.1.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-sass": "^2.1.1",
-    "gulp-uglify": "^1.5.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^1.5.3",
     "gulp-watch": "^4.3.5",
-    "imagemin-pngquant": "^4.2.0",
+    "imagemin-pngquant": "^5.0.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"

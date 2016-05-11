@@ -6,10 +6,9 @@
 var gulp         = require('gulp');
 var newer        = require('gulp-newer');
 var plumber      = require('gulp-plumber');
-var browserSync  = require('browser-sync');
+var browserSync  = require('browser-sync').create();
 var sass         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
-var compass      = require('gulp-compass');
 var imagemin     = require('gulp-imagemin');
 var pngquant     = require('imagemin-pngquant');
 var browserify   = require('browserify');
@@ -26,10 +25,6 @@ var tasks = [];
 var paths = {};
 var jsSrc = [];
 var build = [];
-
-if (config.tasks.compass) {
-  config.tasks.sass = false;
-}
 
 Object.keys(config.tasks).forEach(function (key) {
   if (config.tasks[key]) {
@@ -54,8 +49,8 @@ for (var i = 0; i <= config.js.src.length - 1; i++) {
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('jekyll', ['jekyll-build'], function() {
-  browserSync({
+gulp.task('server', ['jekyll-build'], function() {
+  return browserSync.init({
     port: config.port,
     server: {
       baseDir: config.paths.dest,
@@ -88,22 +83,6 @@ gulp.task('sass', function () {
     .pipe(sass({outputStyle: config.sass.outputStyle}))
     .pipe(autoprefixer({ browsers: config.autoprefixer.browsers }))
     .pipe(gulp.dest(paths.css));
-});
-
-/**
- * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
- */
-gulp.task('compass', function () {
-  return gulp.src(paths.sass + '/**/*')
-    .pipe(plumber())
-    .pipe(compass({
-      config_file: config.compass.config,
-      style: config.compass.style,
-      comments: config.compass.comments,
-      css: paths.css,
-      sass: paths.sass,
-      image: paths.images
-    }));
 });
 
 /**
@@ -164,17 +143,13 @@ gulp.task('watch', ['watchify'], function () {
     });
   }
 
-  if (config.tasks.compass) {
-    watch(paths.sass + '/**/*', function () {
-      gulp.start('compass');
-    });
-  } else if (config.tasks.sass) {
+  if (config.tasks.sass) {
     watch(paths.sass + '/**/*', function () {
       gulp.start('sass');
     });
   }
 
-  if (config.tasks['jekyll']) {
+  if (config.tasks['server']) {
     watch([
       '!./node_modules/**/*',
       '!./README.md',
@@ -183,6 +158,7 @@ gulp.task('watch', ['watchify'], function () {
       '_layouts/**/*',
       '*.html',
       './**/*.md',
+      './**/*.markdown',
       paths.posts + '/**/*',
       paths.css + '/**/*',
       paths.js + '/**/*',
@@ -194,7 +170,18 @@ gulp.task('watch', ['watchify'], function () {
 });
 
 /**
- * Default task, running just `gulp` will compile the sass,
- * compile the jekyll site, launch BrowserSync & watch files.
+ * Only minify the images and compile the sass, js, and jekyll site, but do not launch BrowserSync
+ * and watch files.
+ */
+gulp.task('build', ['sass', 'browserify', 'imagemin', 'jekyll-build']);
+
+/**
+ * Default task, running just `gulp` will minify the images, compile the sass, js, and jekyll site,
+ * launch BrowserSync, and watch files. Tasks can be configured by gulpconfig.json.
  */
 gulp.task('default', tasks);
+
+/**
+ * Test
+ */
+gulp.task('test', ['build']);

@@ -1,10 +1,6 @@
-# Beaker
+# Frasco [![GitHub release](https://img.shields.io/github/release/ixkaito/frasco.svg?maxAge=2592000)](https://github.com/ixkaito/frasco/releases) [![Build Status](https://travis-ci.org/ixkaito/frasco.svg?branch=master)](https://travis-ci.org/ixkaito/frasco) [![license](https://img.shields.io/github/license/ixkaito/frasco.svg?maxAge=2592000)](https://github.com/ixkaito/frasco/blob/master/LICENSE)
 
 __Jekyll starter project for Gulp with Bourbon/Neat/Bitters, etc.__
-
-## Version
-
-0.2.0
 
 ## Features
 
@@ -14,7 +10,6 @@ __Jekyll starter project for Gulp with Bourbon/Neat/Bitters, etc.__
 - Bourbon
 - Neat
 - Bitters
-- Compass
 - Imagemin
 - Browserify
 - Watchify
@@ -29,7 +24,6 @@ To use this starter project, you'll need the following things installed on your 
 
 1. [Jekyll](http://jekyllrb.com/) - `$ gem install jekyll`
 2. [NodeJS](http://nodejs.org) - use the installer, Homebrew, etc.
-3. [GulpJS](https://github.com/gulpjs/gulp) - `$ npm install -g gulp` (Mac users may need sudo)
 
 ## Local Installation
 
@@ -40,10 +34,30 @@ To use this starter project, you'll need the following things installed on your 
 
 ### Development Mode
 
-This will give you file watching, browser synchronisation, auto-rebuild, CSS injecting etc etc.
+This will give you file watching, browser synchronisation, auto-rebuild, CSS injecting, etc.
+
+```shell
+$ npm start
+```
+
+Or, if you have installed Gulp globally, this is also available and is same as `npm start`.
 
 ```shell
 $ gulp
+```
+
+#### To See More Commands
+
+```shell
+$ npm run
+```
+
+__Examples:__
+
+This will compile the Sass files
+
+```shell
+$ npm run sass
 ```
 
 ### Jekyll
@@ -65,7 +79,7 @@ gulp.task("deploy", ["jekyll-build"], function () {
 
 ## Configurations and Defaults
 
-You can change the configuration by editing `gulpconfig.json`
+You can change the configurations by editing `gulpconfig.json`
 
 ### port
 
@@ -75,20 +89,6 @@ options: integer
 ### tasks
 
 Tasks to run when you exec `gulp` command.
-
-#### sass
-
-To compile Sass.
-
-default: `true`  
-options: boolean (`true` / `false`)
-
-#### compass
-
-To use compass. If `true`, Bathe will ignore the above setting of sass.
-
-default: `false`  
-options: boolean (`true` / `false`)
 
 #### browserify
 
@@ -104,7 +104,14 @@ To minify images.
 default: `true`  
 options: boolean (`true` / `false`)
 
-#### jekyll
+#### sass
+
+To compile Sass.
+
+default: `true`  
+options: boolean (`true` / `false`)
+
+#### server
 
 To compile sources via Jekyll and to keep browsers in sync with file changes via Browsersync.
 
@@ -143,7 +150,7 @@ example: `"./"` (directly under the theme direcotry)
 
 #### css
 
-The CSS destination directory for Sass or Compass.
+The CSS destination directory for Sass.
 
 default: `"css"`  
 options: string  
@@ -212,32 +219,6 @@ default: `["> 1%", "last 2 versions", "Firefox ESR"]`
 options: array. See [Browserslist docs](https://github.com/ai/browserslist#queries) for available queries.
 example: `["> 5%", "last 2 versions", "IE 8"]`
 
-### compass
-
-Compass settings.
-
-#### config
-
-The config file for Compass.
-
-default: `"./config.rb"`  
-options: string  
-example: `"./myconfig.rb"`
-
-#### style
-
-The output style of Compass.
-
-default: `"compressed"`  
-options: `"expanded"`, `"nested"`, `"compact"`, `"compressed"`
-
-#### comments
-
-Show line comments or not.
-
-default: `false`  
-options: boolean (`true` / `false`)
-
 ### js
 
 JavaScript settings.
@@ -260,4 +241,4 @@ example: `"script.js"`
 
 ## Copyright / License
 
-Copyright &copy; 2015-2016 the contributors of the Beaker project under the [GPL version 2](https://raw.githubusercontent.com/ixkaito/beaker/master/LICENSE) or later.
+Copyright © 2015-2016 the contributors of the Frasco project under the [MIT License](https://github.com/ixkaito/frasco/blob/master/LICENSE).

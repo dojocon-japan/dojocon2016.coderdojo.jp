@@ -1,15 +1,9 @@
-# markdown: redcarpet
-# highlighter: pygments # or rouge or null
+title: My New Frasco Site
 exclude:
   - node_modules
   - gulpfile.js
   - gulpconfig.json
   - package.json
-  - config.rb
   - npm-debug.log
   - README.md
-
-title: DojoCon Japan 2016
-description: DojoCon Japan 2016
-url: http://dojocon.coderdojo.jp
-baseurl: /
+  - LICENSE
