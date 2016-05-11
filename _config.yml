@@ -1,4 +1,3 @@
-title: My New Frasco Site
 exclude:
   - node_modules
   - gulpfile.js
@@ -7,3 +6,10 @@ exclude:
   - npm-debug.log
   - README.md
   - LICENSE
+
+title: DojoCon Japan 2016
+description: DojoCon Japan 2016
+url: http://dojocon.coderdojo.jp
+baseurl: /
+
+environment: development
