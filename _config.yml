@@ -3,6 +3,7 @@ title: DojoCon Japan 2016 - The more dojos, the more cool coders. -
 description: DojoCon Japan 2016 - The more dojos, the more cool coders. -
 url: http://dojocon.coderdojo.jp
 baseurl: ''
+entryurl: ''
 
 # Build settings
 markdown: kramdown
