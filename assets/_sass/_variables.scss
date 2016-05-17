@@ -1,0 +1,27 @@
+// Bourbon
+$em-base: 10px;
+
+// Neat
+$max-width: 940px;
+$column: 60px;
+$gutter: 20px;
+
+// Screen size
+$m-screen: 960px;
+$s-screen: 768px;
+$xs-screen: 640px;
+$xxs-screen: 480px;
+
+// DojoCon
+$hiragino: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$noto: "Noto Sans Japanese", $hiragino;
+$oswald: "Oswald", sans-serif;
+
+$font-size: 16;
+$line-height: 1.75;
+$line-height-px: $line-height * $font-size * 1px;
+
+$default-font-color: #4d4d4d;
+
+$blue: #0a94b8;
+$yellow: #fff701;

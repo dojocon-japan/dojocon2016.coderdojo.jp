@@ -1,7 +1,9 @@
 @charset "UTF-8";
+@import "variables";
 @import "bourbon/bourbon";
 @import "neat/neat";
-// @import "base/base";
+@import "omega-reset";
+@import "reset";
 
 .container {
 	@include outer-container;
