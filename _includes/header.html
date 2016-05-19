@@ -8,9 +8,21 @@
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
+<link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.url }}">
+<link rel="shortcut icon" href="{{ '/assets/images/favicon.ico' | prepend: site.baseurl }}" type="image/vnd.microsoft.ico"/>
+<link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | prepend: site.baseurl }}">
+
+<meta property="og:locale" content="ja_JP">
+<meta property="og:type" content="{% assign homeurl = site.baseurl | append: '/' %}{% if page.url == homeurl %}website{% else %}article{% endif %}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:image" content="{% if page.ogp_image %}{{ site.url }}{{ site.baseurl }}/assets/images/{{ page.ogp_image }}{% else %}{{ site.url }}{{ site.baseurl }}/assets/images/ogp.png{% endif %}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:image" content="{% if page.ogp_image %}{{ site.url }}{{ site.baseurl }}/assets/images/{{ page.ogp_image }}{% else %}{{ site.url }}{{ site.baseurl }}/assets/images/ogp.png{% endif %}">
 </head>
 <body>
 
