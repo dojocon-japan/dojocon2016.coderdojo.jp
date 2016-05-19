@@ -4,6 +4,12 @@
 @import "neat/neat";
 @import "omega-reset";
 @import "reset";
+@import "fonts";
+
+body {
+	font-family: $noto;
+	line-height: $line-height;
+}
 
 .container {
 	@include outer-container;
