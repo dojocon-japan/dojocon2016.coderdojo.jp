@@ -40,7 +40,7 @@
 {% endif %}
 
 <header class="header">
-	<nav class="header-nav">
+	<nav class="nav">
 		<ul>
 			<li><a href="">Home</a></li>
 			<li><a href="">About</a>
@@ -57,9 +57,5 @@
 			<li><a href="">Time Table</a></li>
 		</ul>
 	</nav>
-	<ul class="action">
-		<li><a href="">f</a></li>
-		<li><a href="">t</a></li>
-		<li class="entry"><a href="{{ site.entryurl }}" target="_blank">Entry</a></li>
-	</ul>
+	{% include action.html %}
 </header>

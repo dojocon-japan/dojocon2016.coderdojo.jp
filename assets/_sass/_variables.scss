@@ -17,6 +17,14 @@ $hiragino: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリ�
 $noto: "Noto Sans CJK JP", $hiragino;
 $oswald: "Oswald", sans-serif;
 
+$thin: 100;
+$light: 200;
+$demilight: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$black: 900;
+
 $font-size: 16;
 $line-height: 1.75;
 $line-height-px: $line-height * $font-size * 1px;
@@ -25,3 +33,12 @@ $default-font-color: #4d4d4d;
 
 $blue: #0a94b8;
 $yellow: #fff701;
+
+$clouds: #f5f7fa;
+$clouds-dark: #e6e9ed;
+
+$silver: #ccd1d9;
+$silver-dark: #aab2bd;
+
+$gray: #656d78;
+$gray-dark: #434a54;

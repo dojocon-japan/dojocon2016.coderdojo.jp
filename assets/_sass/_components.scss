@@ -1,0 +1,78 @@
+.noto {
+	font-family: $noto;
+}
+
+.oswald {
+	font-family: $oswald;
+}
+
+.container {
+	@include outer-container;
+}
+
+button,
+.button {
+	background: $clouds;
+	border-radius: 4px;
+	box-shadow: 0 0 5px rgba(#000, .5);
+	color: $default-font-color;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: $bold;
+	padding: 0.35em 1.5em;
+	text-align: center;
+	text-decoration: none;
+
+	&:hover,
+	&:active {
+		text-decoration: none;
+		background: $clouds-dark;
+	}
+
+	&.button-small {
+		font-size: 14px;
+		font-weight: $medium;
+		padding: 0.2em 1.25em;
+	}
+
+	&.button-large {
+		font-size: 22px;
+		font-weight: $bold;
+		padding: 0.5em 1.75em;
+	}
+
+	&.button-yellow {
+		background: $yellow;
+		color: $blue;
+
+		&:hover,
+		&:active {
+			background: darken($yellow, 1);
+		}
+	}
+
+	&.button-blue {
+		background: $blue;
+		color: #fff;
+
+		&:hover,
+		&:active {
+			background: darken($blue, 1);
+		}
+	}
+
+	&.button-black {
+		background: #000;
+		color: #fff;
+
+		&:hover,
+		&:active {
+			background: lighten(#000, 1);
+		}
+	}
+
+	&.button-block {
+		display: block;
+	}
+}
