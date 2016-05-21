@@ -322,3 +322,50 @@ strong {
 		}
 	}
 }
+
+.sponsor-section {
+
+	h2 {
+		border: 1px solid $default-font-color;
+		font-size: 18px;
+		font-weight: $demilight;
+		line-height: 1.5;
+		margin: 15px 0;
+		text-align: center;
+	}
+
+	.silver-sponsors {
+
+		.sponsors {
+			@include outer-container;
+
+			> li {
+				float: left;
+				width: 50%;
+				@include omega(2n);
+			}
+		}
+	}
+
+	.bronze-sponsors {
+
+		.sponsors {
+			@include outer-container;
+
+			> li {
+				float: left;
+				width: 33.33%;
+				@include omega(3n)
+			}
+		}
+	}
+
+	.become-a-sponsor {
+		box-shadow: none;
+		font-size: 18px;
+		font-weight: $demilight;
+		margin-top: 45px;
+		padding-top: 0.75em;
+		padding-bottom: 0.75em;
+	}
+}
