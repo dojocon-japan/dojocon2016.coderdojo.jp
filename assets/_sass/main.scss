@@ -121,7 +121,7 @@ strong {
 
 	.section-title {
 		font-size: 46px;
-		margin-bottom: $line-height-px * 1.5;
+		margin-bottom: 1em;
 		text-align: center;
 
 		.en {
@@ -145,15 +145,15 @@ strong {
 	h2 {
 		font-size: 18px;
 		font-weight: $bold;
-		margin-top: 42px;
-		margin-bottom: 14px;
+		margin-top: 2em;
+		margin-bottom: .5em;
 	}
 
 	.what-is-coderdojo {
 		margin-bottom: 42px;
 
 		.coderdojo-logo {
-			margin: 42px 0;
+			margin: 2.5em 0;
 			text-align: center;
 
 			img {
@@ -172,11 +172,11 @@ strong {
 	.event-info {
 
 		.entry-button-outer {
-			margin: 28px 0;
+			margin: 2em 0;
 			text-align: center;
 
 			.button {
-				margin-bottom: 7px;
+				margin-bottom: .5em;
 			}
 		}
 	}
@@ -195,14 +195,14 @@ strong {
 			> li {
 				@include span-columns(6);
 				@include omega(2n);
-				margin-bottom: 14px;
+				margin-bottom: 1em;
 
 				a {
 					color: inherit;
 				}
 
 				.post-thumbnail {
-					margin-bottom: 7px;
+					margin-bottom: .5em;
 				}
 
 				.post-date {
@@ -225,14 +225,14 @@ strong {
 
 	h2 {
 		font-weight: $bold;
-		margin-top: $line-height * 14px;
+		margin-top: 1.75em;
 	}
 
 	.venue-images {
 		color: #fff;
 		font-size: 12px;
 		font-weight: $regular;
-		margin: ($line-height / 2 * 14px) -20px (1.5 * $line-height * 14px);
+		margin: .75em -20px 3em;
 		text-transform: uppercase;
 
 		.workshop-area,
@@ -251,7 +251,7 @@ strong {
 			background-image: url("//placehold.it/700x280/ecacba");
 
 			p {
-				bottom: $line-height / 2 * 12px;
+				bottom: .5 * $line-height * 1em;
 			}
 		}
 
@@ -259,7 +259,7 @@ strong {
 			background-image: url("//placehold.it/700x280/778ec3/fff");
 
 			p {
-				top: $line-height / 2 * 12px;
+				top: .5 * $line-height * 1em;
 			}
 		}
 	}
@@ -300,7 +300,7 @@ strong {
 			.speaker-avator {
 				border-radius: 105px;
 				height: 105px;
-				margin: 0 auto ($line-height / 2 * 14px);
+				margin: 0 auto .5em;
 				overflow: hidden;
 				width: 105px;
 			}
@@ -311,7 +311,7 @@ strong {
 
 			.speaker-description {
 				font-weight: $thin;
-				margin-bottom: $line-height / 2 * 14px;
+				margin-bottom: 1em;
 			}
 
 			.button {
