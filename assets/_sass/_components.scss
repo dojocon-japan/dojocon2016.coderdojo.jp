@@ -76,3 +76,17 @@ button,
 		display: block;
 	}
 }
+
+@mixin ul() {
+	padding-left: 1em;
+
+	> li {
+		text-indent: -1em;
+
+		&:before {
+			content: "・";
+			font-family: $noto;
+			font-weight: $black;
+		}
+	}
+}

@@ -8,6 +8,7 @@
 @import "components";
 
 body {
+	color: $default-font-color;
 	font-family: $noto;
 	line-height: $line-height;
 }
@@ -16,8 +17,24 @@ a {
 	text-decoration: none;
 }
 
+p {
+
+	a {
+		color: inherit;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
 img {
 	max-width: 100%;
+}
+
+strong {
+	font-weight: $black;
 }
 
 .header {
@@ -93,6 +110,74 @@ img {
 
 		.venue {
 			font-size: 14px;
+		}
+	}
+}
+
+[class$="-section"]{
+
+	.section-title {
+		font-size: 46px;
+		margin-bottom: $line-height-px * 1.5;
+		text-align: center;
+
+		.en {
+			display: block;
+			font-family: $oswald;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		.ja {
+			display: block;
+			font-size: 21px;
+			font-weight: $thin;
+		}
+	}
+}
+
+.about-section {
+	background: $yellow;
+	font-size: 14px;
+	font-weight: $medium;
+	padding: 60px 20px;
+
+	h2 {
+		font-size: 18px;
+		font-weight: $bold;
+		margin-top: 42px;
+		margin-bottom: 14px;
+	}
+
+	.what-is-coderdojo {
+		margin-bottom: 42px;
+
+		.coderdojo-logo {
+			margin: 42px 0;
+			text-align: center;
+
+			img {
+				width: 168px;
+			}
+		}
+	}
+
+	.first-dojocon-japan {
+
+		ul {
+			@include ul;
+		}
+	}
+
+	.event-info {
+
+		.entry-button-outer {
+			margin: 28px 0;
+			text-align: center;
+
+			.button {
+				margin-bottom: 7px;
+			}
 		}
 	}
 }
