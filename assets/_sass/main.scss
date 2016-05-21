@@ -283,3 +283,42 @@ strong {
 		}
 	}
 }
+
+.speaker-section {
+	background: $blue;
+	color: #fff;
+
+	.speakers {
+		@include outer-container;
+
+		> li {
+			@include span-columns(6);
+			@include omega(2n);
+			margin-bottom: 40px;
+			text-align: center;
+
+			.speaker-avator {
+				border-radius: 105px;
+				height: 105px;
+				margin: 0 auto ($line-height / 2 * 14px);
+				overflow: hidden;
+				width: 105px;
+			}
+
+			.speaker-name {
+				font-size: 16px;
+			}
+
+			.speaker-description {
+				font-weight: $thin;
+				margin-bottom: $line-height / 2 * 14px;
+			}
+
+			.button {
+				box-shadow: none;
+				text-transform: uppercase;
+				width: 100px;
+			}
+		}
+	}
+}
