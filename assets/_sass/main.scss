@@ -115,6 +115,9 @@ strong {
 }
 
 [class$="-section"]{
+	font-size: 14px;
+	font-weight: $medium;
+	padding: 60px 20px;
 
 	.section-title {
 		font-size: 46px;
@@ -138,9 +141,6 @@ strong {
 
 .about-section {
 	background: $yellow;
-	font-size: 14px;
-	font-weight: $medium;
-	padding: 60px 20px;
 
 	h2 {
 		font-size: 18px;
@@ -177,6 +177,41 @@ strong {
 
 			.button {
 				margin-bottom: 7px;
+			}
+		}
+	}
+}
+
+.news-section {
+	color: $blue;
+
+	.posts-outer {
+		height: 500px;
+		overflow: auto;
+
+		.posts {
+			@include outer-container;
+
+			> li {
+				@include span-columns(6);
+				@include omega(2n);
+				margin-bottom: 14px;
+
+				a {
+					color: inherit;
+				}
+
+				.post-thumbnail {
+					margin-bottom: 7px;
+				}
+
+				.post-date {
+					font-weight: $thin;
+				}
+
+				.post-title {
+					font-weight: $medium;
+				}
 			}
 		}
 	}

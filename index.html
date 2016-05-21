@@ -79,6 +79,11 @@ layout: default
 			{% for post in site.posts %}
 				<li>
 					<a href="{{ post.url | prepend: site.baseurl }}">
+						{% if post.thumbnail %}
+							<figure class="post-thumbnail"><img src="{{ post.thumbnail | prepend: site.baseurl }}" alt="{{ post.title }}のサムネイル"></figure>
+						{% else %}
+							<figure class="post-thumbnail"><img src="//placehold.it/600x400.png?text=NOW+PRINTING" alt="ニュースサムネイル"></figure>
+						{% endif %}
 						<p class="post-date"><time datetime="{{ post.date }}">{{ post.date | date: '%Y.%m.%d' }}</time></p>
 						<h2 class="post-title">{{ post.title }}</h2>
 					</a>
