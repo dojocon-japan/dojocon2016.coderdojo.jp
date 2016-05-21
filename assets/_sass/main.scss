@@ -216,3 +216,70 @@ strong {
 		}
 	}
 }
+
+.access-section {
+	background: $yellow;
+	font-weight: $light;
+	padding-bottom: 0;
+	text-align: center;
+
+	h2 {
+		font-weight: $bold;
+		margin-top: $line-height * 14px;
+	}
+
+	.venue-images {
+		color: #fff;
+		font-size: 12px;
+		font-weight: $regular;
+		margin: ($line-height / 2 * 14px) -20px (1.5 * $line-height * 14px);
+		text-transform: uppercase;
+
+		.workshop-area,
+		.session-area {
+			background-size: cover;
+			height: 135px;
+			position: relative;
+
+			p {
+				position: absolute;
+				width: 100%;
+			}
+		}
+
+		.workshop-area {
+			background-image: url("//placehold.it/700x280/ecacba");
+
+			p {
+				bottom: $line-height / 2 * 12px;
+			}
+		}
+
+		.session-area{
+			background-image: url("//placehold.it/700x280/778ec3/fff");
+
+			p {
+				top: $line-height / 2 * 12px;
+			}
+		}
+	}
+
+	.map-outer {
+		margin: 0 -20px;
+
+		h2 {
+			background: $default-font-color;
+			color: $yellow;
+			font-size: 16px;
+			font-weight: $medium;
+			padding: 16px 20px;
+			text-transform: uppercase;
+		}
+
+		.map {
+			background-image: url("//placehold.it/600x400/e9e8dc");
+			background-size: cover;
+			height: 200px;
+		}
+	}
+}
