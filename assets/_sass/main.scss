@@ -131,7 +131,8 @@ strong {
 			text-transform: uppercase;
 		}
 
-		.ja {
+		.ja,
+		.copy {
 			display: block;
 			font-size: 21px;
 			font-weight: $thin;
@@ -575,5 +576,43 @@ strong {
 				font-weight: $light;
 			}
 		}
+	}
+}
+
+.sns-section {
+	background: $blue url("//placehold.it/150/fff") no-repeat center bottom;
+	background-size: 70px;
+	color: #fff;
+	padding-bottom: 100px;
+
+	.fb-tw-widgets {
+		@include outer-container;
+	}
+
+	.sns-id {
+		font-size: 24px;
+		font-weight: $thin;
+		text-align: center;
+	}
+}
+
+.footer {
+
+	.goto-pagetop {
+		background: $yellow;
+		color: $blue;
+		display: block;
+		font-family: $oswald;
+		font-size: 16px;
+		padding: 20px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.copyright {
+		text-align: center;
+		font-size: 14px;
+		font-weight: $light;
+		padding: 30px 20px;
 	}
 }
