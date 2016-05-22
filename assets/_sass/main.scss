@@ -385,9 +385,15 @@ strong {
 	.become-a-sponsor {
 		box-shadow: none;
 		font-size: 18px;
-		font-weight: $demilight;
+		font-weight: $medium;
 		margin-top: 45px;
 		padding-top: 0.75em;
 		padding-bottom: 0.75em;
 	}
+}
+
+.timetable-section {
+	background: $yellow;
+	color: $blue;
+
 }
