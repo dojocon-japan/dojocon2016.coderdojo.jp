@@ -150,6 +150,7 @@ strong {
 	}
 
 	.what-is-coderdojo {
+		@include outer-container;
 		margin-bottom: 42px;
 
 		.coderdojo-logo {
@@ -162,7 +163,16 @@ strong {
 		}
 	}
 
+	.what-is-dojocon {
+		@include outer-container;
+
+		figure {
+			text-align: center;
+		}
+	}
+
 	.first-dojocon-japan {
+		@include outer-container;
 
 		ul {
 			@include ul;
@@ -170,6 +180,7 @@ strong {
 	}
 
 	.event-info {
+		@include outer-container;
 
 		.entry-button-outer {
 			margin: 2em 0;
@@ -178,6 +189,13 @@ strong {
 			.button {
 				margin-bottom: .5em;
 			}
+		}
+	}
+
+	.arduino-robot {
+
+		figure {
+			text-align: center;
 		}
 	}
 }
@@ -331,6 +349,10 @@ strong {
 		font-weight: $demilight;
 		line-height: 1.5;
 		margin: 15px 0;
+		text-align: center;
+	}
+
+	.sponsors {
 		text-align: center;
 	}
 
