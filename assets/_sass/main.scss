@@ -549,3 +549,31 @@ strong {
 		font-weight: $medium;
 	}
 }
+
+.staff-section {
+	background: $yellow;
+
+	.members {
+		@include outer-container;
+		text-align: center;
+
+		> li {
+			@include span-columns(4);
+			@include omega(3n);
+			margin-bottom: 20px;
+
+			.member-avator {
+				border-radius: 60px;
+				height: 60px;
+				margin: 0 auto 0.5em;
+				overflow: hidden;
+				width: 60px;
+			}
+
+			.member-name {
+				font-size: 16px;
+				font-weight: $light;
+			}
+		}
+	}
+}
