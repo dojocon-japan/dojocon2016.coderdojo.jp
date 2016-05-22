@@ -540,3 +540,12 @@ strong {
 		}
 	}
 }
+
+.contact-section {
+	color: $blue;
+
+	.open-form {
+		box-shadow: none;
+		font-weight: $medium;
+	}
+}
