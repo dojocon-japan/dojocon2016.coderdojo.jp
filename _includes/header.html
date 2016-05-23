@@ -57,8 +57,8 @@
 		<nav class="nav">
 			<ul>
 				<li><a href="{{ '/' | prepend: site.baseurl }}#pagetop">Home</a></li>
-				<li><a href="">About</a>
-					<ul>
+				<li><a href="{{ '/' | prepend: site.baseurl }}#about" class="js-about-menu-trigger">About <i>＋</i></a>
+					<ul class="js-about-menu">
 						<li><a href="{{ '/' | prepend: site.baseurl }}#about">About</a></li>
 						<li><a href="{{ '/' | prepend: site.baseurl }}#news">News</a></li>
 						<li><a href="{{ '/' | prepend: site.baseurl }}#contact">Contact</a></li>

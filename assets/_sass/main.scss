@@ -74,7 +74,6 @@ strong {
 
 		.menu-close-outer {
 			background: #fff;
-			border-bottom: 1px solid $default-font-color;
 			text-align: right;
 
 			button {
@@ -111,7 +110,7 @@ strong {
 				}
 
 				> li {
-					border-bottom: 1px solid $default-font-color;
+					border-top: 1px solid $default-font-color;
 					float: left;
 					text-align: center;
 					width: 50%;
@@ -125,6 +124,26 @@ strong {
 
 					> ul {
 						display: none;
+						left: -100%;
+						position: relative;
+						width: 200%;
+
+						> li {
+							border-top: 1px solid $default-font-color;
+							float: left;
+							width: 50%;
+
+							a {
+								background: rgba(#fff, .7);
+							}
+
+							&:nth-child(even) {
+
+								> a {
+									border-left: 1px solid $default-font-color;
+								}
+							}
+						}
 					}
 				}
 			}
@@ -132,6 +151,7 @@ strong {
 
 		.action {
 			background: #fff;
+			border-top: 1px solid $default-font-color;
 			padding: 10px 20px;
 			text-align: center;
 
