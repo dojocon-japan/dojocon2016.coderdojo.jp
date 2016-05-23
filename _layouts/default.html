@@ -2,7 +2,7 @@
 layout: compress
 ---
 
-{% assign homeurl = site.baseurl | append: '/' %}
+{% assign homeurl = '/' | prepend: site.baseurl %}
 
 {% include header.html %}
 
