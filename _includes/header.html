@@ -56,19 +56,19 @@
 		</div>
 		<nav class="nav">
 			<ul>
-				<li><a href="#pagetop">Home</a></li>
+				<li><a href="{{ '/' | prepend: site.baseurl }}#pagetop">Home</a></li>
 				<li><a href="">About</a>
 					<ul>
-						<li><a href="#about">About</a></li>
-						<li><a href="#news">News</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<li><a href="#staff">Staff</a></li>
+						<li><a href="{{ '/' | prepend: site.baseurl }}#about">About</a></li>
+						<li><a href="{{ '/' | prepend: site.baseurl }}#news">News</a></li>
+						<li><a href="{{ '/' | prepend: site.baseurl }}#contact">Contact</a></li>
+						<li><a href="{{ '/' | prepend: site.baseurl }}#staff">Staff</a></li>
 					</ul>
 				</li>
-				<li><a href="#access">Access</a></li>
-				<li><a href="#speakers">Speakers</a></li>
-				<li><a href="#sponsors">Sponsors</a></li>
-				<li><a href="#timetable">Time Table</a></li>
+				<li><a href="{{ '/' | prepend: site.baseurl }}#access">Access</a></li>
+				<li><a href="{{ '/' | prepend: site.baseurl }}#speakers">Speakers</a></li>
+				<li><a href="{{ '/' | prepend: site.baseurl }}#sponsors">Sponsors</a></li>
+				<li><a href="{{ '/' | prepend: site.baseurl }}#timetable">Time Table</a></li>
 			</ul>
 		</nav>
 		{% include action.html %}
