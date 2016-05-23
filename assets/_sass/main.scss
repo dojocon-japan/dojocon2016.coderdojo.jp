@@ -85,6 +85,10 @@ strong {
 				font-size: 16px;
 				line-height: 18px;
 				padding: 10px;
+
+				&:hover {
+					color: $blue;
+				}
 			}
 		}
 
@@ -100,6 +104,10 @@ strong {
 					display: block;
 					background: #fff;
 					padding: 7px 1em;
+
+					&:hover {
+						color: $blue;
+					}
 				}
 
 				> li {
@@ -774,9 +782,16 @@ strong {
 				margin-left: 20px;
 			}
 
-			a:before {
-				font-size: 32px;
-				vertical-align: middle;
+			a {
+
+				&:before {
+					font-size: 32px;
+					vertical-align: middle;
+				}
+
+				&:hover {
+					color: darken(#fff, 5);
+				}
 			}
 		}
 	}
@@ -798,6 +813,10 @@ strong {
 		&:before {
 			display: block;
 			font-size: 22px;
+		}
+
+		&:hover {
+			background: darken($yellow, 3);
 		}
 	}
 
