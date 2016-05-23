@@ -11,6 +11,7 @@ $icon-2-o-clock: "\e909";
 $icon-3-o-clock: "\e90a";
 $icon-4-o-clock: "\e90b";
 $icon-share: "\e90c";
+$icon-angle-up: "\e90d";
 
 @mixin dojoicon($icon: false, $position: 'before') {
 
@@ -24,8 +25,8 @@ $icon-share: "\e90c";
 		line-height: 1;
 
 		/* Better Font Rendering =========== */
-		// -webkit-font-smoothing: antialiased;
-		// -moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 
 		@if $icon {
 			@extend .icon-#{$icon}:before;
@@ -37,11 +38,11 @@ $icon-share: "\e90c";
 
 @font-face {
 	font-family: 'dojoicon';
-	src: url('../fonts/dojoicon.eot?720g5t');
-	src: url('../fonts/dojoicon.eot?720g5t#iefix') format('embedded-opentype'),
-	     url('../fonts/dojoicon.ttf?720g5t') format('truetype'),
-	     url('../fonts/dojoicon.woff?720g5t') format('woff'),
-	     url('../fonts/dojoicon.svg?720g5t#dojoicon') format('svg');
+	src: url('../fonts/dojoicon.eot?ry2rq6');
+	src: url('../fonts/dojoicon.eot?ry2rq6#iefix') format('embedded-opentype'),
+	     url('../fonts/dojoicon.ttf?ry2rq6') format('truetype'),
+	     url('../fonts/dojoicon.woff?ry2rq6') format('woff'),
+	     url('../fonts/dojoicon.svg?ry2rq6#dojoicon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -88,4 +89,7 @@ $icon-share: "\e90c";
 }
 .icon-share:before {
 	content: $icon-share;
+}
+.icon-angle-up:before {
+	content: $icon-angle-up;
 }

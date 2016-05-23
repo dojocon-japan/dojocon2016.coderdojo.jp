@@ -92,6 +92,12 @@ strong {
 
 			&.entry {
 				display: block;
+
+				.icon-flag:before {
+					font-size: 24px;
+					margin-right: .3em;
+					vertical-align: -3px;
+				}
 			}
 		}
 	}
@@ -129,6 +135,11 @@ strong {
 
 		.venue {
 			font-size: 14px;
+
+			&:before {
+				font-size: 18px;
+				margin-right: .1em;
+			}
 		}
 	}
 }
@@ -208,6 +219,12 @@ strong {
 
 			.button {
 				margin-bottom: .5em;
+			}
+
+			.icon-flag:before {
+				font-size: 30px;
+				margin-right: .3em;
+				vertical-align: -3px;
 			}
 		}
 	}
@@ -408,8 +425,8 @@ strong {
 		font-size: 18px;
 		font-weight: $medium;
 		margin-top: 45px;
-		padding-top: 0.75em;
-		padding-bottom: 0.75em;
+		padding-top: .75em;
+		padding-bottom: .75em;
 	}
 }
 
@@ -453,12 +470,18 @@ strong {
 			float: left;
 			font-size: 14px;
 			font-weight: $light;
-			padding-top: 80px;
+			padding-top: 80 - 11px;
 			text-align: center;
 
 			> li {
 				height: 12 * 30px;
 				width: $clock-width;
+
+				&:before {
+					display: block;
+					font-size: 22px;
+					margin-bottom: 1px;
+				}
 			}
 		}
 
@@ -488,7 +511,7 @@ strong {
 
 					.button {
 						box-shadow: none;
-						margin-top: 0.5em;
+						margin-top: .5em;
 						text-decoration: none;
 						width: 100px;
 					}
@@ -550,7 +573,7 @@ strong {
 				.exhibition-title {
 					font-size: 15px;
 					font-weight: $bold;
-					margin-bottom: 0.5em;
+					margin-bottom: .5em;
 
 					small {
 						font-size: 13px;
@@ -586,7 +609,7 @@ strong {
 			.member-avator {
 				border-radius: 60px;
 				height: 60px;
-				margin: 0 auto 0.5em;
+				margin: 0 auto .5em;
 				overflow: hidden;
 				width: 60px;
 			}
@@ -603,7 +626,7 @@ strong {
 	background: $blue url("//placehold.it/150/fff") no-repeat center bottom;
 	background-size: 70px;
 	color: #fff;
-	padding-bottom: 100px;
+	padding-bottom: 120px;
 
 	.fb-tw-widgets {
 		@include outer-container;
@@ -612,7 +635,35 @@ strong {
 	.sns-id {
 		font-size: 24px;
 		font-weight: $thin;
+		margin-top: 40px;
 		text-align: center;
+	}
+
+	.sns-links {
+		line-height: 2;
+		margin-top: 40px;
+		text-align: center;
+
+		&:before {
+			border-right: 1px solid #fff;
+			font-size: 50px;
+			margin-right: 50px;
+			padding-right: 50px;
+			vertical-align: middle;
+		}
+
+		> li {
+			display: inline-block;
+
+			+ li {
+				margin-left: 20px;
+			}
+
+			a:before {
+				font-size: 32px;
+				vertical-align: middle;
+			}
+		}
 	}
 }
 
@@ -624,9 +675,15 @@ strong {
 		display: block;
 		font-family: $oswald;
 		font-size: 16px;
-		padding: 20px;
+		line-height: 1.2;
+		padding: 13px 20px 20px;
 		text-align: center;
 		text-transform: uppercase;
+
+		&:before {
+			display: block;
+			font-size: 22px;
+		}
 	}
 
 	.copyright {
