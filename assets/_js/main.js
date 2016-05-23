@@ -6,7 +6,7 @@ var scrollsmoothly = require('./scrollsmoothly.js');
 
 $(function() {
 
-$('.js-menu-trigger, .js-menu-screen, .js-menu-close').on('click touchstart', function (e) {
+$('.js-menu-trigger, .js-menu-screen, .js-menu-close, .js-menu .nav a').on('click touchstart', function (e) {
   $('.js-menu, .js-menu-screen').toggleClass('is-visible');
   e.preventDefault();
 });
