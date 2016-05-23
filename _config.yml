@@ -8,6 +8,10 @@ baseurl: ''
 entryurl: ''
 venueurl: ''
 
+twitter:
+  id: DojoConJapan
+  hashtag: DojoConJP
+
 # Build settings
 markdown: kramdown
 exclude:
