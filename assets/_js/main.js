@@ -11,7 +11,7 @@ $('.js-menu-trigger, .js-menu-screen, .js-menu-close').on('click touchstart', fu
   e.preventDefault();
 });
 
-$('.js-menu .nav a:not(.js-about-menu-trigger)').on('click touchstart', function (e) {
+$('.js-menu .nav a:not(.js-about-menu-trigger)').on('click', function () {
   $('.js-menu, .js-menu-screen').toggleClass('is-visible');
 });
 
