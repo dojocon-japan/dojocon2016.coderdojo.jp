@@ -38,6 +38,26 @@ strong {
 	font-weight: $black;
 }
 
+.menu-button {
+	background: #fff;
+	border-radius: 0;
+	box-shadow: none;
+	color: $default-font-color;
+	font-size: 20px;
+	line-height: 40px;
+	height: 40px;
+	padding: 0;
+	position: fixed;
+	right: 0;
+	top: 30px;
+	width: 40px;
+
+	&:hover {
+		background: #fff;
+		color: $blue;
+	}
+}
+
 .header {
 
 	.nav {
