@@ -630,6 +630,11 @@ strong {
 
 	.fb-tw-widgets {
 		@include outer-container;
+		text-align: center;
+
+		> li {
+			margin-bottom: 20px;
+		}
 	}
 
 	.sns-id {
