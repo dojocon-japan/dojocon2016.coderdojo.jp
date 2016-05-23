@@ -100,7 +100,15 @@ strong {
 			}
 
 			.day {
-				font-weight: $bold;
+				display: inline-block;
+				font-size: 9px;
+				font-weight: $black;
+
+				> .vertical {
+					display: block;
+					text-align: center;
+					line-height: 1.07;
+				}
 			}
 		}
 
