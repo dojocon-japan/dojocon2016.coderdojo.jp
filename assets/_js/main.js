@@ -2,6 +2,7 @@
 
 var jQuery = require('jquery');
 var $ = jQuery;
+var scrollsmoothly = require('./scrollsmoothly.js');
 
 $(function() {
 
