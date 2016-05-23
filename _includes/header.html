@@ -48,25 +48,30 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<button class="icon-bar menu-button js-menu-button"></button>
-
 <header class="header">
-	<nav class="nav">
-		<ul>
-			<li><a href="#pagetop">Home</a></li>
-			<li><a href="">About</a>
-				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#news">News</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="#staff">Staff</a></li>
-				</ul>
-			</li>
-			<li><a href="#access">Access</a></li>
-			<li><a href="#speakers">Speakers</a></li>
-			<li><a href="#sponsors">Sponsors</a></li>
-			<li><a href="#timetable">Time Table</a></li>
-		</ul>
-	</nav>
-	{% include action.html %}
+	<button type="button" class="icon-bar menu-trigger js-menu-trigger"></button>
+	<div class="menu js-menu">
+		<div class="menu-close-outer">
+			<button type="button" class="menu-close js-menu-close icon-close"></button>
+		</div>
+		<nav class="nav">
+			<ul>
+				<li><a href="#pagetop">Home</a></li>
+				<li><a href="">About</a>
+					<ul>
+						<li><a href="#about">About</a></li>
+						<li><a href="#news">News</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="#staff">Staff</a></li>
+					</ul>
+				</li>
+				<li><a href="#access">Access</a></li>
+				<li><a href="#speakers">Speakers</a></li>
+				<li><a href="#sponsors">Sponsors</a></li>
+				<li><a href="#timetable">Time Table</a></li>
+			</ul>
+		</nav>
+		{% include action.html %}
+	</div>
+	<div class="menu-screen js-menu-screen"></div>
 </header>
