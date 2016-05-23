@@ -253,7 +253,8 @@ strong {
 	}
 }
 
-[class$="-section"]{
+[class$="-section"],
+[class*="-section "]{
 	font-size: 14px;
 	font-weight: $medium;
 	padding: 60px 20px;
