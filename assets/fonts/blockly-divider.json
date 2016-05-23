@@ -1,0 +1,112 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M1015.062 507.525l-124.574 124.574h-310.803l-126.42-126.42h-316.049l-124.574-124.574-8.938 8.951 121.944 121.944-121.944 121.944 8.938 8.951 124.574-124.574h310.803l126.42 126.42h321.296l128.265-128.265z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"grid": 0,
+				"tags": [
+					"blockly-divider-begin"
+				]
+			},
+			"attrs": [],
+			"properties": {
+				"order": 40,
+				"id": 1,
+				"prevSize": 80,
+				"code": 59648,
+				"name": "blockly-divider-begin"
+			},
+			"setIdx": 0,
+			"setId": 17,
+			"iconIdx": 0
+		},
+		{
+			"icon": {
+				"paths": [
+					"M1024 505.679h-1024v12.642h1024z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"grid": 0,
+				"tags": [
+					"blockly-divider-middle"
+				]
+			},
+			"attrs": [],
+			"properties": {
+				"order": 42,
+				"id": 3,
+				"prevSize": 80,
+				"code": 59649,
+				"name": "blockly-divider-middle"
+			},
+			"setIdx": 0,
+			"setId": 17,
+			"iconIdx": 1
+		},
+		{
+			"icon": {
+				"paths": [
+					"M1015.066 381.096l8.939 8.939-126.417 126.417-8.939-8.939 126.417-126.417z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"grid": 0,
+				"tags": [
+					"blockly-divider-end"
+				]
+			},
+			"attrs": [],
+			"properties": {
+				"order": 41,
+				"id": 2,
+				"prevSize": 80,
+				"code": 59650,
+				"name": "blockly-divider-end"
+			},
+			"setIdx": 0,
+			"setId": 17,
+			"iconIdx": 2
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "icomoon"
+	},
+	"preferences": {
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "icomoon",
+				"majorVersion": 1,
+				"minorVersion": 0
+			},
+			"metrics": {
+				"emSize": 512,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"embed": false
+		},
+		"imagePref": {
+			"color": 0,
+			"height": 32,
+			"columns": 16,
+			"margin": 16,
+			"prefix": "icon-"
+		},
+		"historySize": 100,
+		"showCodes": true,
+		"search": "",
+		"showQuickUse2": true,
+		"showSVGs": true,
+		"gridSize": 16
+	}
+}

@@ -5,6 +5,7 @@
 @import "omega-reset";
 @import "fonts";
 @import "icons";
+@import "blockly-divider";
 @import "reset";
 @import "components";
 
@@ -289,14 +290,40 @@ strong {
 
 	.section-title {
 		font-size: 46px;
+		line-height: 1.5;
 		margin-bottom: 1em;
 		text-align: center;
+
+		.section-title-inner {
+			display: inline-block;
+			position: relative;
+
+			@include blockly-divider(begin, before) {
+				@include position(absolute, 28px auto auto -10px);
+				font-size: 81px;
+			}
+
+			@include blockly-divider(end, after) {
+				@include position(absolute, 28px -10px auto auto);
+				font-size: 81px;
+			}
+		}
 
 		.en {
 			display: block;
 			font-family: $oswald;
 			font-weight: bold;
+			overflow: hidden;
+			padding: 0 10px;
+			position: relative;
 			text-transform: uppercase;
+
+			@include blockly-divider(middle, after) {
+				@include position(absolute, auto auto -40px 70px);
+				font-size: 81px;
+				transform: scale(10, 1);
+				transform-origin: 0;
+			}
 		}
 
 		.ja,
@@ -304,6 +331,7 @@ strong {
 			display: block;
 			font-size: 21px;
 			font-weight: $thin;
+			margin-top: 20px;
 		}
 	}
 }
