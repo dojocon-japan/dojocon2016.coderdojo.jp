@@ -124,6 +124,7 @@ strong {
 					}
 
 					> ul {
+						@include clearfix;
 						display: none;
 						left: -100%;
 						position: relative;
