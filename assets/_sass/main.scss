@@ -355,8 +355,7 @@ strong {
 
 	@include media(min-width $s-screen) {
 		font-size: 16px;
-		padding-left: 40px;
-		padding-right: 40px;
+		padding: 80px 40px;
 	}
 
 	.section-title {
@@ -603,6 +602,12 @@ strong {
 				@include span-columns(6);
 				@include omega(2n);
 				margin-bottom: 1em;
+
+				@include media(min-width $s-screen) {
+					@include span-columns(4);
+					@include omega-reset(2n);
+					@include omega(3n);
+				}
 
 				a {
 					color: inherit;
