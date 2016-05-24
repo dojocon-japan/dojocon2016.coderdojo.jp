@@ -359,6 +359,10 @@ strong {
 		margin-bottom: 1em;
 		text-align: center;
 
+		@include media(min-width $s-screen) {
+			font-size: 72px;
+		}
+
 		.section-title-inner {
 			display: inline-block;
 			position: relative;
@@ -366,11 +370,19 @@ strong {
 			@include blockly-divider(begin, before) {
 				@include position(absolute, 28px auto auto -10px);
 				font-size: 81px;
+
+				@include media(min-width $s-screen) {
+					top: 67px;
+				}
 			}
 
 			@include blockly-divider(end, after) {
 				@include position(absolute, 28px -10px auto auto);
 				font-size: 81px;
+
+				@include media(min-width $s-screen) {
+					top: 67px;
+				}
 			}
 		}
 
@@ -386,6 +398,10 @@ strong {
 			@include blockly-divider(middle, before) {
 				@include position(absolute, 28px auto auto 71px);
 				font-size: 81px;
+
+				@include media(min-width $s-screen) {
+					top: 67px;
+				}
 			}
 
 			@include blockly-divider(middle, after) {
@@ -393,6 +409,10 @@ strong {
 				font-size: 81px;
 				transform: scale(10, 1);
 				transform-origin: 0;
+
+				@include media(min-width $s-screen) {
+					top: 67px;
+				}
 			}
 		}
 
@@ -402,6 +422,10 @@ strong {
 			font-size: 21px;
 			font-weight: $thin;
 			margin-top: 20px;
+
+			@include media(min-width $s-screen) {
+				font-size: 30px;
+			}
 		}
 	}
 }
@@ -432,6 +456,12 @@ strong {
 
 	.what-is-dojocon {
 		@include outer-container;
+
+		@include media(min-width $s-screen) {
+			background: #fff;
+			margin-left: -20px;
+			margin-right: -20px;
+		}
 
 		figure {
 			text-align: center;
