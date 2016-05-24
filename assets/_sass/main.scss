@@ -813,6 +813,21 @@ strong {
 		text-align: center;
 	}
 
+	.gold-sponsors {
+
+		.sponsors {
+			@include outer-container;
+
+			> li {
+
+				@include media(min-width $s-screen) {
+					float: left;
+					width: percentage(1/3);
+				}
+			}
+		}
+	}
+
 	.silver-sponsors {
 
 		.sponsors {
@@ -820,8 +835,11 @@ strong {
 
 			> li {
 				float: left;
-				width: 50%;
-				@include omega(2n);
+				width: percentage(1/2);
+
+				@include media(min-width $s-screen) {
+					width: percentage(1/4);
+				}
 			}
 		}
 	}
@@ -833,8 +851,11 @@ strong {
 
 			> li {
 				float: left;
-				width: 33.33%;
-				@include omega(3n)
+				width: percentage(1/3);
+
+				@include media(min-width $s-screen) {
+					width: percentage(1/6);
+				}
 			}
 		}
 	}
@@ -846,6 +867,15 @@ strong {
 		margin-top: 45px;
 		padding-top: .75em;
 		padding-bottom: .75em;
+
+		@include media(min-width $s-screen) {
+			font-size: 22px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: .5em;
+			padding-bottom: .5em;
+			width: 340px;
+		}
 	}
 }
 
