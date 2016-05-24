@@ -318,8 +318,13 @@ strong {
 			position: relative;
 			text-transform: uppercase;
 
+			@include blockly-divider(middle, before) {
+				@include position(absolute, 28px auto auto 71px);
+				font-size: 81px;
+			}
+
 			@include blockly-divider(middle, after) {
-				@include position(absolute, auto auto -40px 70px);
+				@include position(absolute, 28px auto auto 80px);
 				font-size: 81px;
 				transform: scale(10, 1);
 				transform-origin: 0;
