@@ -1129,6 +1129,13 @@ strong {
 .staff-section {
 	background: $yellow;
 
+	.section-title {
+
+		@include media(min-width $s-screen) {
+			text-align-last: left;
+		}
+	}
+
 	.members {
 		@include outer-container;
 		text-align: center;
@@ -1138,12 +1145,22 @@ strong {
 			@include omega(3n);
 			margin-bottom: 20px;
 
+			@include media(min-width $s-screen) {
+				@include span-columns(2);
+				@include omega-reset(3n);
+				@include omega(6n);
+			}
+
 			.member-avator {
+				@include size(60px);
 				border-radius: 60px;
-				height: 60px;
 				margin: 0 auto .5em;
 				overflow: hidden;
-				width: 60px;
+
+				@include media(min-width $s-screen) {
+					@include size(75px);
+					border-radius: 75px;
+				}
 			}
 
 			.member-name {
