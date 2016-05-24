@@ -880,7 +880,8 @@ strong {
 }
 
 .timetable-section {
-	$clock-width: 55px;
+	$clock-width-xs: 55px;
+	$clock-width-s: 95px;
 
 	background: $yellow;
 	color: $blue;
@@ -894,13 +895,30 @@ strong {
 		}
 	}
 
+	.section-title {
+
+		@include media(min-width $s-screen) {
+			text-align-last: left;
+		}
+	}
+
 	.timetable {
+		@include clearfix;
+
+		@include media(min-width $s-screen) {
+			padding-left: $clock-width-s;
+		}
 
 		.session-block,
 		.workshop-block {
 			@include outer-container;
 			background: #f3f3f3;
 			margin-bottom: 35px;
+
+			@include media(min-width $s-screen) {
+				float: left;
+				width: percentage(1/2);
+			}
 
 			h2 {
 				background: $blue;
@@ -909,27 +927,65 @@ strong {
 				font-weight: $light;
 				line-height: 40px;
 				height: 80px;
-				padding: 20px 10px 20px ($clock-width + 10px);
+				padding: 20px 10px 20px ($clock-width-xs + 10px);
+
+				@include media(min-width $s-screen) {
+					padding-left: 10px;
+				}
+			}
+		}
+
+		.session-block {
+
+			.clock {
+
+				@include media(min-width $s-screen) {
+					margin-left: - $clock-width-s;
+				}
+			}
+		}
+
+		.workshop-block {
+
+			.clock {
+
+				@include media(min-width $s-screen) {
+					border-left: 1px solid $blue;
+					overflow: hidden;
+					width: 0;
+				}
 			}
 		}
 
 		.clock {
+			$icon-size: 22px;
+
 			background: $blue;
 			color: #fff;
 			float: left;
 			font-size: 14px;
 			font-weight: $light;
-			padding-top: 80 - 11px;
+			padding-top: 80 - ($icon-size / 2);
 			text-align: center;
 
 			> li {
 				height: 12 * 30px;
-				width: $clock-width;
+				width: $clock-width-xs;
+
+				@include media(min-width $s-screen) {
+					width: $clock-width-s;
+				}
 
 				&:before {
 					display: block;
-					font-size: 22px;
+					font-size: $icon-size;
 					margin-bottom: 1px;
+
+					@include media(min-width $s-screen) {
+						display: inline-block;
+						margin-right: 8px;
+						vertical-align: middle;
+					}
 				}
 			}
 		}
@@ -941,7 +997,11 @@ strong {
 			.workshops {
 
 				> li {
-					padding: 3px 10px 0 ($clock-width + 10px);
+					padding: 3px 10px 0 ($clock-width-xs + 10px);
+
+					@include media(min-width $s-screen) {
+						padding-left: 10px;
+					}
 
 					.session-title,
 					.workshop-title {
@@ -1010,12 +1070,18 @@ strong {
 				background: #fff;
 				margin-bottom: 15px;
 
+				@include media(min-width $s-screen) {
+					@include span-columns(4);
+					@include omega(3n);
+				}
+
 				figure {
 					text-align: center;
 				}
 
 				.description {
 					font-size: 14px;
+					font-weight: $regular;
 					padding: 1em 1.5em;
 				}
 
@@ -1024,9 +1090,17 @@ strong {
 					font-weight: $bold;
 					margin-bottom: .5em;
 
+					@include media(min-width $s-screen) {
+						font-size: 16px;
+					}
+
 					small {
 						font-size: 13px;
 						font-weight: $light;
+
+						@include media(min-width $s-screen) {
+							font-size: 14px;
+						}
 					}
 				}
 			}
