@@ -642,11 +642,17 @@ strong {
 	}
 
 	.venue-images {
+		@include clearfix;
 		color: #fff;
 		font-size: 12px;
 		font-weight: $regular;
 		margin: .75em -20px 3em;
 		text-transform: uppercase;
+
+		@include media(min-width $s-screen) {
+			margin: 1.5em -40px 3em;
+			font-size: 16px;
+		}
 
 		.workshop-area,
 		.session-area {
@@ -654,6 +660,12 @@ strong {
 			background-size: cover;
 			height: 135px;
 			position: relative;
+
+			@include media(min-width $s-screen) {
+				float: left;
+				height: 150px;
+				width: 50%;
+			}
 
 			p {
 				position: absolute;
@@ -666,6 +678,13 @@ strong {
 
 			p {
 				bottom: .5 * $line-height * 1em;
+
+				@include media(min-width $s-screen) {
+					bottom: (1 - .5 * ($line-height - 1)) * 1em;
+					padding-right: 1em;
+					text-align: right;
+
+				}
 			}
 		}
 
@@ -674,12 +693,24 @@ strong {
 
 			p {
 				top: .5 * $line-height * 1em;
+
+				@include media(min-width $s-screen) {
+					bottom: (1 - .5 * ($line-height - 1)) * 1em;
+					padding-left: 1em;
+					text-align-last: left;
+					top: auto;
+				}
 			}
 		}
 	}
 
 	.map-outer {
 		margin: 0 -20px;
+
+		@include media(min-width $s-screen) {
+			margin-left: -40px;
+			margin-right: -40px;
+		}
 
 		h2 {
 			background: $default-font-color;
@@ -688,10 +719,16 @@ strong {
 			font-weight: $medium;
 			padding: 16px 20px;
 			text-transform: uppercase;
+
+			@include media(min-width $s-screen) {
+				font-size: 18px;
+				margin-top: 3em;
+				padding: 24px 40px;
+			}
 		}
 
 		.map {
-			background-image: url("//placehold.it/600x400/e9e8dc");
+			background: url("//placehold.it/600x400/e9e8dc") no-repeat center;
 			background-size: cover;
 			height: 200px;
 		}
