@@ -1175,7 +1175,7 @@ strong {
 	background: $blue url(../images/ninja.svg) no-repeat center bottom;
 	background-size: 70px;
 	color: #fff;
-	padding-bottom: 120px;
+	padding-bottom: 70px;
 
 	.fb-tw-widgets {
 		@include outer-container;
@@ -1183,6 +1183,11 @@ strong {
 
 		> li {
 			margin-bottom: 20px;
+
+			@include media(min-width $s-screen) {
+				@include span-columns(6);
+				@include omega(2n);
+			}
 		}
 	}
 
@@ -1196,7 +1201,13 @@ strong {
 	.sns-links {
 		line-height: 2;
 		margin-top: 40px;
+		margin-bottom: 50px;
 		text-align: center;
+
+		@include media(min-width $s-screen) {
+			margin-top: 80px;
+			margin-bottom: 80px;
+		}
 
 		&:before {
 			border-right: 1px solid #fff;
