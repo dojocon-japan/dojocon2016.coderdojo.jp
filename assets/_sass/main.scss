@@ -1114,6 +1114,15 @@ strong {
 	.open-form {
 		box-shadow: none;
 		font-weight: $medium;
+
+		@include media(min-width $s-screen) {
+			font-size: 22px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: .5em;
+			padding-bottom: .5em;
+			width: 340px;
+		}
 	}
 }
 
