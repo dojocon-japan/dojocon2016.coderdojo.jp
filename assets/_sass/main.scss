@@ -247,21 +247,40 @@ strong {
 	.date-venue {
 		background: rgba(#fff, .8);
 		color: $blue;
-		padding: 15px;
+		padding: 15px 20px;
 		text-align: center;
 
+		@include media(min-width $s-screen) {
+			padding-top: 35px;
+			padding-bottom: 35px;
+		}
+
 		.date {
+
+			@include media(min-width $s-screen) {
+				display: inline-block;
+				vertical-align: middle;
+			}
 
 			time {
 				font-family: $oswald;
 				font-size: 30px;
 				line-height: 1;
+
+				@include media(min-width $s-screen) {
+					font-size: 54px;
+				}
 			}
 
 			.day {
 				display: inline-block;
 				font-size: 9px;
 				font-weight: $black;
+
+				@include media(min-width $s-screen) {
+					font-size: 16px;
+					margin-left: 3px;
+				}
 
 				> .vertical {
 					display: block;
@@ -273,14 +292,55 @@ strong {
 
 		.caption {
 			display: none;
+
+			@include media(min-width $s-screen) {
+				border: 1px solid $blue;
+				display: inline-block;
+				font-size: 19px;
+				font-weight: $light;
+				margin-left: 20px;
+				padding: 0 1em .1em;
+				position: relative;
+				text-align: center;
+				vertical-align: middle;
+				width: 290px;
+
+				&:before {
+					@include position(absolute, 100% auto auto 50%);
+					@include size(0);
+					border: 10px solid rgba(#fff, 0);
+					border-top-color: $blue;
+					content: "";
+					margin-left: -10px;
+				}
+
+				&:after {
+					@include position(absolute, 100% auto auto 50%);
+					@include size(0);
+					border: 9px solid rgba(#fff, 0);
+					border-top-color: #fff;
+					content: "";
+					margin-left: -9px;
+				}
+			}
 		}
 
 		.venue {
 			font-size: 14px;
 
+			@include media(min-width $s-screen) {
+				font-size: 22px;
+				font-weight: $light;
+			}
+
 			&:before {
 				font-size: 18px;
 				margin-right: .1em;
+
+				@include media(min-width $s-screen) {
+					font-size: 30px;
+					vertical-align: -5px;
+				}
 			}
 		}
 	}
