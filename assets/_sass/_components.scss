@@ -10,6 +10,10 @@
 	@include outer-container;
 }
 
+.row {
+	@include clearfix;
+}
+
 button,
 .button {
 	background: $default-font-color;

@@ -353,6 +353,12 @@ strong {
 	font-weight: $medium;
 	padding: 60px 20px;
 
+	@include media(min-width $s-screen) {
+		font-size: 16px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
 	.section-title {
 		font-size: 46px;
 		line-height: 1.5;
@@ -433,16 +439,44 @@ strong {
 .about-section {
 	background: $yellow;
 
+	.section-title {
+
+		@include media(min-width $s-screen) {
+			@include span-columns(4.5);
+			text-align: left;
+
+			.section-title-inner {
+				text-align: center;
+			}
+		}
+	}
+
 	h2 {
 		font-size: 18px;
 		font-weight: $bold;
 		margin-top: 2em;
 		margin-bottom: .5em;
+
+		@include media(min-width $s-screen) {
+			font-size: 24px;
+		}
 	}
 
 	.what-is-coderdojo {
 		@include outer-container;
 		margin-bottom: 42px;
+
+		@include media(min-width $s-screen) {
+			@include span-columns(7.25);
+			@include shift(.25);
+		}
+
+		h2 {
+
+			@include media(min-width $s-screen) {
+				margin-top: 0;
+			}
+		}
 
 		.coderdojo-logo {
 			margin: 2.5em 0;
@@ -450,6 +484,10 @@ strong {
 
 			img {
 				width: 170px;
+
+				@include media(min-width $s-screen) {
+					width: 185px;
+				}
 			}
 		}
 	}
@@ -459,17 +497,61 @@ strong {
 
 		@include media(min-width $s-screen) {
 			background: #fff;
-			margin-left: -20px;
-			margin-right: -20px;
+			margin-left: -40px;
+			margin-right: -40px;
+			padding: 40px;
 		}
 
 		figure {
 			text-align: center;
+
+			@include media(min-width $s-screen) {
+				float: right;
+				margin-left: 40px;
+				margin-right: -40px;
+				width: 280px;
+			}
+		}
+
+		.text {
+
+			@include media(min-width $s-screen) {
+				overflow: hidden;
+			}
+		}
+
+		h2 {
+
+			@include media(min-width $s-screen) {
+				margin-top: 0;
+			}
+		}
+	}
+
+	.first-dojocon-japan-outer {
+
+		@include media(min-width $s-screen) {
+			background: #fff;
+			margin-left: -40px;
+			margin-right: -40px;
+			padding: 0 40px 40px;
 		}
 	}
 
 	.first-dojocon-japan {
 		@include outer-container;
+
+		@include media(min-width $s-screen) {
+			@include span-columns(7.25);
+			@include shift(4.75)
+		}
+
+		h2 {
+
+			@include media(min-width $s-screen) {
+				margin-top: 0;
+			}
+		}
 
 		ul {
 			@include ul;
@@ -478,6 +560,10 @@ strong {
 
 	.event-info {
 		@include outer-container;
+
+		@include media(min-width $s-screen) {
+			text-align: center;
+		}
 
 		.entry-button-outer {
 			margin: 2em 0;
