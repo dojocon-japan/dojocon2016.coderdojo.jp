@@ -427,6 +427,7 @@ strong {
 			font-size: 21px;
 			font-weight: $thin;
 			margin-top: 20px;
+			padding: 0 10px;
 
 			@include media(min-width $s-screen) {
 				font-size: 30px;
@@ -444,10 +445,6 @@ strong {
 		@include media(min-width $s-screen) {
 			@include span-columns(4.5);
 			text-align: left;
-
-			.section-title-inner {
-				text-align: center;
-			}
 		}
 	}
 
@@ -739,6 +736,13 @@ strong {
 	background: $blue;
 	color: #fff;
 
+	.section-title {
+
+		@include media(min-width $s-screen) {
+			text-align-last: left;
+		}
+	}
+
 	.speakers {
 		@include outer-container;
 
@@ -748,21 +752,41 @@ strong {
 			margin-bottom: 40px;
 			text-align: center;
 
+			@include media(min-width $s-screen) {
+				@include span-columns(4);
+				@include omega-reset(2n);
+				@include omega(3n);
+				margin-bottom: 45px;
+			}
+
 			.speaker-avator {
+				@include size(105px);
 				border-radius: 105px;
-				height: 105px;
 				margin: 0 auto .5em;
 				overflow: hidden;
-				width: 105px;
+
+				@include media(min-width $s-screen) {
+					@include size(150px);
+					margin-bottom: 1em;
+				}
 			}
 
 			.speaker-name {
 				font-size: 16px;
+
+				@include media(min-width $s-screen) {
+					font-size: 19px;
+					font-weight: $medium;
+				}
 			}
 
 			.speaker-description {
 				font-weight: $thin;
 				margin-bottom: 1em;
+
+				@include media(min-width $s-screen) {
+					font-size: 18px;
+				}
 			}
 
 			.button {
