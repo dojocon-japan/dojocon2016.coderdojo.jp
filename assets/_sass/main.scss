@@ -361,7 +361,7 @@ strong {
 	.section-title {
 		font-size: 46px;
 		line-height: 1.5;
-		margin-bottom: 1em;
+		margin-bottom: 40px;
 		text-align: center;
 
 		@include media(min-width $s-screen) {
@@ -430,6 +430,7 @@ strong {
 
 			@include media(min-width $s-screen) {
 				font-size: 30px;
+				margin-top: 30px;
 			}
 		}
 	}
