@@ -424,6 +424,7 @@ strong {
 	}
 
 	.section-title {
+		@include outer-container;
 		font-size: 46px;
 		line-height: 1.5;
 		margin-bottom: 40px;
@@ -601,13 +602,6 @@ strong {
 			@include shift(4.75);
 		}
 
-		h2 {
-
-			@include media(min-width $s-screen) {
-				// margin-top: 0;
-			}
-		}
-
 		ul {
 			@include ul;
 		}
@@ -649,6 +643,8 @@ strong {
 
 	.posts-outer {
 		height: 500px;
+		margin: auto;
+		max-width: 1000px;
 		overflow: auto;
 
 		.posts {
@@ -859,11 +855,13 @@ strong {
 .sponsor-section {
 
 	h2 {
+		@include outer-container;
 		border: 1px solid $default-font-color;
 		font-size: 18px;
 		font-weight: $demilight;
 		line-height: 1.5;
-		margin: 15px 0;
+		margin-top: 15px;
+		margin-bottom: 15px;
 		text-align: center;
 	}
 
@@ -962,6 +960,7 @@ strong {
 
 	.timetable {
 		@include clearfix;
+		@include outer-container;
 
 		@include media(min-width $s-screen) {
 			padding-left: $clock-width-s;
