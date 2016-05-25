@@ -554,8 +554,7 @@ strong {
 		}
 	}
 
-	.what-is-dojocon {
-		@include outer-container;
+	.what-is-dojocon-outer {
 
 		@include media(min-width $s-screen) {
 			background: #fff;
@@ -563,6 +562,10 @@ strong {
 			margin-right: -40px;
 			padding: 40px;
 		}
+	}
+
+	.what-is-dojocon {
+		@include outer-container;
 
 		figure {
 			text-align: center;
