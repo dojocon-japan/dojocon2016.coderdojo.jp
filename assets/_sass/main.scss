@@ -593,28 +593,18 @@ strong {
 		}
 	}
 
-	.first-dojocon-japan-outer {
-
-		@include media(min-width $s-screen) {
-			background: #fff;
-			margin-left: -40px;
-			margin-right: -40px;
-			padding: 0 40px 40px;
-		}
-	}
-
 	.first-dojocon-japan {
 		@include outer-container;
 
 		@include media(min-width $s-screen) {
 			@include span-columns(7.25);
-			@include shift(4.75)
+			@include shift(4.75);
 		}
 
 		h2 {
 
 			@include media(min-width $s-screen) {
-				margin-top: 0;
+				// margin-top: 0;
 			}
 		}
 
