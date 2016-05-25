@@ -514,6 +514,16 @@ strong {
 		}
 	}
 
+	.about-section-inner {
+
+		@include media(min-width $s-screen) {
+			background: #fff;
+			margin-left: -40px;
+			margin-right: -40px;
+			padding: 40px;
+		}
+	}
+
 	h2 {
 		font-size: 18px;
 		font-weight: $bold;
@@ -555,16 +565,6 @@ strong {
 		}
 	}
 
-	.what-is-dojocon-outer {
-
-		@include media(min-width $s-screen) {
-			background: #fff;
-			margin-left: -40px;
-			margin-right: -40px;
-			padding: 40px;
-		}
-	}
-
 	.what-is-dojocon {
 		@include outer-container;
 
@@ -573,8 +573,9 @@ strong {
 
 			@include media(min-width $s-screen) {
 				float: right;
-				margin-left: 40px;
+				margin-top: 55px;
 				margin-right: -40px;
+				margin-left: 40px;
 				width: 280px;
 			}
 		}
@@ -869,6 +870,17 @@ strong {
 		margin-top: 15px;
 		margin-bottom: 15px;
 		text-align: center;
+
+		@include media(min-width $s-screen) {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		@include media(min-width $m-screen) {
+			font-size: 20px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
 	}
 
 	.sponsors {
@@ -994,6 +1006,7 @@ strong {
 
 				@include media(min-width $s-screen) {
 					padding-left: 10px;
+					text-align: center;
 				}
 			}
 		}
