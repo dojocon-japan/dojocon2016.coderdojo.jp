@@ -821,7 +821,13 @@ strong {
 
 				@include media(min-width $s-screen) {
 					@include size(150px);
+					border-radius: 105px;
 					margin-bottom: 1em;
+				}
+
+				@include media(min-width $m-screen) {
+					@include size(200px);
+					border-radius: 200px;
 				}
 			}
 
@@ -1119,6 +1125,10 @@ strong {
 			margin-bottom: 15px;
 			padding: 20px 10px;
 			text-align: center;
+
+			@include media(min-width $m-screen) {
+				margin-bottom: 20px;
+			}
 		}
 
 		.exhibitions {
@@ -1130,6 +1140,10 @@ strong {
 				@include media(min-width $s-screen) {
 					@include span-columns(4);
 					@include omega(3n);
+				}
+
+				@include media(min-width $m-screen) {
+					margin-bottom: 20px;
 				}
 
 				figure {
@@ -1217,6 +1231,11 @@ strong {
 				@include media(min-width $s-screen) {
 					@include size(75px);
 					border-radius: 75px;
+				}
+
+				@include media(min-width $m-screen) {
+					@include size(100px);
+					border-radius: 100px;
 				}
 			}
 
