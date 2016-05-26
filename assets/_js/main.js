@@ -3,6 +3,7 @@
 var jQuery = require('jquery');
 var $ = jQuery;
 var scrollsmoothly = require('./scrollsmoothly.js');
+var xlScreen = 1440;
 
 $(function() {
 
@@ -11,8 +12,11 @@ $('.js-menu-trigger, .js-menu-screen, .js-menu-close').on('click touchstart', fu
   e.preventDefault();
 });
 
+
 $('.js-menu .nav a:not(.js-about-menu-trigger)').on('click', function () {
-  $('.js-menu, .js-menu-screen').toggleClass('is-visible');
+  if ($(window).width() < xlScreen) {
+    $('.js-menu, .js-menu-screen').toggleClass('is-visible');
+  }
 });
 
 var text;
