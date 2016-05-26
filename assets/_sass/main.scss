@@ -792,19 +792,24 @@ strong {
 			}
 
 			p {
+				bottom: .5 * $line-height * 1em;
 				position: absolute;
 				width: 100%;
+
+				@include media($s-screen) {
+					bottom: (1 - .5 * ($line-height - 1)) * 1em;
+				}
 			}
 		}
 
 		.workshop-area {
-			background-image: url("//placehold.it/700x280/ecacba");
+			background-image: url(../images/workshop-area.jpg);
 
 			p {
-				bottom: .5 * $line-height * 1em;
+				// bottom: .5 * $line-height * 1em;
 
 				@include media($s-screen) {
-					bottom: (1 - .5 * ($line-height - 1)) * 1em;
+					// bottom: (1 - .5 * ($line-height - 1)) * 1em;
 					padding-right: 1em;
 					text-align: right;
 
@@ -813,16 +818,27 @@ strong {
 		}
 
 		.session-area{
-			background-image: url("//placehold.it/700x280/778ec3/fff");
+			background-image: url(../images/session-area.jpg);
 
-			p {
-				top: .5 * $line-height * 1em;
+			&:before {
 
 				@include media($s-screen) {
 					bottom: (1 - .5 * ($line-height - 1)) * 1em;
+					content: "/";
+					left: 0;
+					margin-left: - .2em;
+					position: absolute;
+				}
+			}
+
+			p {
+				// top: .5 * $line-height * 1em;
+
+				@include media($s-screen) {
+					// bottom: (1 - .5 * ($line-height - 1)) * 1em;
 					padding-left: 1em;
 					text-align-last: left;
-					top: auto;
+					// top: auto;
 				}
 			}
 		}
