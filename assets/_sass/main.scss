@@ -259,22 +259,15 @@ strong {
 			}
 		}
 
-		.action {
+		.entry {
 			background: #fff;
 			border-top: 1px solid $default-font-color;
 			padding: 10px 20px;
 			text-align: center;
 
-			.share {
-				display: none;
-			}
-
 			.button {
-				@extend .button-blue;
 				box-shadow: none;
 				font-size: 14px;
-				padding-top: .5em;
-				padding-bottom: .5em;
 
 				&:before {
 					font-size: 20px;
