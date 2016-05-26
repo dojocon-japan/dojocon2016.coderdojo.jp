@@ -578,6 +578,15 @@ strong {
 				margin-left: 40px;
 				width: 280px;
 			}
+
+			@include media(min-width $s-screen) {
+				width: 320px;
+			}
+
+			@include media(min-width $l-screen) {
+				margin-right: -170px;
+				width: 460px;
+			}
 		}
 
 		.text {
