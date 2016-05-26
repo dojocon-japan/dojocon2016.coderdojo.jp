@@ -86,7 +86,7 @@ strong {
 				line-height: 18px;
 				padding: 10px;
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					padding: 20px;
 				}
 
@@ -109,7 +109,7 @@ strong {
 					background: #fff;
 					padding: 7px 1em;
 
-					@include media(min-width $s-screen) {
+					@include media($s-screen) {
 						padding-top: 17px;
 						padding-bottom: 17px;
 					}
@@ -125,7 +125,7 @@ strong {
 					text-align: center;
 					width: percentage(1/2);
 
-					@include media(min-width $s-screen) {
+					@include media($s-screen) {
 						width: percentage(1/3);
 					}
 
@@ -138,7 +138,7 @@ strong {
 						> a {
 							border-left-width: 0;
 
-							@include media(min-width $s-screen) {
+							@include media($s-screen) {
 								border-left-width: 1px;
 							}
 						}
@@ -146,13 +146,13 @@ strong {
 
 					&:nth-child(3n+1) {
 
-						@include media(min-width $s-screen) {
+						@include media($s-screen) {
 							clear: left;
 						}
 
 						> a {
 
-							@include media(min-width $s-screen) {
+							@include media($s-screen) {
 								border-left-width: 0;
 							}
 						}
@@ -165,7 +165,7 @@ strong {
 						position: relative;
 						width: 200%;
 
-						@include media(min-width $s-screen) {
+						@include media($s-screen) {
 							width: 300%;
 						}
 
@@ -174,7 +174,7 @@ strong {
 							float: left;
 							width: percentage(1/2);
 
-							@include media(min-width $s-screen) {
+							@include media($s-screen) {
 								width: percentage(1/4);
 							}
 
@@ -188,7 +188,7 @@ strong {
 								> a {
 									border-left-width: 0;
 
-									@include media(min-width $s-screen) {
+									@include media($s-screen) {
 										border-left-width: 1px;
 									}
 								}
@@ -198,7 +198,7 @@ strong {
 
 								> a {
 
-									@include media(min-width $s-screen) {
+									@include media($s-screen) {
 										border-left-width: 0;
 									}
 								}
@@ -229,7 +229,7 @@ strong {
 				&:before {
 					margin-right: .3em;
 
-					@include media(min-width $s-screen) {
+					@include media($s-screen) {
 						font-size: 20px;
 						vertical-align: -2px;
 					}
@@ -316,14 +316,14 @@ strong {
 		padding: 15px 0;
 		text-align: center;
 
-		@include media(min-width $s-screen) {
+		@include media($s-screen) {
 			padding-top: 35px;
 			padding-bottom: 35px;
 		}
 
 		.date {
 
-			@include media(min-width $s-screen) {
+			@include media($s-screen) {
 				display: inline-block;
 				vertical-align: middle;
 			}
@@ -333,7 +333,7 @@ strong {
 				font-size: 30px;
 				line-height: 1;
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					font-size: 54px;
 				}
 			}
@@ -343,7 +343,7 @@ strong {
 				font-size: 9px;
 				font-weight: $black;
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					font-size: 16px;
 					margin-left: 3px;
 				}
@@ -359,7 +359,7 @@ strong {
 		.caption {
 			display: none;
 
-			@include media(min-width $s-screen) {
+			@include media($s-screen) {
 				border: 1px solid $blue;
 				display: inline-block;
 				font-size: 19px;
@@ -394,7 +394,7 @@ strong {
 		.venue {
 			font-size: 14px;
 
-			@include media(min-width $s-screen) {
+			@include media($s-screen) {
 				font-size: 22px;
 				font-weight: $light;
 			}
@@ -403,7 +403,7 @@ strong {
 				font-size: 18px;
 				margin-right: .1em;
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					font-size: 30px;
 					vertical-align: -5px;
 				}
@@ -418,7 +418,7 @@ strong {
 	font-weight: $medium;
 	padding: 60px 20px;
 
-	@include media(min-width $s-screen) {
+	@include media($s-screen) {
 		font-size: 16px;
 		padding: 80px 40px;
 	}
@@ -430,7 +430,7 @@ strong {
 		margin-bottom: 40px;
 		text-align: center;
 
-		@include media(min-width $s-screen) {
+		@include media($s-screen) {
 			font-size: 72px;
 		}
 
@@ -442,7 +442,7 @@ strong {
 				@include position(absolute, 28px auto auto -10px);
 				font-size: 81px;
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					top: 67px;
 				}
 			}
@@ -451,7 +451,7 @@ strong {
 				@include position(absolute, 28px -10px auto auto);
 				font-size: 81px;
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					top: 67px;
 				}
 			}
@@ -470,7 +470,7 @@ strong {
 				@include position(absolute, 28px auto auto 71px);
 				font-size: 81px;
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					top: 67px;
 				}
 			}
@@ -481,7 +481,7 @@ strong {
 				transform: scale(10, 1);
 				transform-origin: 0;
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					top: 67px;
 				}
 			}
@@ -495,7 +495,7 @@ strong {
 			margin-top: 20px;
 			padding: 0 10px;
 
-			@include media(min-width $s-screen) {
+			@include media($s-screen) {
 				font-size: 30px;
 				margin-top: 30px;
 			}
@@ -508,7 +508,7 @@ strong {
 
 	.section-title {
 
-		@include media(min-width $s-screen) {
+		@include media($s-screen) {
 			@include span-columns(4.5);
 			text-align: left;
 		}
@@ -516,7 +516,7 @@ strong {
 
 	.about-section-inner {
 
-		@include media(min-width $s-screen) {
+		@include media($s-screen) {
 			background: #fff;
 			margin-left: -40px;
 			margin-right: -40px;
@@ -530,7 +530,7 @@ strong {
 		margin-top: 2em;
 		margin-bottom: .5em;
 
-		@include media(min-width $s-screen) {
+		@include media($s-screen) {
 			font-size: 24px;
 		}
 	}
@@ -539,14 +539,14 @@ strong {
 		@include outer-container;
 		margin-bottom: 42px;
 
-		@include media(min-width $s-screen) {
+		@include media($s-screen) {
 			@include span-columns(7.25);
 			@include shift(.25);
 		}
 
 		h2 {
 
-			@include media(min-width $s-screen) {
+			@include media($s-screen) {
 				margin-top: 0;
 			}
 		}
@@ -558,7 +558,7 @@ strong {
 			img {
 				width: 170px;
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					width: 185px;
 				}
 			}
@@ -571,7 +571,7 @@ strong {
 		figure {
 			text-align: center;
 
-			@include media(min-width $s-screen) {
+			@include media($s-screen) {
 				float: right;
 				margin-top: 55px;
 				margin-right: -40px;
@@ -579,11 +579,11 @@ strong {
 				width: 280px;
 			}
 
-			@include media(min-width $s-screen) {
+			@include media($s-screen) {
 				width: 320px;
 			}
 
-			@include media(min-width $l-screen) {
+			@include media($l-screen) {
 				margin-right: -170px;
 				width: 460px;
 			}
@@ -591,14 +591,14 @@ strong {
 
 		.text {
 
-			@include media(min-width $s-screen) {
+			@include media($s-screen) {
 				overflow: hidden;
 			}
 		}
 
 		h2 {
 
-			@include media(min-width $s-screen) {
+			@include media($s-screen) {
 				margin-top: 0;
 			}
 		}
@@ -607,7 +607,7 @@ strong {
 	.first-dojocon-japan {
 		@include outer-container;
 
-		@include media(min-width $s-screen) {
+		@include media($s-screen) {
 			@include span-columns(7.25);
 			@include shift(4.75);
 		}
@@ -620,7 +620,7 @@ strong {
 	.event-info {
 		@include outer-container;
 
-		@include media(min-width $s-screen) {
+		@include media($s-screen) {
 			text-align: center;
 		}
 
@@ -665,7 +665,7 @@ strong {
 				@include omega(2n);
 				margin-bottom: 1em;
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					@include span-columns(4);
 					@include omega-reset(2n);
 					@include omega(3n);
@@ -710,7 +710,7 @@ strong {
 		margin: .75em -20px 3em;
 		text-transform: uppercase;
 
-		@include media(min-width $s-screen) {
+		@include media($s-screen) {
 			margin: 1.5em -40px 3em;
 			font-size: 16px;
 		}
@@ -722,10 +722,18 @@ strong {
 			height: 135px;
 			position: relative;
 
-			@include media(min-width $s-screen) {
+			@include media($s-screen) {
 				float: left;
 				height: 150px;
 				width: 50%;
+			}
+
+			@include media($m-screen) {
+				height: 200px;
+			}
+
+			@include media($l-screen) {
+				height: 250px;
 			}
 
 			p {
@@ -740,7 +748,7 @@ strong {
 			p {
 				bottom: .5 * $line-height * 1em;
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					bottom: (1 - .5 * ($line-height - 1)) * 1em;
 					padding-right: 1em;
 					text-align: right;
@@ -755,7 +763,7 @@ strong {
 			p {
 				top: .5 * $line-height * 1em;
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					bottom: (1 - .5 * ($line-height - 1)) * 1em;
 					padding-left: 1em;
 					text-align-last: left;
@@ -768,7 +776,7 @@ strong {
 	.map-outer {
 		margin: 0 -20px;
 
-		@include media(min-width $s-screen) {
+		@include media($s-screen) {
 			margin-left: -40px;
 			margin-right: -40px;
 		}
@@ -781,7 +789,7 @@ strong {
 			padding: 16px 20px;
 			text-transform: uppercase;
 
-			@include media(min-width $s-screen) {
+			@include media($s-screen) {
 				font-size: 18px;
 				margin-top: 3em;
 				padding: 24px 40px;
@@ -802,7 +810,7 @@ strong {
 
 	.section-title {
 
-		@include media(min-width $s-screen) {
+		@include media($s-screen) {
 			text-align-last: left;
 		}
 	}
@@ -816,7 +824,7 @@ strong {
 			margin-bottom: 40px;
 			text-align: center;
 
-			@include media(min-width $s-screen) {
+			@include media($s-screen) {
 				@include span-columns(4);
 				@include omega-reset(2n);
 				@include omega(3n);
@@ -829,13 +837,13 @@ strong {
 				margin: 0 auto .5em;
 				overflow: hidden;
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					@include size(150px);
 					border-radius: 105px;
 					margin-bottom: 1em;
 				}
 
-				@include media(min-width $m-screen) {
+				@include media($m-screen) {
 					@include size(200px);
 					border-radius: 200px;
 				}
@@ -844,7 +852,7 @@ strong {
 			.speaker-name {
 				font-size: 16px;
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					font-size: 19px;
 					font-weight: $medium;
 				}
@@ -854,7 +862,7 @@ strong {
 				font-weight: $thin;
 				margin-bottom: 1em;
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					font-size: 18px;
 				}
 			}
@@ -880,12 +888,12 @@ strong {
 		margin-bottom: 15px;
 		text-align: center;
 
-		@include media(min-width $s-screen) {
+		@include media($s-screen) {
 			margin-top: 20px;
 			margin-bottom: 20px;
 		}
 
-		@include media(min-width $m-screen) {
+		@include media($m-screen) {
 			font-size: 20px;
 			margin-top: 30px;
 			margin-bottom: 30px;
@@ -903,7 +911,7 @@ strong {
 
 			> li {
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					float: left;
 					width: percentage(1/3);
 				}
@@ -920,7 +928,7 @@ strong {
 				float: left;
 				width: percentage(1/2);
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					width: percentage(1/4);
 				}
 			}
@@ -936,7 +944,7 @@ strong {
 				float: left;
 				width: percentage(1/3);
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					width: percentage(1/6);
 				}
 			}
@@ -951,7 +959,7 @@ strong {
 		padding-top: .75em;
 		padding-bottom: .75em;
 
-		@include media(min-width $s-screen) {
+		@include media($s-screen) {
 			font-size: 22px;
 			margin-left: auto;
 			margin-right: auto;
@@ -980,7 +988,7 @@ strong {
 
 	.section-title {
 
-		@include media(min-width $s-screen) {
+		@include media($s-screen) {
 			text-align-last: left;
 		}
 	}
@@ -989,7 +997,7 @@ strong {
 		@include clearfix;
 		@include outer-container;
 
-		@include media(min-width $s-screen) {
+		@include media($s-screen) {
 			padding-left: $clock-width-s;
 		}
 
@@ -999,7 +1007,7 @@ strong {
 			background: #f3f3f3;
 			margin-bottom: 35px;
 
-			@include media(min-width $s-screen) {
+			@include media($s-screen) {
 				float: left;
 				width: percentage(1/2);
 			}
@@ -1013,7 +1021,7 @@ strong {
 				height: 80px;
 				padding: 20px 10px 20px ($clock-width-xs + 10px);
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					padding-left: 10px;
 					text-align: center;
 				}
@@ -1024,7 +1032,7 @@ strong {
 
 			.clock {
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					margin-left: - $clock-width-s;
 				}
 			}
@@ -1034,7 +1042,7 @@ strong {
 
 			.clock {
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					border-left: 1px solid $blue;
 					overflow: hidden;
 					width: 0;
@@ -1057,7 +1065,7 @@ strong {
 				height: 12 * 30px;
 				width: $clock-width-xs;
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					width: $clock-width-s;
 				}
 
@@ -1066,7 +1074,7 @@ strong {
 					font-size: $icon-size;
 					margin-bottom: 1px;
 
-					@include media(min-width $s-screen) {
+					@include media($s-screen) {
 						display: inline-block;
 						margin-right: 8px;
 						vertical-align: middle;
@@ -1084,7 +1092,7 @@ strong {
 				> li {
 					padding: 3px 10px 0 ($clock-width-xs + 10px);
 
-					@include media(min-width $s-screen) {
+					@include media($s-screen) {
 						padding-left: 10px;
 					}
 
@@ -1148,7 +1156,7 @@ strong {
 			padding: 20px 10px;
 			text-align: center;
 
-			@include media(min-width $m-screen) {
+			@include media($m-screen) {
 				margin-bottom: 20px;
 			}
 		}
@@ -1159,12 +1167,12 @@ strong {
 				background: #fff;
 				margin-bottom: 15px;
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					@include span-columns(4);
 					@include omega(3n);
 				}
 
-				@include media(min-width $m-screen) {
+				@include media($m-screen) {
 					margin-bottom: 20px;
 				}
 
@@ -1183,7 +1191,7 @@ strong {
 					font-weight: $bold;
 					margin-bottom: .5em;
 
-					@include media(min-width $s-screen) {
+					@include media($s-screen) {
 						font-size: 16px;
 					}
 
@@ -1191,7 +1199,7 @@ strong {
 						font-size: 13px;
 						font-weight: $light;
 
-						@include media(min-width $s-screen) {
+						@include media($s-screen) {
 							font-size: 14px;
 						}
 					}
@@ -1208,7 +1216,7 @@ strong {
 		box-shadow: none;
 		font-weight: $medium;
 
-		@include media(min-width $s-screen) {
+		@include media($s-screen) {
 			font-size: 22px;
 			margin-left: auto;
 			margin-right: auto;
@@ -1224,7 +1232,7 @@ strong {
 
 	.section-title {
 
-		@include media(min-width $s-screen) {
+		@include media($s-screen) {
 			text-align-last: left;
 		}
 	}
@@ -1238,7 +1246,7 @@ strong {
 			@include omega(3n);
 			margin-bottom: 20px;
 
-			@include media(min-width $s-screen) {
+			@include media($s-screen) {
 				@include span-columns(2);
 				@include omega-reset(3n);
 				@include omega(6n);
@@ -1250,12 +1258,12 @@ strong {
 				margin: 0 auto .5em;
 				overflow: hidden;
 
-				@include media(min-width $s-screen) {
+				@include media($s-screen) {
 					@include size(75px);
 					border-radius: 75px;
 				}
 
-				@include media(min-width $m-screen) {
+				@include media($m-screen) {
 					@include size(100px);
 					border-radius: 100px;
 				}
@@ -1282,7 +1290,7 @@ strong {
 		> li {
 			margin-bottom: 20px;
 
-			@include media(min-width $s-screen) {
+			@include media($s-screen) {
 				@include span-columns(6);
 				@include omega(2n);
 			}
@@ -1302,7 +1310,7 @@ strong {
 		margin-bottom: 50px;
 		text-align: center;
 
-		@include media(min-width $s-screen) {
+		@include media($s-screen) {
 			margin-top: 80px;
 			margin-bottom: 80px;
 		}
