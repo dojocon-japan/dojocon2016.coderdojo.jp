@@ -43,16 +43,19 @@ strong {
 
 	.menu-trigger {
 		@include position(fixed, 30px 0 auto auto);
+		@include size(40px);
 		background: #fff;
 		border-radius: 0;
 		// box-shadow: none;
 		color: $default-font-color;
 		font-size: 20px;
 		line-height: 40px;
-		height: 40px;
 		padding: 0;
-		width: 40px;
 		z-index: 99;
+
+		@include media($s-screen) {
+			top: 70px;
+		}
 
 		&:hover {
 			background: #fff;
@@ -253,38 +256,100 @@ strong {
 .hero {
 	background: url(../images/hero-bg.jpg) no-repeat center center;
 	background-size: cover;
+	// position: relative;
 
 	.hero-main {
 		background: rgba($blue, .85);
 		padding: 30px 15px 15px;
+		position: relative;
+
+		@include media($s-screen) {
+			margin-right: 50%;
+		}
 	}
 
 	.logo {
 		margin: 0 auto 20px;
 		width: 140px;
+
+		@include media($s-screen) {
+			margin-top: 70px;
+			padding-left: 40px;
+			padding-right: 40px;
+			text-align: right;
+			width: auto;
+		}
 	}
 
 	.line-taiji {
 		margin: 20px auto;
 		width: 160px;
+
+		@include media($s-screen) {
+			@include position(absolute, 0 auto 0 100%);
+			background: rgba(#000080, .3);
+			margin: 0;
+			width: 100%;
+		}
+
+		img {
+
+			@include media($s-screen) {
+				@include position(absolute, 0 auto 0 50px);
+				@include size(285px);
+				margin: auto;
+			}
+
+			@include media($m-screen) {
+				@include size(380px);
+			}
+
+			@include media($l-screen) {
+				@include size(425px);
+			}
+		}
 	}
 
 	.subtitle {
 		margin: 20px auto 10px;
 		width: 230px;
+
+		@include media($s-screen) {
+			margin-top: 50px;
+			margin-bottom: 45px;
+			padding-left: 40px;
+			padding-right: 40px;
+			text-align: right;
+			width: auto;
+		}
 	}
 
 	.action {
 		text-align: center;
 
+		@include media($s-screen) {
+			@include position(absolute, 0 auto auto 100%);
+			text-align: right;
+			padding: 6px;
+			width: 100%;
+		}
+
 		> li {
 			display: inline-block;
 			line-height: 1;
-			margin: 6px 5px;
+			margin: 6px;
+
+			@include media($s-screen) {
+				vertical-align: middle;
+			}
 
 			&.share {
 				color: #fff;
 				font-size: 24px;
+
+				@include media($s-screen) {
+					font-size: 32px;
+				}
 
 				a {
 					opacity: .7;
@@ -297,6 +362,10 @@ strong {
 
 			&.entry {
 				display: block;
+
+				@include media($s-screen) {
+					display: inline-block;
+				}
 
 				.icon-flag:before {
 					font-size: 24px;
