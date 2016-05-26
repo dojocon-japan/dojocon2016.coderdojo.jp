@@ -387,9 +387,13 @@ strong {
 		@include media($s-screen) {
 			@include position(absolute, 0 auto auto 100%);
 			text-align: right;
+			max-width: $xl-screen / 2;
 			padding: 6px;
 			width: 100%;
-			max-width: $xl-screen / 2;
+		}
+
+		@include media($xl-screen) {
+			z-index: 10000;
 		}
 
 		> li {
