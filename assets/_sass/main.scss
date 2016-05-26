@@ -503,25 +503,6 @@ strong {
 					height: 12px;
 					margin-top: -1px;
 				}
-
-
-				// &:before {
-				// 	@include position(absolute, 100% auto auto 50%);
-				// 	@include size(0);
-				// 	border: 10px solid rgba(#fff, 0);
-				// 	border-top-color: $blue;
-				// 	content: "";
-				// 	margin-left: -10px;
-				// }
-
-				// &:after {
-				// 	@include position(absolute, 100% auto auto 50%);
-				// 	@include size(0);
-				// 	border: 9px solid rgba(#fff, 0);
-				// 	border-top-color: #fff;
-				// 	content: "";
-				// 	margin-left: -9px;
-				// }
 			}
 		}
 
