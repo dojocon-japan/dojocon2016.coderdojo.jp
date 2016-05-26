@@ -179,7 +179,7 @@ strong {
 							}
 
 							a {
-								background: rgba(#fff, .7);
+								background: rgba(#fff, .8);
 								border-left: 1px solid $default-font-color;
 							}
 
@@ -227,12 +227,9 @@ strong {
 				padding-bottom: .5em;
 
 				&:before {
+					font-size: 20px;
+					vertical-align: -2px;
 					margin-right: .3em;
-
-					@include media($s-screen) {
-						font-size: 20px;
-						vertical-align: -2px;
-					}
 				}
 			}
 		}
@@ -311,7 +308,7 @@ strong {
 	}
 
 	.date-venue {
-		background: rgba(#fff, .8);
+		background: rgba(#fff, .9);
 		color: $blue;
 		padding: 15px 0;
 		text-align: center;
