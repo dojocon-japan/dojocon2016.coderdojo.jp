@@ -109,9 +109,8 @@ strong {
 		.nav {
 
 			@include media($xl-screen) {
-				margin-right: 50%;
-				margin-left: auto;
-				// max-width: $xl-screen / 2;
+				float: left;
+				width: 50%;
 			}
 
 			> ul {
@@ -264,6 +263,17 @@ strong {
 			border-top: 1px solid $default-font-color;
 			padding: 10px 20px;
 			text-align: center;
+
+			@include media($xl-screen) {
+				background: none;
+				border: 0;
+				display: none;
+				float: left;
+				max-width: $xl-screen / 2;
+				padding: 12px;
+				text-align: right;
+				width: 50%;
+			}
 
 			.button {
 				box-shadow: none;
