@@ -279,6 +279,10 @@ strong {
 			text-align: right;
 			width: auto;
 		}
+
+		@include media($l-screen) {
+			padding-right: 80px;
+		}
 	}
 
 	.line-taiji {
@@ -306,6 +310,7 @@ strong {
 
 			@include media($l-screen) {
 				@include size(425px);
+				left: 80px;
 			}
 		}
 	}
@@ -321,6 +326,10 @@ strong {
 			padding-right: 40px;
 			text-align: right;
 			width: auto;
+		}
+
+		@include media($l-screen) {
+			padding-right: 80px;
 		}
 	}
 
@@ -789,6 +798,10 @@ strong {
 
 			@include media($l-screen) {
 				height: 250px;
+			}
+
+			@include media($xl-screen) {
+				height: 300px;
 			}
 
 			p {
