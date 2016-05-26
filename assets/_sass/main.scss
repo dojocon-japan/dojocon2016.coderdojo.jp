@@ -1055,8 +1055,13 @@ strong {
 }
 
 .timetable-section {
+	$h2-height: 70px;
+	$h2-line-height: 40px;
 	$clock-width-xs: 55px;
 	$clock-width-s: 95px;
+	$clock-width-m: 120px;
+	$icon-size-xs: 22px;
+	$icon-size-m: 30px;
 
 	background: $yellow;
 	color: $blue;
@@ -1085,6 +1090,10 @@ strong {
 			padding-left: $clock-width-s;
 		}
 
+		@include media($m-screen) {
+			padding-left: $clock-width-m;
+		}
+
 		.session-block,
 		.workshop-block {
 			@include outer-container;
@@ -1101,13 +1110,60 @@ strong {
 				color: #fff;
 				font-size: 28px;
 				font-weight: $light;
-				line-height: 40px;
-				height: 80px;
-				padding: 20px 10px 20px ($clock-width-xs + 10px);
+				line-height: $h2-line-height;
+				height: $h2-height;
+				padding-top: (($h2-height - $h2-line-height) / 2);
+				padding-right: 10px;
+				padding-bottom: (($h2-height - $h2-line-height) / 2);
+				padding-left: ($clock-width-xs + 10px);
 
 				@include media($s-screen) {
 					padding-left: 10px;
 					text-align: center;
+				}
+			}
+
+			.clock {
+				background: $blue;
+				color: #fff;
+				float: left;
+				font-size: 14px;
+				font-weight: $light;
+				padding-top: $h2-height - ($icon-size-xs / 2);
+				text-align: center;
+
+				@include media($m-screen) {
+					font-size: 18px;
+					padding-top: $h2-height - ($icon-size-m / 2);
+				}
+
+				> li {
+					height: 12 * 30px;
+					width: $clock-width-xs;
+
+					@include media($s-screen) {
+						width: $clock-width-s;
+					}
+
+					@include media($m-screen) {
+						width: $clock-width-m;
+					}
+
+					&:before {
+						display: block;
+						font-size: $icon-size-xs;
+						margin-bottom: 1px;
+
+						@include media($s-screen) {
+							display: inline-block;
+							margin-right: 8px;
+							vertical-align: middle;
+						}
+
+						@include media($m-screen) {
+							font-size: $icon-size-m;
+						}
+					}
 				}
 			}
 		}
@@ -1118,6 +1174,10 @@ strong {
 
 				@include media($s-screen) {
 					margin-left: - $clock-width-s;
+				}
+
+				@include media($m-screen) {
+					margin-left: - $clock-width-m;
 				}
 			}
 		}
@@ -1130,39 +1190,6 @@ strong {
 					border-left: 1px solid $blue;
 					overflow: hidden;
 					width: 0;
-				}
-			}
-		}
-
-		.clock {
-			$icon-size: 22px;
-
-			background: $blue;
-			color: #fff;
-			float: left;
-			font-size: 14px;
-			font-weight: $light;
-			padding-top: 80 - ($icon-size / 2);
-			text-align: center;
-
-			> li {
-				height: 12 * 30px;
-				width: $clock-width-xs;
-
-				@include media($s-screen) {
-					width: $clock-width-s;
-				}
-
-				&:before {
-					display: block;
-					font-size: $icon-size;
-					margin-bottom: 1px;
-
-					@include media($s-screen) {
-						display: inline-block;
-						margin-right: 8px;
-						vertical-align: middle;
-					}
 				}
 			}
 		}
@@ -1234,10 +1261,10 @@ strong {
 			color: #fff;
 			font-size: 28px;
 			font-weight: $light;
-			line-height: 40px;
-			height: 80px;
+			line-height: $h2-line-height;
+			height: $h2-height;
 			margin-bottom: 15px;
-			padding: 20px 10px;
+			padding: (($h2-height - $h2-line-height) / 2) 10px;
 			text-align: center;
 
 			@include media($m-screen) {
