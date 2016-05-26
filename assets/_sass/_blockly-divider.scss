@@ -50,7 +50,3 @@ $blockly-divider-end: "\e902";
 .blockly-divider-end:before {
 	content: $blockly-divider-end;
 }
-
-* {
-	vertical-align: top !important;
-}
