@@ -436,33 +436,43 @@ strong {
 
 			@include media($s-screen) {
 				border: 1px solid $blue;
+				border-bottom: 0;
 				display: inline-block;
 				font-size: 19px;
 				font-weight: $light;
 				margin-left: 20px;
-				padding: 0 1em .1em;
+				padding: 0 1em .16em;
 				position: relative;
 				text-align: center;
 				vertical-align: middle;
 				width: 290px;
 
-				&:before {
-					@include position(absolute, 100% auto auto 50%);
-					@include size(0);
-					border: 10px solid rgba(#fff, 0);
-					border-top-color: $blue;
+				&:after {
+					@include position(absolute, 100% 0 auto 0);
+					background: url(../images/arrow-bottom-blue.svg) no-repeat center bottom;
 					content: "";
-					margin-left: -10px;
+					height: 12px;
+					margin-top: -1px;
 				}
 
-				&:after {
-					@include position(absolute, 100% auto auto 50%);
-					@include size(0);
-					border: 9px solid rgba(#fff, 0);
-					border-top-color: #fff;
-					content: "";
-					margin-left: -9px;
-				}
+
+				// &:before {
+				// 	@include position(absolute, 100% auto auto 50%);
+				// 	@include size(0);
+				// 	border: 10px solid rgba(#fff, 0);
+				// 	border-top-color: $blue;
+				// 	content: "";
+				// 	margin-left: -10px;
+				// }
+
+				// &:after {
+				// 	@include position(absolute, 100% auto auto 50%);
+				// 	@include size(0);
+				// 	border: 9px solid rgba(#fff, 0);
+				// 	border-top-color: #fff;
+				// 	content: "";
+				// 	margin-left: -9px;
+				// }
 			}
 		}
 
