@@ -69,8 +69,11 @@ strong {
 		overflow-y: auto;
 		transform: translateY(-300px);
 		transition: all .25s linear;
-		width: 100%;
 		z-index: 9999;
+
+		@include media($xl-screen) {
+			transform: translateY(0);
+		}
 
 		&.is-visible {
 			transform: translateY(0);
@@ -79,6 +82,10 @@ strong {
 		.menu-close-outer {
 			background: #fff;
 			text-align: right;
+
+			@include media($xl-screen) {
+				display: none;
+			}
 
 			button {
 				background: transparent;
@@ -101,11 +108,24 @@ strong {
 
 		.nav {
 
+			@include media($xl-screen) {
+				margin-right: 50%;
+				margin-left: auto;
+				// max-width: $xl-screen / 2;
+			}
+
 			> ul {
 				@include clearfix;
 				text-transform: uppercase;
 				font-size: 14px;
 				font-weight: $medium;
+
+				@include media($xl-screen) {
+					color: #fff;
+					font-size: 16px;
+					text-align: right;
+					padding: 0 20px;
+				}
 
 				a {
 					display: block;
@@ -117,8 +137,20 @@ strong {
 						padding-bottom: 17px;
 					}
 
+					@include media($xl-screen) {
+						background: none;
+						padding-right: 20px;
+						padding-left: 20px;
+						opacity: .7;
+					}
+
 					&:hover {
 						color: $blue;
+
+						@include media($xl-screen) {
+							color: inherit;
+							opacity: 1;
+						}
 					}
 				}
 
@@ -132,8 +164,19 @@ strong {
 						width: percentage(1/3);
 					}
 
+					@include media($xl-screen) {
+						display: inline-block;
+						border: 0;
+						float: none;
+						width: auto;
+					}
+
 					> a {
 						border-left: 1px solid $default-font-color;
+
+						@include media($xl-screen) {
+							border: 0;
+						}
 					}
 
 					&:nth-child(odd) {
@@ -151,6 +194,10 @@ strong {
 
 						@include media($s-screen) {
 							clear: left;
+						}
+
+						@include media($xl-screen) {
+							clear: none;
 						}
 
 						> a {
@@ -329,6 +376,7 @@ strong {
 		}
 
 		@include media($l-screen) {
+			margin-bottom: 60px;
 			padding-right: 80px;
 		}
 	}
@@ -341,6 +389,7 @@ strong {
 			text-align: right;
 			padding: 6px;
 			width: 100%;
+			max-width: $xl-screen / 2;
 		}
 
 		> li {
