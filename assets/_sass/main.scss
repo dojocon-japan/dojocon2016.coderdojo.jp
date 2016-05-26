@@ -439,20 +439,20 @@ strong {
 			position: relative;
 
 			@include blockly-divider(begin, before) {
-				@include position(absolute, 28px auto auto -10px);
+				@include position(absolute, 58px auto auto -10px);
 				font-size: 81px;
 
 				@include media($s-screen) {
-					top: 67px;
+					top: 96px;
 				}
 			}
 
 			@include blockly-divider(end, after) {
-				@include position(absolute, 28px -10px auto auto);
+				@include position(absolute, 58px -10px auto auto);
 				font-size: 81px;
 
 				@include media($s-screen) {
-					top: 67px;
+					top: 96px;
 				}
 			}
 		}
@@ -467,22 +467,11 @@ strong {
 			text-transform: uppercase;
 
 			@include blockly-divider(middle, before) {
-				@include position(absolute, 28px auto auto 71px);
+				@include position(absolute, 58px auto auto 71px);
 				font-size: 81px;
 
 				@include media($s-screen) {
-					top: 67px;
-				}
-			}
-
-			@include blockly-divider(middle, after) {
-				@include position(absolute, 28px auto auto 151px);
-				font-size: 81px;
-				transform: scale(10, 1);
-				transform-origin: 0;
-
-				@include media($s-screen) {
-					top: 67px;
+					top: 96px;
 				}
 			}
 		}
