@@ -18,11 +18,11 @@ $('.js-menu .nav a:not(.js-child-menu-trigger)').on('click', function () {
   }
 });
 
-var text;
-$('.js-child-menu-trigger').attr('href', '').on('click touchstart', function (e) {
-  text = $('i', this).text();
-  $('i', this).text(text == '＋' ? '−' : '＋');
-  $(this).siblings('.js-child-menu').slideToggle();
+var icon;
+$('.js-child-menu-trigger').attr('href', '').on('click', function (e) {
+  icon = $(this).attr('data-icon');
+  $(this).attr('data-icon', icon == '＋' ? '−' : '＋');
+  $(this).siblings('.js-child-menu').slideToggle('fast');
   e.preventDefault();
 });
 

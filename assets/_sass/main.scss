@@ -77,6 +77,7 @@ strong {
 		z-index: 9999;
 
 		@include media($xl-screen) {
+			overflow: visible;
 			transform: translateY(0);
 		}
 
@@ -158,9 +159,21 @@ strong {
 					}
 				}
 
+				.child-menu-trigger {
+
+					&:after {
+						content: attr(data-icon);
+						display: inline-block;
+						margin-left: .2em;
+						min-width: 1em;
+						text-align: center;
+					}
+				}
+
 				> li {
 					border-top: 1px solid $default-font-color;
 					float: left;
+					position: relative;
 					text-align: center;
 					width: percentage(1/2);
 
@@ -174,6 +187,26 @@ strong {
 						float: none;
 						width: auto;
 					}
+
+					// &:hover {
+
+					// 	.child-menu-trigger {
+
+					// 		&:after {
+
+					// 			@include media($xl-screen) {
+					// 				content: "−";
+					// 			}
+					// 		}
+					// 	}
+
+					// 	.child-menu {
+
+					// 		@include media($xl-screen) {
+					// 			display: block;
+					// 		}
+					// 	}
+					// }
 
 					> a {
 						border-left: 1px solid $default-font-color;
@@ -223,6 +256,12 @@ strong {
 							width: 300%;
 						}
 
+						@include media($xl-screen) {
+							@include position(absolute, 100% auto auto 0);
+							color: $default-font-color;
+							width: $xl-screen / 2;
+						}
+
 						> li {
 							border-top: 1px solid $default-font-color;
 							float: left;
@@ -232,9 +271,20 @@ strong {
 								width: percentage(1/4);
 							}
 
+							@include media($xl-screen) {
+								border: 0;
+								width: 119px;
+								margin: 0 0 1px 1px;
+							}
+
 							a {
 								background: rgba(#fff, .8);
 								border-left: 1px solid $default-font-color;
+
+								@include media($xl-screen) {
+									border: 0;
+									padding: 6px 1em;
+								}
 							}
 
 							&:nth-child(odd) {
@@ -293,7 +343,10 @@ strong {
 		}
 
 		&.scrolled {
-			background: #f3f3f3;
+
+			@include media($xl-screen) {
+				background: #f3f3f3;
+			}
 
 			.nav {
 
@@ -325,6 +378,10 @@ strong {
 		&.is-visible {
 			opacity: .4;
 			visibility: visible;
+
+			@include media($xl-screen) {
+				opacity: 0;
+			}
 		}
 	}
 } // .header
