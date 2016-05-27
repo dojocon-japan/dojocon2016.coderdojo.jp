@@ -12,7 +12,6 @@ $('.js-menu-trigger, .js-menu-screen, .js-menu-close').on('click touchstart', fu
   e.preventDefault();
 });
 
-
 $('.js-menu .nav a:not(.js-about-menu-trigger)').on('click', function () {
   if ($(window).width() < xlScreen) {
     $('.js-menu, .js-menu-screen').toggleClass('is-visible');
@@ -25,6 +24,18 @@ $('.js-about-menu-trigger').attr('href', '').on('click touchstart', function (e)
   $('i', this).text(text == '＋' ? '−' : '＋');
   $('.js-about-menu').slideToggle();
   e.preventDefault();
+});
+
+var timer = false;
+$(window).on('scroll', function() {
+  if (timer) clearTimeout(timer);
+  timer = setTimeout(function() {
+    if ($(window).scrollTop() > 70) {
+      $('.js-menu').addClass('scrolled');
+    } else {
+      $('.js-menu').removeClass('scrolled');
+    }
+  }, 100);
 });
 
 });

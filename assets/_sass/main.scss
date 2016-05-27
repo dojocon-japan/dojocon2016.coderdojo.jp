@@ -57,6 +57,10 @@ strong {
 			top: 70px;
 		}
 
+		@include media($xl-screen) {
+			display: none;
+		}
+
 		&:hover {
 			background: #fff;
 			color: $blue;
@@ -64,6 +68,7 @@ strong {
 	}
 
 	.menu {
+		@include clearfix;
 		@include position(fixed, 0 0 auto 0);
 		-webkit-overflow-scrolling: touch;
 		overflow-y: auto;
@@ -286,7 +291,28 @@ strong {
 				}
 			}
 		}
-	}
+
+		&.scrolled {
+			background: #f3f3f3;
+
+			.nav {
+
+				> ul {
+
+					@include media($xl-screen) {
+						color: $default-font-color;
+					}
+				}
+			}
+
+			.entry {
+
+				@include media($xl-screen) {
+					display: block;
+				}
+			}
+		}
+	} // .menu
 
 	.menu-screen {
 		@include position(fixed, 0);
@@ -301,7 +327,7 @@ strong {
 			visibility: visible;
 		}
 	}
-}
+} // .header
 
 .hero {
 	background: url(../images/hero-bg.jpg) no-repeat center center;
