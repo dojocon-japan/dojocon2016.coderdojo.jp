@@ -212,7 +212,7 @@ strong {
 						}
 					}
 
-					> ul {
+					.child-menu {
 						@include clearfix;
 						display: none;
 						left: -100%;

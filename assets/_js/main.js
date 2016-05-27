@@ -12,17 +12,17 @@ $('.js-menu-trigger, .js-menu-screen, .js-menu-close').on('click touchstart', fu
   e.preventDefault();
 });
 
-$('.js-menu .nav a:not(.js-about-menu-trigger)').on('click', function () {
+$('.js-menu .nav a:not(.js-child-menu-trigger)').on('click', function () {
   if ($(window).width() < xlScreen) {
     $('.js-menu, .js-menu-screen').toggleClass('is-visible');
   }
 });
 
 var text;
-$('.js-about-menu-trigger').attr('href', '').on('click touchstart', function (e) {
+$('.js-child-menu-trigger').attr('href', '').on('click touchstart', function (e) {
   text = $('i', this).text();
   $('i', this).text(text == '＋' ? '−' : '＋');
-  $('.js-about-menu').slideToggle();
+  $(this).siblings('.js-child-menu').slideToggle();
   e.preventDefault();
 });
 
