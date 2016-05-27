@@ -628,6 +628,11 @@ strong {
 		padding: 80px 40px;
 	}
 
+	@include media($l-screen) {
+		padding-top: 180px;
+		padding-bottom: 180px;
+	}
+
 	.section-title {
 		@include outer-container;
 		font-size: 46px;
