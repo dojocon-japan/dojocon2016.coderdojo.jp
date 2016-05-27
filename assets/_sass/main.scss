@@ -704,6 +704,7 @@ strong {
 
 .about-section {
 	background: $yellow;
+	position: relative;
 	overflow-x: hidden;
 
 	.section-title {
@@ -847,9 +848,15 @@ strong {
 		position: relative;
 
 		@include media($s-screen) {
-			@include size(480px 360px);
-			margin: 0;
+			@include position(absolute, auto 50% 330px auto);
+			@include size(440px 330px);
+			margin: 0 40px 0 0;
 			padding-bottom: 0;
+			z-index: 0;
+		}
+
+		@include media($l-screen) {
+			bottom: 400px;
 		}
 
 		.hand {
