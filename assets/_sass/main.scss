@@ -846,6 +846,12 @@ strong {
 		padding-bottom: percentage(480 / 640);
 		position: relative;
 
+		@include media($s-screen) {
+			@include size(480px 360px);
+			margin: 0;
+			padding-bottom: 0;
+		}
+
 		.hand {
 			@include position(absolute, -20% -20% auto auto);
 			@include size(50% auto);
