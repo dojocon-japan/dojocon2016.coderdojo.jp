@@ -704,6 +704,7 @@ strong {
 
 .about-section {
 	background: $yellow;
+	overflow-x: hidden;
 
 	.section-title {
 
@@ -840,9 +841,24 @@ strong {
 	}
 
 	.arduino-robot {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-bottom: percentage(480 / 640);
+		position: relative;
 
-		figure {
-			text-align: center;
+		.hand {
+			@include position(absolute, -20% -20% auto auto);
+			@include size(50% auto);
+		}
+
+		.pipi {
+			@include position(absolute, 15% 25% auto auto);
+			@include size(16% auto);
+		}
+
+		.robot {
+			@include position(absolute, 35% auto auto 5%);
+			@include size(60% auto);
 		}
 	}
 }
