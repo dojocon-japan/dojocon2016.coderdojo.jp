@@ -807,6 +807,8 @@ strong {
 
 	.first-dojocon-japan {
 		@include outer-container;
+		position: relative;
+		z-index: 2;
 
 		@include media($s-screen) {
 			@include span-columns(7.25);
@@ -848,15 +850,16 @@ strong {
 		position: relative;
 
 		@include media($s-screen) {
-			@include position(absolute, auto 50% 330px auto);
-			@include size(440px 330px);
+			@include position(absolute, auto 51% 330px auto);
+			@include size(360px 270px);
 			margin: 0 40px 0 0;
 			padding-bottom: 0;
 			z-index: 0;
 		}
 
 		@include media($l-screen) {
-			bottom: 400px;
+			@include size(440px 330px);
+			bottom: 440px;
 		}
 
 		.hand {
