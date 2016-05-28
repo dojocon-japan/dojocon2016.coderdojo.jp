@@ -857,9 +857,14 @@ strong {
 			z-index: 0;
 		}
 
+		@include media($m-screen) {
+			@include size(480px 360px);
+			bottom: 350px;
+		}
+
 		@include media($l-screen) {
-			@include size(440px 330px);
-			bottom: 440px;
+			@include size(560px 420px);
+			bottom: 400px;
 		}
 
 		.hand {
