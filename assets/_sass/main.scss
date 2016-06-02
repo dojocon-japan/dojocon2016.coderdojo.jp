@@ -1109,7 +1109,7 @@ strong {
 }
 
 .speaker-section {
-	background: $blue;
+	background: radial-gradient(circle closest-side, $blue, darken($blue, 3));
 	color: #fff;
 
 	.section-title {
@@ -1181,9 +1181,7 @@ strong {
 }
 
 .sponsor-section {
-	background: linear-gradient($blue 50%, $yellow 50%);
-	// overflow-x: hidden;
-	// overflow-y: visible;
+	background: linear-gradient(darken($blue, 3) 50%, $yellow 50%);
 	position: relative;
 
 	&:before {
