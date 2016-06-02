@@ -743,15 +743,18 @@ strong {
 		position: relative;
 
 		&:after {
-			@include position(absolute, auto 0 0 50%);
-			background: $yellow;
-			content: "";
-			height: 500%;
-			margin: auto;
-			transform: translateX(-50%) rotate(7deg);
-			transform-origin: 50% 100%;
-			width: 120%;
-			z-index: -1;
+
+			@include media($s-screen) {
+				@include position(absolute, auto 0 0 50%);
+				background: $yellow;
+				content: "";
+				height: 500%;
+				margin: auto;
+				transform: translateX(-50%) rotate(7deg);
+				transform-origin: 50% 100%;
+				width: 120%;
+				z-index: -1;
+			}
 		}
 	}
 
@@ -827,13 +830,13 @@ strong {
 
 	.first-dojocon-japan {
 		@include outer-container;
-		margin-bottom: 80px;
 		position: relative;
 		z-index: 2;
 
 		@include media($s-screen) {
 			@include span-columns(7.25);
 			@include shift(4.75);
+			margin-bottom: 80px;
 		}
 
 		ul {
@@ -845,15 +848,18 @@ strong {
 		position: relative;
 
 		&:before {
-			@include position(absolute, 0 0 auto 50%);
-			background: $yellow;
-			content: "";
-			height: 500%;
-			margin: auto;
-			transform: translateX(-50%) rotate(-7deg);
-			transform-origin: 50% 0%;
-			width: 120%;
-			z-index: -1;
+
+			@include media($s-screen) {
+				@include position(absolute, 0 0 auto 50%);
+				background: $yellow;
+				content: "";
+				height: 500%;
+				margin: auto;
+				transform: translateX(-50%) rotate(-7deg);
+				transform-origin: 50% 0%;
+				width: 120%;
+				z-index: -1;
+			}
 		}
 	}
 
@@ -888,7 +894,7 @@ strong {
 		position: relative;
 
 		@include media($s-screen) {
-			@include position(absolute, auto 51% 330px auto);
+			@include position(absolute, auto 51% 380px auto);
 			@include size(360px 270px);
 			margin: 0 40px 0 0;
 			padding-bottom: 0;
