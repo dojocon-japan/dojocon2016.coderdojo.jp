@@ -934,6 +934,19 @@ strong {
 
 .news-section {
 	color: $blue;
+	position: relative;
+
+	&:before {
+		@include position(absolute, -315px auto auto 50%);
+		content: url(../images/line-yin-gray.svg);
+		margin-left: 480px;
+	}
+
+	&:after {
+		@include position(absolute, auto 50% -230px auto);
+		content: url(../images/line-yang-blue.svg);
+		margin-right: 480px;
+	}
 
 	.posts-outer {
 		height: 500px;
@@ -1111,6 +1124,20 @@ strong {
 .speaker-section {
 	background: radial-gradient(circle closest-side, $blue, darken($blue, 3));
 	color: #fff;
+	position: relative;
+
+	&:before {
+		@include position(absolute, 35px auto auto 50%);
+		content: url(../images/line-yin-gray.svg);
+		margin-left: 450px;
+	}
+
+	&:after {
+		@include position(absolute, auto 50% -370px auto);
+		content: url(../images/line-yang-yellow.svg);
+		margin-right: 400px;
+		z-index: 2;
+	}
 
 	.section-title {
 
@@ -1193,6 +1220,13 @@ strong {
 		transform-origin: 50% 50%;
 		width: 1000%;
 		z-index: 0;
+	}
+
+	&:after {
+		@include position(absolute, auto auto -190px 50%);
+		content: url(../images/line-yin-gray.svg);
+		margin-left: 420px;
+		z-index: 2;
 	}
 
 	.sponsor-section-inner {
@@ -1493,6 +1527,8 @@ strong {
 
 	.exhibition-block {
 		@include outer-container;
+		position: relative;
+		z-index: 1;
 
 		h2 {
 			background: $blue;
@@ -1511,6 +1547,7 @@ strong {
 		}
 
 		.exhibitions {
+			@include outer-container;
 
 			> li {
 				background: #fff;
@@ -1561,6 +1598,19 @@ strong {
 .contact-section {
 	background: $clouds;
 	color: $blue;
+	position: relative;
+
+	&:before {
+		@include position(absolute, -280px 50% auto auto);
+		content: url(../images/line-yang-blue.svg);
+		margin-right: 430px;
+	}
+
+	&:after {
+		@include position(absolute, auto auto -160px 50%);
+		content: url(../images/line-yin-white.svg);
+		margin-left: 420px;
+	}
 
 	.open-form {
 		box-shadow: none;
@@ -1632,6 +1682,13 @@ strong {
 	background-size: 70px;
 	color: #fff;
 	padding-bottom: 70px;
+	position: relative;
+
+	&:before {
+		@include position(absolute, -180px 50% auto auto);
+		content: url(../images/line-yang-gray.svg);
+		margin-right: 440px;
+	}
 
 	.fb-tw-widgets {
 		@include outer-container;
