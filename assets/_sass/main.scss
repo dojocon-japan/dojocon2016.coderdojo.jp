@@ -750,14 +750,12 @@ strong {
 		&:after {
 
 			@include media($s-screen) {
-				@include position(absolute, auto 0 0 50%);
+				@include position(absolute, auto 0 0 0);
 				background: $yellow;
 				content: "";
+				display: block;
 				height: 500%;
-				margin: auto;
-				transform: translateX(-50%) rotate(7deg);
-				transform-origin: 50% 100%;
-				width: 120%;
+				transform: skewY(7deg);
 				z-index: -1;
 			}
 		}
@@ -855,14 +853,12 @@ strong {
 		&:before {
 
 			@include media($s-screen) {
-				@include position(absolute, 0 0 auto 50%);
+				@include position(absolute, 0 0 auto 0);
 				background: $yellow;
 				content: "";
+				display: block;
 				height: 500%;
-				margin: auto;
-				transform: translateX(-50%) rotate(-7deg);
-				transform-origin: 50% 0%;
-				width: 120%;
+				transform: skewY(-7deg);
 				z-index: -1;
 			}
 		}
@@ -1210,13 +1206,11 @@ strong {
 	position: relative;
 
 	&:before {
-		@include position(absolute, 0 auto 0 50%);
+		@include position(absolute, 0);
 		background: #fff;
 		content: "";
-		height: 100%;
-		transform: translateX(-50%) rotate(-7deg);
-		transform-origin: 50% 50%;
-		width: 200%;
+		display: block;
+		transform: skewY(-7deg);
 		z-index: 0;
 	}
 
