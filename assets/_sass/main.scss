@@ -724,7 +724,7 @@ strong {
 		@include media($s-screen) {
 			margin-left: -40px;
 			margin-right: -40px;
-			padding: 40px;
+			padding: 0 40px;
 		}
 	}
 
@@ -762,6 +762,7 @@ strong {
 		@include media($s-screen) {
 			@include span-columns(7.25);
 			@include shift(.25);
+			margin-bottom: 80px;
 		}
 
 		h2 {
@@ -793,7 +794,7 @@ strong {
 
 			@include media($s-screen) {
 				float: right;
-				margin-top: 55px;
+				margin-top: 100px;
 				margin-right: -40px;
 				margin-left: 40px;
 				width: 280px;
@@ -819,14 +820,14 @@ strong {
 		h2 {
 
 			@include media($s-screen) {
-				margin-top: 0;
+				// margin-top: 0;
 			}
 		}
 	}
 
 	.first-dojocon-japan {
 		@include outer-container;
-		margin-bottom: 40px;
+		margin-bottom: 80px;
 		position: relative;
 		z-index: 2;
 
@@ -860,6 +861,7 @@ strong {
 		@include outer-container;
 
 		@include media($s-screen) {
+			padding-top: 40px;
 			text-align: center;
 		}
 
@@ -900,7 +902,7 @@ strong {
 
 		@include media($l-screen) {
 			@include size(560px 420px);
-			bottom: 500px;
+			bottom: 460px;
 		}
 
 		.hand {
