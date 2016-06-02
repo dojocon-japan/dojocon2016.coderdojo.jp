@@ -17,6 +17,7 @@ body {
 	color: $default-font-color;
 	font-family: $noto;
 	line-height: $line-height;
+	overflow-x: hidden;
 }
 
 a {
@@ -936,15 +937,13 @@ strong {
 	color: $blue;
 	position: relative;
 
-	&:before {
+	@include yin-yang-ornament(before, yin, gray) {
 		@include position(absolute, -315px auto auto 50%);
-		content: url(../images/line-yin-gray.svg);
 		margin-left: 480px;
 	}
 
-	&:after {
+	@include yin-yang-ornament(after, yang, blue) {
 		@include position(absolute, auto 50% -230px auto);
-		content: url(../images/line-yang-blue.svg);
 		margin-right: 480px;
 	}
 
@@ -1126,15 +1125,13 @@ strong {
 	color: #fff;
 	position: relative;
 
-	&:before {
+	@include yin-yang-ornament(before, yin, gray) {
 		@include position(absolute, 35px auto auto 50%);
-		content: url(../images/line-yin-gray.svg);
 		margin-left: 450px;
 	}
 
-	&:after {
+	@include yin-yang-ornament(after, yang, yellow) {
 		@include position(absolute, auto 50% -370px auto);
-		content: url(../images/line-yang-yellow.svg);
 		margin-right: 400px;
 		z-index: 2;
 	}
@@ -1218,13 +1215,12 @@ strong {
 		height: 100%;
 		transform: translateX(-50%) rotate(-7deg);
 		transform-origin: 50% 50%;
-		width: 1000%;
+		width: 200%;
 		z-index: 0;
 	}
 
-	&:after {
+	@include yin-yang-ornament(after, yin, gray) {
 		@include position(absolute, auto auto -190px 50%);
-		content: url(../images/line-yin-gray.svg);
 		margin-left: 420px;
 		z-index: 2;
 	}
@@ -1600,15 +1596,13 @@ strong {
 	color: $blue;
 	position: relative;
 
-	&:before {
+	@include yin-yang-ornament(before, yang, blue) {
 		@include position(absolute, -280px 50% auto auto);
-		content: url(../images/line-yang-blue.svg);
 		margin-right: 430px;
 	}
 
-	&:after {
+	@include yin-yang-ornament(after, yin, white) {
 		@include position(absolute, auto auto -160px 50%);
-		content: url(../images/line-yin-white.svg);
 		margin-left: 420px;
 	}
 
@@ -1684,9 +1678,8 @@ strong {
 	padding-bottom: 70px;
 	position: relative;
 
-	&:before {
+	@include yin-yang-ornament(before, yang, gray) {
 		@include position(absolute, -180px 50% auto auto);
-		content: url(../images/line-yang-gray.svg);
 		margin-right: 440px;
 	}
 

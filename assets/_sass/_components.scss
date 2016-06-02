@@ -101,3 +101,14 @@ button,
 		}
 	}
 }
+
+@mixin yin-yang-ornament($before-after, $yin-yang, $color) {
+
+	&:#{$before-after} {
+
+		@include media($s-screen) {
+			content: url(../images/line-#{$yin-yang}-#{$color}.svg);
+			@content;
+		}
+	}
+}
