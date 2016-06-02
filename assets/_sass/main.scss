@@ -705,7 +705,7 @@ strong {
 .about-section {
 	background: $yellow;
 	position: relative;
-	overflow-x: hidden;
+	overflow: hidden;
 
 	@include media($s-screen) {
 		background: transparent;
@@ -748,7 +748,7 @@ strong {
 			content: "";
 			height: 500%;
 			margin: auto;
-			transform: translate(-50%) rotate(7deg);
+			transform: translateX(-50%) rotate(7deg);
 			transform-origin: 50% 100%;
 			width: 120%;
 			z-index: -1;
@@ -836,6 +836,22 @@ strong {
 
 		ul {
 			@include ul;
+		}
+	}
+
+	.event-info-outer {
+		position: relative;
+
+		&:before {
+			@include position(absolute, 0 0 auto 50%);
+			background: $yellow;
+			content: "";
+			height: 500%;
+			margin: auto;
+			transform: translateX(-50%) rotate(-7deg);
+			transform-origin: 50% 0%;
+			width: 120%;
+			z-index: -1;
 		}
 	}
 
