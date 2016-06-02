@@ -9,6 +9,10 @@
 @import "reset";
 @import "components";
 
+html {
+	overflow-x: hidden;
+}
+
 body {
 	color: $default-font-color;
 	font-family: $noto;
@@ -1177,6 +1181,26 @@ strong {
 }
 
 .sponsor-section {
+	background: linear-gradient($blue 50%, $yellow 50%);
+	// overflow-x: hidden;
+	// overflow-y: visible;
+	position: relative;
+
+	&:before {
+		@include position(absolute, 0 auto 0 50%);
+		background: #fff;
+		content: "";
+		height: 100%;
+		transform: translateX(-50%) rotate(-7deg);
+		transform-origin: 50% 50%;
+		width: 1000%;
+		z-index: 0;
+	}
+
+	.sponsor-section-inner {
+		position: relative;
+		z-index: 1;
+	}
 
 	h2 {
 		@include outer-container;
