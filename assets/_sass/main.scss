@@ -707,6 +707,10 @@ strong {
 	position: relative;
 	overflow-x: hidden;
 
+	@include media($s-screen) {
+		background: transparent;
+	}
+
 	.section-title {
 
 		@include media($s-screen) {
@@ -718,7 +722,6 @@ strong {
 	.about-section-inner {
 
 		@include media($s-screen) {
-			background: #fff;
 			margin-left: -40px;
 			margin-right: -40px;
 			padding: 40px;
@@ -733,6 +736,22 @@ strong {
 
 		@include media($s-screen) {
 			font-size: 24px;
+		}
+	}
+
+	.what-is-coderdojo-outer {
+		position: relative;
+
+		&:after {
+			@include position(absolute, auto 0 0 50%);
+			background: $yellow;
+			content: "";
+			height: 500%;
+			margin: auto;
+			transform: translate(-50%) rotate(7deg);
+			transform-origin: 50% 100%;
+			width: 120%;
+			z-index: -1;
 		}
 	}
 
