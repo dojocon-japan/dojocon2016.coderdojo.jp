@@ -757,7 +757,7 @@ strong {
 
 	.what-is-coderdojo {
 		@include outer-container;
-		margin-bottom: 42px;
+		margin-bottom: 40px;
 
 		@include media($s-screen) {
 			@include span-columns(7.25);
@@ -826,6 +826,7 @@ strong {
 
 	.first-dojocon-japan {
 		@include outer-container;
+		margin-bottom: 40px;
 		position: relative;
 		z-index: 2;
 
