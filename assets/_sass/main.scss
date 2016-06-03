@@ -1698,6 +1698,48 @@ strong {
 		}
 	}
 
+	.photo-gallery {
+		margin: 20px -20px 40px -21px;
+
+		@include media($s-screen) {
+			margin: 80px -40px 40px -41px;
+		}
+
+		.photos {
+			text-align: center;
+
+			> li {
+				@include size(percentage(1/4) auto);
+				display: inline-block;
+				padding: 0 0 1px 1px;
+				vertical-align: top;
+
+				@include media($xxs-screen) {
+					width: percentage(1/5);
+				}
+
+				@include media($xs-screen) {
+					width: percentage(1/6);
+				}
+
+				@for $i from 7 through 40 {
+
+					@include media($i * 120px) {
+						width: percentage(1/$i);
+					}
+				}
+
+				a {
+					background-position: 50%;
+					background-size: cover;
+					display: block;
+					height: 0;
+					padding-bottom: 100%;
+				}
+			}
+		}
+	}
+
 	.sns-id {
 		font-size: 24px;
 		font-weight: $thin;

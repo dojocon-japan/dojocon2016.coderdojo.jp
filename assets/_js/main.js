@@ -46,7 +46,8 @@ google.maps.event.addDomListener(window, 'load', function(){
     zoom: 16,
     center: latlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
-    scrollwheel: false
+    scrollwheel: false,
+    // draggable: false,
   };
   var map = new google.maps.Map(document.getElementById('map'), options);
   var marker = new google.maps.Marker({
