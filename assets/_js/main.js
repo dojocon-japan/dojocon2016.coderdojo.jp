@@ -27,7 +27,7 @@ $('.js-child-menu-trigger').attr('href', '').on('click', function (e) {
 });
 
 var timer = false;
-$(window).on('scroll', function() {
+$(window).on('load scroll', function() {
   if (timer) clearTimeout(timer);
   timer = setTimeout(function() {
     if ($(window).scrollTop() > 70) {
