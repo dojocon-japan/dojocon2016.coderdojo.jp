@@ -1,0 +1,528 @@
+html {
+	overflow-x: hidden;
+}
+
+body {
+	color: $default-font-color;
+	font-family: $noto;
+	line-height: $line-height;
+	overflow-x: hidden;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+p {
+
+	a {
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+strong {
+	font-weight: $black;
+}
+
+.header {
+
+	.menu-trigger {
+		@include position(fixed, 30px 0 auto auto);
+		@include size(40px);
+		background: #fff;
+		border-radius: 0;
+		// box-shadow: none;
+		color: $default-font-color;
+		font-size: 20px;
+		line-height: 40px;
+		padding: 0;
+		z-index: 99;
+
+		@include media($s-screen) {
+			top: 70px;
+		}
+
+		@include media($xl-screen) {
+			display: none;
+		}
+
+		&:hover {
+			background: #fff;
+			color: $blue;
+		}
+	}
+
+	.menu {
+		@include clearfix;
+		@include position(fixed, 0 0 auto 0);
+		-webkit-overflow-scrolling: touch;
+		overflow-y: auto;
+		transform: translateY(-300px);
+		transition: all .25s linear;
+		z-index: 9999;
+
+		@include media($xl-screen) {
+			overflow: visible;
+			transform: translateY(0);
+		}
+
+		&.is-visible {
+			transform: translateY(0);
+		}
+
+		.menu-close-outer {
+			background: #fff;
+			text-align: right;
+
+			@include media($xl-screen) {
+				display: none;
+			}
+
+			button {
+				background: transparent;
+				box-shadow: none;
+				color: $default-font-color;
+				font-weight: $thin;
+				font-size: 16px;
+				line-height: 18px;
+				padding: 10px;
+
+				@include media($s-screen) {
+					padding: 20px;
+				}
+
+				&:hover {
+					color: $blue;
+				}
+			}
+		}
+
+		.nav {
+
+			@include media($xl-screen) {
+				float: left;
+				width: 50%;
+			}
+
+			> ul {
+				@include clearfix;
+				text-transform: uppercase;
+				font-size: 14px;
+				font-weight: $medium;
+
+				@include media($xl-screen) {
+					color: #fff;
+					font-size: 16px;
+					text-align: right;
+					padding-right: 20px;
+				}
+
+				a {
+					display: block;
+					background: #fff;
+					padding: 7px 1em;
+
+					@include media($s-screen) {
+						padding-top: 17px;
+						padding-bottom: 17px;
+					}
+
+					@include media($xl-screen) {
+						background: none;
+						padding-right: 20px;
+						padding-left: 20px;
+						opacity: .7;
+					}
+
+					&:hover {
+						color: $blue;
+
+						@include media($xl-screen) {
+							color: inherit;
+							opacity: 1;
+						}
+					}
+				}
+
+				.child-menu-trigger {
+
+					&:after {
+						content: attr(data-icon);
+						display: inline-block;
+						margin-left: .2em;
+						min-width: 1em;
+						text-align: center;
+					}
+				}
+
+				> li {
+					border-top: 1px solid $default-font-color;
+					float: left;
+					position: relative;
+					text-align: center;
+					width: percentage(1/2);
+
+					@include media($s-screen) {
+						width: percentage(1/3);
+					}
+
+					@include media($xl-screen) {
+						display: inline-block;
+						border: 0;
+						float: none;
+						width: auto;
+					}
+
+					// &:hover {
+
+					// 	.child-menu-trigger {
+
+					// 		&:after {
+
+					// 			@include media($xl-screen) {
+					// 				content: "−";
+					// 			}
+					// 		}
+					// 	}
+
+					// 	.child-menu {
+
+					// 		@include media($xl-screen) {
+					// 			display: block;
+					// 		}
+					// 	}
+					// }
+
+					> a {
+						border-left: 1px solid $default-font-color;
+
+						@include media($xl-screen) {
+							border: 0;
+						}
+					}
+
+					&:nth-child(odd) {
+
+						> a {
+							border-left-width: 0;
+
+							@include media($s-screen) {
+								border-left-width: 1px;
+							}
+						}
+					}
+
+					&:nth-child(3n+1) {
+
+						@include media($s-screen) {
+							clear: left;
+						}
+
+						@include media($xl-screen) {
+							clear: none;
+						}
+
+						> a {
+
+							@include media($s-screen) {
+								border-left-width: 0;
+							}
+						}
+					}
+
+					.child-menu {
+						@include clearfix;
+						display: none;
+						left: -100%;
+						position: relative;
+						width: 200%;
+
+						@include media($s-screen) {
+							width: 300%;
+						}
+
+						@include media($xl-screen) {
+							@include position(absolute, 100% auto auto 0);
+							color: $default-font-color;
+							width: $xl-screen / 2;
+						}
+
+						> li {
+							border-top: 1px solid $default-font-color;
+							float: left;
+							width: percentage(1/2);
+
+							@include media($s-screen) {
+								width: percentage(1/4);
+							}
+
+							@include media($xl-screen) {
+								border: 0;
+								width: 119px;
+								margin: 0 0 1px 1px;
+							}
+
+							a {
+								background: rgba(#fff, .8);
+								border-left: 1px solid $default-font-color;
+
+								@include media($xl-screen) {
+									border: 0;
+									padding: 6px 1em;
+								}
+							}
+
+							&:nth-child(odd) {
+
+								> a {
+									border-left-width: 0;
+
+									@include media($s-screen) {
+										border-left-width: 1px;
+									}
+								}
+							}
+
+							&:nth-child(4n+1) {
+
+								> a {
+
+									@include media($s-screen) {
+										border-left-width: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.entry {
+			background: #fff;
+			border-top: 1px solid $default-font-color;
+			padding: 10px 20px;
+			text-align: center;
+
+			@include media($xl-screen) {
+				background: none;
+				border: 0;
+				display: none;
+				float: left;
+				max-width: $xl-screen / 2;
+				padding: 12px;
+				text-align: right;
+				width: 50%;
+			}
+
+			.button {
+				box-shadow: none;
+				font-size: 14px;
+
+				&:before {
+					font-size: 20px;
+					vertical-align: -2px;
+					margin-right: .3em;
+				}
+			}
+		}
+
+		&.scrolled {
+
+			@include media($xl-screen) {
+				background: #f3f3f3;
+			}
+
+			.nav {
+
+				> ul {
+
+					@include media($xl-screen) {
+						color: $default-font-color;
+					}
+				}
+			}
+
+			.entry {
+
+				@include media($xl-screen) {
+					display: block;
+				}
+			}
+		}
+	} // .menu
+
+	.menu-screen {
+		@include position(fixed, 0);
+		background: black;
+		opacity: 0;
+		transition: all .2s ease-in-out;
+		visibility: hidden;
+		z-index: 9998;
+
+		&.is-visible {
+			opacity: .7;
+			visibility: visible;
+
+			@include media($xl-screen) {
+				opacity: 0;
+			}
+		}
+	}
+} // .header
+
+.sns-section {
+	background: $blue url(../images/ninja.svg) no-repeat center bottom;
+	background-size: 70px;
+	color: #fff;
+	padding-bottom: 70px;
+	position: relative;
+
+	@include yin-yang-ornament(before, yang, gray) {
+		@include position(absolute, -180px 50% auto auto);
+		margin-right: 440px;
+	}
+
+	.fb-tw-widgets {
+		@include outer-container;
+		text-align: center;
+
+		> li {
+			margin-bottom: 20px;
+
+			@include media($s-screen) {
+				@include span-columns(6);
+				@include omega(2n);
+			}
+		}
+	}
+
+	.photo-gallery {
+		margin: 20px -20px 40px -21px;
+
+		@include media($s-screen) {
+			margin: 80px -40px 40px -41px;
+		}
+
+		.photos {
+			text-align: center;
+
+			> li {
+				@include size(percentage(1/4) auto);
+				display: inline-block;
+				padding: 0 0 1px 1px;
+				vertical-align: top;
+
+				@include media($xxs-screen) {
+					width: percentage(1/5);
+				}
+
+				@include media($xs-screen) {
+					width: percentage(1/6);
+				}
+
+				@for $i from 7 through 40 {
+
+					@include media($i * 120px) {
+						width: percentage(1/$i);
+					}
+				}
+
+				a {
+					background-position: 50%;
+					background-size: cover;
+					display: block;
+					height: 0;
+					padding-bottom: 100%;
+				}
+			}
+		}
+	}
+
+	.sns-id {
+		font-size: 24px;
+		font-weight: $thin;
+		margin-top: 40px;
+		text-align: center;
+	}
+
+	.sns-links {
+		line-height: 2;
+		margin-top: 40px;
+		margin-bottom: 50px;
+		text-align: center;
+
+		@include media($s-screen) {
+			margin-top: 80px;
+			margin-bottom: 80px;
+		}
+
+		&:before {
+			border-right: 1px solid #fff;
+			font-size: 50px;
+			margin-right: 50px;
+			padding-right: 50px;
+			vertical-align: middle;
+		}
+
+		> li {
+			display: inline-block;
+
+			+ li {
+				margin-left: 20px;
+			}
+
+			a {
+
+				&:before {
+					font-size: 32px;
+					vertical-align: middle;
+				}
+
+				&:hover {
+					color: darken(#fff, 5);
+				}
+			}
+		}
+	}
+}
+
+.footer {
+
+	.goto-pagetop {
+		background: $yellow;
+		color: $blue;
+		display: block;
+		font-family: $oswald;
+		font-size: 16px;
+		line-height: 1.2;
+		padding: 13px 20px 20px;
+		text-align: center;
+		text-transform: uppercase;
+
+		&:before {
+			display: block;
+			font-size: 22px;
+		}
+
+		&:hover {
+			background: darken($yellow, 3);
+		}
+	}
+
+	.copyright {
+		text-align: center;
+		font-size: 14px;
+		font-weight: $light;
+		padding: 30px 20px;
+	}
+}
