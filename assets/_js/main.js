@@ -39,3 +39,18 @@ $(window).on('scroll', function() {
 });
 
 });
+
+google.maps.event.addDomListener(window, 'load', function(){
+  var latlng = new google.maps.LatLng(34.6794953, 135.513265);
+  var options = {
+    zoom: 16,
+    center: latlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    scrollwheel: false
+  };
+  var map = new google.maps.Map(document.getElementById('map'), options);
+  var marker = new google.maps.Marker({
+    position: latlng,
+    map: map
+  });
+});
