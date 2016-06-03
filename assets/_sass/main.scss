@@ -1433,6 +1433,10 @@ strong {
 
 		.session-block {
 
+			@include media($s-screen) {
+				border-right: 1px solid $blue;
+			}
+
 			.clock {
 
 				@include media($s-screen) {
