@@ -38,7 +38,7 @@ $(window).on('load scroll', function() {
   }, 100);
 });
 
-});
+}); // end $(function(){});
 
 google.maps.event.addDomListener(window, 'load', function(){
   var latlng = new google.maps.LatLng(34.6794953, 135.513265);
