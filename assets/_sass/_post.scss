@@ -130,6 +130,23 @@
 	}
 
 	table {
+		border-collapse: separate;
+		border-spacing: 2px;
 		margin-bottom: 1.75em;
+		width: 100%;
+	}
+
+	th, td {
+		padding: .5em 1em;
+	}
+
+	th {
+		background: tint($blue, 30);
+		color: $clouds;
+		font-weight: normal;
+	}
+
+	td {
+		background: $clouds;
 	}
 }
