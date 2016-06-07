@@ -341,7 +341,7 @@ strong {
 		&.scrolled {
 
 			@include media($xl-screen) {
-				background: #f3f3f3;
+				background: $clouds;
 			}
 
 			.nav {

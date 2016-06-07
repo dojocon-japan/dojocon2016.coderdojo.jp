@@ -1,3 +1,30 @@
+.post {
+
+	.menu {
+
+		@include media($xl-screen) {
+			background: $clouds;
+		}
+
+		.nav {
+
+			> ul {
+
+				@include media($xl-screen) {
+					color: $default-font-color;
+				}
+			}
+		}
+
+		.entry {
+
+			@include media($xl-screen) {
+				display: block;
+			}
+		}
+	}
+}
+
 .post-header {
 	@include outer-container;
 	margin-top: 30px;
@@ -7,6 +34,14 @@
 
 	@include media($s-screen) {
 		margin-top: 70px;
+	}
+
+	@include media($m-screen) {
+		padding: 0;
+	}
+
+	@include media($xl-screen) {
+		margin-top: 150px;
 	}
 
 	.page-title {
@@ -82,6 +117,11 @@
 
 	.post-thumbnail {
 		margin: 40px -20px;
+
+		@include media($m-screen) {
+			margin-left: 0;
+			margin-right: 0;
+		}
 	}
 
 	*:first-child {
@@ -97,6 +137,11 @@
 .post-content {
 	@include outer-container;
 	padding: 0 20px 100px;
+
+	@include media($m-screen) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 
 	h1 {
 		border-bottom: 1px solid $clouds-dark;
