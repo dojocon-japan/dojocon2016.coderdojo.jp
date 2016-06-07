@@ -342,6 +342,7 @@ strong {
 
 			@include media($xl-screen) {
 				background: $clouds;
+				box-shadow: 0 0 10px rgba(#000, .2);
 			}
 
 			.nav {
