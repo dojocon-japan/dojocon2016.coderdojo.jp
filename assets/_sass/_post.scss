@@ -1,22 +1,30 @@
 .post-header {
 	@include outer-container;
 	margin-top: 30px;
-	margin-bottom: $line-height-px;
+	margin-bottom: 40px;
 	padding: 0 20px;
 	text-align: center;
+
+	@include media($s-screen) {
+		margin-top: 70px;
+	}
 
 	.page-title {
 		color: $blue;
 		display: inline-block;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 		position: relative;
+
+		@include media($s-screen) {
+			margin-bottom: 30px;
+		}
 
 		@include blockly-divider(begin, before) {
 			@include position(absolute, 33px auto auto -5px);
 			font-size: .5 * 81px;
 
 			@include media($s-screen) {
-				top: 96px;
+				top: 36px;
 			}
 		}
 
@@ -25,7 +33,7 @@
 			font-size: .5 * 81px;
 
 			@include media($s-screen) {
-				top: 96px;
+				top: 36px;
 			}
 		}
 
@@ -39,12 +47,16 @@
 			position: relative;
 			text-transform: uppercase;
 
+			@include media($s-screen) {
+				font-size: 24px;
+			}
+
 			@include blockly-divider(middle, before) {
 				@include position(absolute, 33px auto auto (.5 * 81 - 5.5px));
 				font-size: .5 * 81px;
 
 				@include media($s-screen) {
-					top: 96px;
+					top: 36px;
 				}
 			}
 		}
@@ -52,9 +64,14 @@
 
 	.post-title {
 		font-size: 24px;
-		font-weight: $medium;
+		font-weight: $regular;
 		line-height: 1.5;
-		margin: .5em 0;
+		margin: 1em 0;
+
+		@include media($s-screen) {
+			font-size: 30px;
+			margin-top: 1.5em;
+		}
 	}
 
 	.post-meta {
@@ -64,7 +81,7 @@
 	}
 
 	.post-thumbnail {
-		margin: $line-height-px -20px;
+		margin: 40px -20px;
 	}
 
 	*:first-child {
@@ -81,13 +98,30 @@
 	@include outer-container;
 	padding: 0 20px 150px;
 
+	h1 {
+		border-bottom: 1px solid $clouds-dark;
+		font-size: 24px;
+		font-weight: $medium;
+		line-height: 1.5;
+		margin: 3em 0 $line-height-px;
+		padding-bottom: .5em;
+
+		@include media($s-screen) {
+			font-size: 30px;
+		}
+	}
+
 	h2 {
 		border-bottom: 1px solid $clouds-dark;
 		font-size: 22px;
 		font-weight: $medium;
 		line-height: 1.5;
-		padding-bottom: .5em;
 		margin: 3em 0 $line-height-px;
+		padding-bottom: .5em;
+
+		@include media($s-screen) {
+			font-size: 24px;
+		}
 	}
 
 	h3 {
@@ -109,6 +143,13 @@
 
 		&:last-child {
 			margin-bottom: 0;
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+
+		+ h1, + h2, + h3, + h4, + h5, + h6 {
+			margin-top: 0;
 		}
 	}
 
