@@ -98,7 +98,7 @@
 	}
 
 	p {
-		margin-bottom: 1.5em;
+		margin-bottom: 1.75em;
 	}
 
 	h1, h2, h3, h4, h5, h6, p {
@@ -110,5 +110,26 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+	}
+
+	ol, ul {
+		margin-bottom: 1.75em;
+
+		ol, ul {
+			padding-left: 1em;
+			margin-bottom: 0;
+		}
+	}
+
+	ol {
+		list-style: decimal inside;
+	}
+
+	ul {
+		list-style: square inside;
+	}
+
+	table {
+		margin-bottom: 1.75em;
 	}
 }
