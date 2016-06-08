@@ -39,6 +39,8 @@ $(window).on('load scroll', function() {
   }, 100);
 });
 
+$('.js-photos > li > a').attr('rel', 'photo-gallery').fancybox();
+
 }); // end $(function(){});
 
 google.maps.event.addDomListener(window, 'load', function(){

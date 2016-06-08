@@ -70,7 +70,7 @@ strong {
 		overflow-y: auto;
 		transform: translateY(-300px);
 		transition: all .25s linear;
-		z-index: 9999;
+		z-index: 999;
 
 		@include media($xl-screen) {
 			overflow: visible;
