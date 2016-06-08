@@ -1,8 +1,9 @@
 'use strict';
 
-var jQuery = require('jquery');
-var $ = jQuery;
+global.jQuery = require('jquery');
+global.$ = jQuery;
 var scrollsmoothly = require('./scrollsmoothly.js');
+var fancybox = require('./jquery.fancybox.js');
 var xlScreen = 1440;
 
 $(function() {
