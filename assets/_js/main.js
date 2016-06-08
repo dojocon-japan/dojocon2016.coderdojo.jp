@@ -39,7 +39,18 @@ $(window).on('load scroll', function() {
   }, 100);
 });
 
-$('.js-photos > li > a').attr('rel', 'photo-gallery').fancybox();
+$('.js-photos > li > a')
+  .attr('rel', 'photo-gallery')
+  .fancybox({
+    padding: 0,
+    helpers: {
+      overlay: {
+        css: {
+          'background' : 'rgba(0, 0, 0, .7)',
+        }
+      }
+    }
+  });
 
 }); // end $(function(){});
 
