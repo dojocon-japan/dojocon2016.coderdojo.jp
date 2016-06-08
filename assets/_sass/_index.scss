@@ -994,16 +994,55 @@
 		}
 	}
 
+	.gold-sponsors,
+	.silver-sponsors,
+	.bronze-sponsors {
+		@include outer-container;
+	}
+
 	.sponsors {
 		text-align: center;
+		margin-bottom: 1px;
+
+		> li {
+			background:
+				linear-gradient(45deg,  transparent 12px, #fff 12px),
+				linear-gradient(135deg, transparent 12px, #fff 12px),
+				linear-gradient(225deg, transparent 12px, #fff 12px),
+				linear-gradient(315deg, transparent 12px, #fff 12px);
+			background-position:
+				left bottom,
+				left top,
+				right top,
+				right bottom;
+			background-size: 50% 50%;
+			background-repeat: no-repeat;
+			margin-left: -1px;
+			margin-bottom: -1px;
+			padding: 1px;
+			position: relative;
+
+			&:before {
+				@include position(absolute, 0);
+				border: 1px solid $default-font-color;
+				content: "";
+				z-index: -1;
+			}
+		}
 	}
 
 	.gold-sponsors {
 
 		.sponsors {
-			@include outer-container;
+			@include clearfix;
+
+			@include media($s-screen) {
+				margin-left: 1px;
+				margin-right: -3px;
+			}
 
 			> li {
+				margin-left: 0;
 
 				@include media($s-screen) {
 					float: left;
@@ -1016,7 +1055,13 @@
 	.silver-sponsors {
 
 		.sponsors {
-			@include outer-container;
+			@include clearfix;
+			margin-left: 1px;
+			margin-right: -2px;
+
+			@include media($s-screen) {
+				margin-right: -4px;
+			}
 
 			> li {
 				float: left;
@@ -1032,7 +1077,13 @@
 	.bronze-sponsors {
 
 		.sponsors {
-			@include outer-container;
+			@include clearfix;
+			margin-left: 1px;
+			margin-right: -3px;
+
+			@include media($s-screen) {
+				margin-right: -6px;
+			}
 
 			> li {
 				float: left;
