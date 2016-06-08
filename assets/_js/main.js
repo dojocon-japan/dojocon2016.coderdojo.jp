@@ -39,6 +39,19 @@ $(window).on('load scroll', function() {
   }, 100);
 });
 
+$('.js-speaker-profile-trigger')
+  .each(function (index, el) {
+    $(this)
+      .attr('data-fancybox-href', $(this).attr('href'))
+      .attr('href', '');
+  })
+  .attr('rel', 'speakers')
+  .fancybox({
+    maxWidth: 940,
+    padding: 0,
+    scrolling: 'visible'
+  });
+
 $('.js-photos > li > a')
   .attr('rel', 'photo-gallery')
   .fancybox({

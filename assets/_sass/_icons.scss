@@ -13,6 +13,8 @@ $icon-4-o-clock: "\e90b";
 $icon-share: "\e90c";
 $icon-angle-up: "\e90d";
 $icon-close: "\e90e";
+$icon-chevron-left: "\e90f";
+$icon-chevron-right: "\e910";
 
 @mixin dojoicon($icon: false, $position: 'before') {
 
@@ -39,11 +41,11 @@ $icon-close: "\e90e";
 
 @font-face {
 	font-family: 'dojoicon';
-	src: url('../fonts/dojoicon.eot?7yeqzt');
-	src: url('../fonts/dojoicon.eot?7yeqzt#iefix') format('embedded-opentype'),
-	     url('../fonts/dojoicon.ttf?7yeqzt') format('truetype'),
-	     url('../fonts/dojoicon.woff?7yeqzt') format('woff'),
-	     url('../fonts/dojoicon.svg?7yeqzt#dojoicon') format('svg');
+	src: url('../fonts/dojoicon.eot?534bzv');
+	src: url('../fonts/dojoicon.eot?534bzv#iefix') format('embedded-opentype'),
+	     url('../fonts/dojoicon.ttf?534bzv') format('truetype'),
+	     url('../fonts/dojoicon.woff?534bzv') format('woff'),
+	     url('../fonts/dojoicon.svg?534bzv#dojoicon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -96,4 +98,10 @@ $icon-close: "\e90e";
 }
 .icon-close:before {
 	content: $icon-close;
+}
+.icon-chevron-left:before {
+	content: $icon-chevron-left;
+}
+.icon-chevron-right:before {
+	content: $icon-chevron-right;
 }
