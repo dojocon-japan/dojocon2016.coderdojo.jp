@@ -1046,6 +1046,7 @@
 
 				@include media($s-screen) {
 					float: left;
+					margin-left: -1px;
 					width: percentage(1/3);
 				}
 			}
