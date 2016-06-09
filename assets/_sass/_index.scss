@@ -604,6 +604,21 @@
 
 				a {
 					color: inherit;
+
+					&:hover {
+
+						.post-title {
+							text-decoration: underline;
+						}
+
+						.post-thumbnail {
+							background: #fff;
+
+							img {
+								opacity: .8;
+							}
+						}
+					}
 				}
 
 				.post-thumbnail {
@@ -1622,8 +1637,12 @@
 
 			> li {
 				@include size(percentage(1/4) auto);
+				background: #fff;
+				border: 1px solid $blue;
+				border-top: 0;
+				border-right: 0;
 				display: inline-block;
-				padding: 0 0 1px 1px;
+				// padding: 0 0 1px 1px;
 				vertical-align: top;
 
 				@include media($xxs-screen) {
@@ -1647,6 +1666,11 @@
 					display: block;
 					height: 0;
 					padding-bottom: 100%;
+
+					&:hover {
+						background-color: #fff;
+						opacity: .8;
+					}
 				}
 			}
 		}
