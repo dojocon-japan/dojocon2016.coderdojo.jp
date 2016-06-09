@@ -997,6 +997,7 @@
 .sponsor-section {
 	background: linear-gradient(darken($blue, 3) 50%, $yellow 50%);
 	position: relative;
+	transform: skewY(0);
 
 	&:before {
 		@include position(absolute, 0);
