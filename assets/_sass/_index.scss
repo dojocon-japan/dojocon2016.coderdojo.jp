@@ -1015,11 +1015,11 @@
 				left top,
 				right top,
 				right bottom;
-			background-size: 50% 50%;
+			background-size: 55% 55%; // CSS hack for Chrome. Properly: `50% 50%`
 			background-repeat: no-repeat;
 			margin-left: -1px;
 			margin-bottom: -1px;
-			padding: 1px;
+			padding: 1px 1px 2px;
 			position: relative;
 
 			&:before {
