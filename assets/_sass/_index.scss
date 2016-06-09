@@ -566,6 +566,21 @@
 		margin-right: 480px;
 	}
 
+	.fade-out-overlay {
+		margin: auto;
+		max-width: 1000px;
+		position: relative;
+
+		&:after {
+			@include position(absolute, auto 30px 0 0);
+			background: linear-gradient(transparent, $clouds);
+			content: "";
+			display: block;
+			height: 100px;
+			z-index: 5;
+		}
+	}
+
 	.posts-outer {
 		height: 500px;
 		margin: auto;
@@ -574,6 +589,7 @@
 
 		.posts {
 			@include outer-container;
+			margin-bottom: 100px;
 
 			> li {
 				@include span-columns(6);
