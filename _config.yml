@@ -22,12 +22,13 @@ exclude:
   - npm-debug.log
   - README.md
   - LICENSE
+
 compress_html:
   clippings: all
   comments: all
   endings: all
-  ignore:
-    envs: [development]
+  # ignore:
+  #   envs: [development]
   # blanklines: true
   # profile: true
   startings: [html, head, body]

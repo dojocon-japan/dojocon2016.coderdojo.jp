@@ -1,4 +1,14 @@
 <footer class="footer">
+	<div class="site-share">
+		<ul class="share-links icon-share">
+			<li><a href="https://www.facebook.com/sharer.php?u={{ '/' | prepend: site.url }}" class="icon-facebook-circle" target="_blank"></a></li>
+			<li><a href="https://twitter.com/share?
+				url={{ '/' | prepend: site.url }}&
+				text={{ site.title }}&
+				hashtags={{ site.twitter.hashtag }}&
+				via={{ site.twitter.id }}" class="icon-twitter-circle" target="_blank"></a></li>
+		</ul>
+	</div>
 	<a href="#pagetop" class="goto-pagetop icon-angle-up">Page Top</a>
 	<p class="copyright">© DojoCon Japan 2016</p>
 </footer>

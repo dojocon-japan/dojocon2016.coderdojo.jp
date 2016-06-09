@@ -383,123 +383,58 @@ strong {
 	}
 } // .header
 
-.sns-section {
-	background: $blue url(../images/ninja.svg) no-repeat center bottom;
-	background-size: 70px;
-	color: #fff;
-	padding-bottom: 70px;
-	position: relative;
+.footer {
 
-	@include yin-yang-ornament(before, yang, gray) {
-		@include position(absolute, -180px 50% auto auto);
-		margin-right: 440px;
-	}
-
-	.fb-tw-widgets {
-		@include outer-container;
-		text-align: center;
-
-		> li {
-			margin-bottom: 20px;
-
-			@include media($s-screen) {
-				@include span-columns(6);
-				@include omega(2n);
-			}
-		}
-	}
-
-	.photo-gallery {
-		margin: 20px -20px 40px -21px;
+	.site-share {
+		background: $blue url(../images/ninja.svg) no-repeat center bottom;
+		background-size: 70px;
+		color: #fff;
+		padding-top: 40px;
+		padding-bottom: 70px;
+		position: relative;
 
 		@include media($s-screen) {
-			margin: 80px -40px 40px -41px;
+			padding-top: 80px;
 		}
 
-		.photos {
+		.share-links {
+			line-height: 2;
+			margin-bottom: 50px;
 			text-align: center;
 
+			@include media($s-screen) {
+				margin-bottom: 80px;
+			}
+
+			&:before {
+				border-right: 1px solid #fff;
+				font-size: 50px;
+				margin-right: 50px;
+				padding-right: 50px;
+				vertical-align: middle;
+			}
+
 			> li {
-				@include size(percentage(1/4) auto);
 				display: inline-block;
-				padding: 0 0 1px 1px;
-				vertical-align: top;
 
-				@include media($xxs-screen) {
-					width: percentage(1/5);
-				}
-
-				@include media($xs-screen) {
-					width: percentage(1/6);
-				}
-
-				@for $i from 7 through 40 {
-
-					@include media($i * 120px) {
-						width: percentage(1/$i);
-					}
+				+ li {
+					margin-left: 20px;
 				}
 
 				a {
-					background-position: 50%;
-					background-size: cover;
-					display: block;
-					height: 0;
-					padding-bottom: 100%;
+
+					&:before {
+						font-size: 32px;
+						vertical-align: middle;
+					}
+
+					&:hover {
+						color: darken(#fff, 5);
+					}
 				}
 			}
 		}
 	}
-
-	.sns-id {
-		font-size: 24px;
-		font-weight: $thin;
-		margin-top: 40px;
-		text-align: center;
-	}
-
-	.sns-links {
-		line-height: 2;
-		margin-top: 40px;
-		margin-bottom: 50px;
-		text-align: center;
-
-		@include media($s-screen) {
-			margin-top: 80px;
-			margin-bottom: 80px;
-		}
-
-		&:before {
-			border-right: 1px solid #fff;
-			font-size: 50px;
-			margin-right: 50px;
-			padding-right: 50px;
-			vertical-align: middle;
-		}
-
-		> li {
-			display: inline-block;
-
-			+ li {
-				margin-left: 20px;
-			}
-
-			a {
-
-				&:before {
-					font-size: 32px;
-					vertical-align: middle;
-				}
-
-				&:hover {
-					color: darken(#fff, 5);
-				}
-			}
-		}
-	}
-}
-
-.footer {
 
 	.goto-pagetop {
 		background: $yellow;

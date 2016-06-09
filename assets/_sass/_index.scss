@@ -1468,3 +1468,78 @@
 		}
 	}
 }
+
+.sns-section {
+	background: $blue;
+	color: #fff;
+	padding-bottom: 0;
+	position: relative;
+
+	@include yin-yang-ornament(before, yang, gray) {
+		@include position(absolute, -180px 50% auto auto);
+		margin-right: 440px;
+	}
+
+	.fb-tw-widgets {
+		@include outer-container;
+		text-align: center;
+
+		> li {
+			margin-bottom: 20px;
+
+			@include media($s-screen) {
+				@include span-columns(6);
+				@include omega(2n);
+			}
+		}
+	}
+
+	.photo-gallery {
+		margin: 20px -20px 0 -21px;
+
+		@include media($s-screen) {
+			margin: 80px -40px 0 -41px;
+		}
+
+		.photos {
+			text-align: center;
+
+			> li {
+				@include size(percentage(1/4) auto);
+				display: inline-block;
+				padding: 0 0 1px 1px;
+				vertical-align: top;
+
+				@include media($xxs-screen) {
+					width: percentage(1/5);
+				}
+
+				@include media($xs-screen) {
+					width: percentage(1/6);
+				}
+
+				@for $i from 7 through 40 {
+
+					@include media($i * 120px) {
+						width: percentage(1/$i);
+					}
+				}
+
+				a {
+					background-position: 50%;
+					background-size: cover;
+					display: block;
+					height: 0;
+					padding-bottom: 100%;
+				}
+			}
+		}
+	}
+
+	.sns-id {
+		font-size: 24px;
+		font-weight: $thin;
+		margin-top: 40px;
+		text-align: center;
+	}
+}
