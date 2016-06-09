@@ -572,7 +572,7 @@
 		position: relative;
 
 		&:after {
-			@include position(absolute, auto 30px 0 0);
+			@include position(absolute, auto 0 0 0);
 			background: linear-gradient(transparent, $clouds);
 			content: "";
 			display: block;
