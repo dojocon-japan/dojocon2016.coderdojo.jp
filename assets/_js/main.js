@@ -8,6 +8,9 @@ var xlScreen = 1440;
 
 $(function() {
 
+/**
+ * Global menu on mobiles and tablets
+ */
 $('.js-menu-trigger, .js-menu-screen, .js-menu-close').on('click touchstart', function (e) {
   $('.js-menu, .js-menu-screen').toggleClass('is-visible');
   e.preventDefault();
@@ -19,6 +22,9 @@ $('.js-menu .nav a:not(.js-child-menu-trigger)').on('click', function () {
   }
 });
 
+/**
+ * Child menu in the global menu
+ */
 var icon;
 $('.js-child-menu-trigger').attr('href', '').on('click', function (e) {
   icon = $(this).attr('data-icon');
@@ -27,6 +33,9 @@ $('.js-child-menu-trigger').attr('href', '').on('click', function (e) {
   e.preventDefault();
 });
 
+/**
+ * Global menu on desktops
+ */
 var timer = false;
 $(window).on('load scroll', function() {
   if (timer) clearTimeout(timer);
@@ -39,6 +48,10 @@ $(window).on('load scroll', function() {
   }, 100);
 });
 
+/**
+ * Speaker modal window
+ * @use Fancybox
+ */
 $('.js-speaker-profile-trigger')
   .each(function (index, el) {
     $(this)
@@ -52,6 +65,10 @@ $('.js-speaker-profile-trigger')
     scrolling: 'visible'
   });
 
+/**
+ * Photo gallery modal window
+ * @use Fancybox
+ */
 $('.js-photos > li > a')
   .attr('rel', 'photo-gallery')
   .fancybox({
@@ -67,6 +84,10 @@ $('.js-photos > li > a')
 
 }); // end $(function(){});
 
+/**
+ * Google Maps
+ * @require Google Maps API
+ */
 google.maps.event.addDomListener(window, 'load', function(){
   var latlng = new google.maps.LatLng(34.6794953, 135.513265);
   var options = {
