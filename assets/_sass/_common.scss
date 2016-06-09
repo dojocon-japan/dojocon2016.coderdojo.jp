@@ -385,6 +385,54 @@ strong {
 
 .footer {
 
+	.page-share {
+
+		.share-links {
+			@include clearfix;
+
+			> li {
+				color: #fff;
+				text-align: center;
+				text-transform: uppercase;
+
+				a {
+					display: block;
+					padding: 16px 1em;
+
+					@include media($xxs-screen) {
+						padding: 26px 1em;
+					}
+				}
+
+				@include media($xxs-screen) {
+					float: left;
+					width: percentage(1/3);
+				}
+
+				&.facebook {
+
+					> a {
+						background: $facebook_brand_color;
+					}
+				}
+
+				&.twitter {
+
+					> a {
+						background: $twitter_brand_color;
+					}
+				}
+
+				&.line {
+
+					> a {
+						background: $line_brand_color;
+					}
+				}
+			}
+		}
+	}
+
 	.site-share {
 		background: $blue url(../images/ninja.svg) no-repeat center bottom;
 		background-size: 70px;
@@ -443,7 +491,7 @@ strong {
 		font-family: $oswald;
 		font-size: 16px;
 		line-height: 1.2;
-		padding: 13px 20px 20px;
+		padding: 15px 20px 24px;
 		text-align: center;
 		text-transform: uppercase;
 
