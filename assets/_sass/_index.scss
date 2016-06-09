@@ -1399,6 +1399,81 @@
 	}
 }
 
+.session-detail-box {
+	@include outer-container;
+	background: #fff;
+	color: $default-font-color;
+	padding: 40px 20px;
+	position: relative;
+	z-index: 2;
+
+	@include media($s-screen) {
+		padding: 80px 80px;
+	}
+
+	@include media($m-screen) {
+		padding: 80px 100px;
+	}
+
+	.session-detail-box-label {
+		background: $default-font-color;
+		border-radius: 4px;
+		color: #fff;
+		display: inline-block;
+		font-size: 13px;
+		font-weight: $regular;
+		margin-bottom: 10px;
+		padding: 0 1.5em;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.session-title {
+		font-size: 20px;
+		font-weight: $medium;
+		line-height: 1.5;
+		margin-bottom: 10px;
+
+		@include media($s-screen) {
+			font-size: 22px;
+		}
+	}
+
+	.session-time {
+		font-size: 16px;
+		font-weight: $thin;
+		margin: 10px 0;
+	}
+
+	.speaker-name {
+		font-size: 16px;
+		font-weight: $medium;
+	}
+
+	.session-detail {
+		font-size: 14px;
+		font-weight: $light;
+		margin-top: 1em;
+		text-align: left;
+
+		p {
+			margin-bottom: .5 * $line-height * 1em;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.speaker-avator {
+		@include size(100px);
+		border-radius: 100px;
+		float: right;
+		margin-top: 30px;
+		overflow: hidden;
+	}
+}
+
 .contact-section {
 	background: $clouds;
 	color: $blue;

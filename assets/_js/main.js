@@ -49,7 +49,7 @@ $(window).on('load scroll', function() {
 });
 
 /**
- * Speaker modal window
+ * Speaker profile modal window
  * @use Fancybox
  */
 $('.js-speaker-profile-box').hide();
@@ -60,6 +60,24 @@ $('.js-speaker-profile-trigger')
       .attr('href', '');
   })
   .attr('rel', 'speakers')
+  .fancybox({
+    maxWidth: 940,
+    padding: 0,
+    scrolling: 'visible'
+  });
+
+/**
+ * Session detail modal window
+ * @use Fancybox
+ */
+$('.js-session-detail-box').hide();
+$('.js-session-detail-trigger')
+  .each(function (index, el) {
+    $(this)
+      .attr('data-fancybox-href', $(this).attr('href'))
+      .attr('href', '');
+  })
+  .attr('rel', 'sessions')
   .fancybox({
     maxWidth: 940,
     padding: 0,
