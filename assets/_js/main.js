@@ -52,6 +52,7 @@ $(window).on('load scroll', function() {
  * Speaker modal window
  * @use Fancybox
  */
+$('.js-speaker-profile-box').hide();
 $('.js-speaker-profile-trigger')
   .each(function (index, el) {
     $(this)
