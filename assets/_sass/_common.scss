@@ -413,6 +413,10 @@ strong {
 
 					> a {
 						background: $facebook_brand_color;
+
+						&:hover {
+							background: darken($facebook_brand_color, 5);
+						}
 					}
 				}
 
@@ -420,6 +424,10 @@ strong {
 
 					> a {
 						background: $twitter_brand_color;
+
+						&:hover {
+							background: darken($twitter_brand_color, 5);
+						}
 					}
 				}
 
@@ -427,6 +435,10 @@ strong {
 
 					> a {
 						background: $line_brand_color;
+
+						&:hover {
+							background: darken($line_brand_color, 5);
+						}
 					}
 				}
 			}
