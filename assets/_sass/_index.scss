@@ -1029,6 +1029,16 @@
 				z-index: -1;
 			}
 		}
+
+		a {
+
+			&:hover {
+
+				img {
+					opacity: .7;
+				}
+			}
+		}
 	}
 
 	.gold-sponsors {
