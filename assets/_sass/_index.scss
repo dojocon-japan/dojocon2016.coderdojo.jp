@@ -527,11 +527,26 @@
 		.pipi {
 			@include position(absolute, 15% 25% auto auto);
 			@include size(16% auto);
+			animation-duration: .75s;
+			animation-delay: 5s;
+			animation-fill-mode: both;
+			opacity: 0;
+
+			&.flash {
+				animation-name: flash;
+			}
 		}
 
 		.robot {
 			@include position(absolute, 35% auto auto 5%);
 			@include size(60% auto);
+			transition: all 5s linear;
+
+			&.start-position {
+				left: -60%;
+				top: 50%;
+				transition: all 0s linear;
+			}
 		}
 	}
 }

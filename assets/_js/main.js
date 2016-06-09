@@ -101,6 +101,24 @@ $('.js-photos > li > a')
     }
   });
 
+var timer2 = false;
+var robotTop, robotH, winH, scrollTop;
+$('.js-robot').addClass('start-position');
+$(window).on('load scroll resize', function() {
+  winH = $(window).height();
+  robotH = $('.js-robot').height();
+  robotTop = $('.js-robot').offset().top;
+  scrollTop = $(window).scrollTop();
+
+  if (timer2) clearTimeout(timer2);
+  timer2 = setTimeout(function() {
+    if (scrollTop > robotTop - winH + robotH) {
+      $('.js-robot').removeClass('start-position');
+      $('.js-pipi').addClass('flash');
+    }
+  }, 100);
+});
+
 }); // end $(function(){});
 
 /**
