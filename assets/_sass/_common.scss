@@ -389,12 +389,12 @@ strong {
 		background: $blue url(../images/ninja.svg) no-repeat center bottom;
 		background-size: 70px;
 		color: #fff;
-		padding-top: 40px;
+		padding-top: 60px;
 		padding-bottom: 70px;
 		position: relative;
 
 		@include media($s-screen) {
-			padding-top: 80px;
+			padding-top: 100px;
 		}
 
 		.share-links {
