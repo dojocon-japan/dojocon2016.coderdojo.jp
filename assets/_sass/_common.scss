@@ -540,11 +540,12 @@ strong {
 .fancybox-nav {
 	display: inline-block;
 	height: auto;
-	top: 90px;
+	position: fixed;
+	top: 50%;
 	width: auto;
 
 	@include media($s-screen) {
-		top: 50%;
+		position: absolute;
 	}
 }
 
@@ -556,7 +557,7 @@ strong {
 	display: inline-block;
 	font-size: 24px;
 	line-height: 75px;
-	margin-top: 0;
+	margin-top: -.5 * 75px;
 	text-align: center;
 	visibility: visible;
 
