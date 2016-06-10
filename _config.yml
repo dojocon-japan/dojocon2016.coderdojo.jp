@@ -8,6 +8,9 @@ baseurl: ''
 entryurl: ''
 venueurl: http://www.uchida.co.jp/company/showroom/canvas/osaka/
 
+sponsorform_url: https://docs.google.com/forms/d/1mXQ45DxPV9le-_cGRSXaMbF5eSHDt1ipM_duBuUwwJg/viewform
+contactform_url: https://docs.google.com/forms/d/1jOp-orD2XQovdp7g3QeJF7wFcp9poNRga_bpnMCYf8Q/viewform
+
 twitter:
   id: DojoConJapan
   hashtag: DojoConJP
