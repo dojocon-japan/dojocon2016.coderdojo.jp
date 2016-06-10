@@ -3,9 +3,7 @@
 		<div class="page-share">
 			<ul class="share-links">
 				<li class="facebook"><a href="https://www.facebook.com/sharer.php?u={{ page.url | prepend: site.url }}" target="_blank">Facebook</a></li>
-				<li class="twitter"><a href="https://twitter.com/share?
-					hashtags={{ site.twitter.hashtag }}&
-					via={{ site.twitter.id }}" target="_blank">Twitter</a></li>
+				<li class="twitter"><a href="https://twitter.com/share?text={{ page.title }}&hashtags={{ site.twitter.hashtag }}&via={{ site.twitter.id }}" target="_blank">Twitter</a></li>
 				<li class="line"><a href="http://line.me/R/msg/text/?{{ page.title }} {{ page.url | prepend: site.url }}" target="_blank">LINE</a></li>
 			</ul>
 		</div>
@@ -13,10 +11,7 @@
 	<div class="site-share">
 		<ul class="share-links icon-share">
 			<li><a href="https://www.facebook.com/sharer.php?u={{ '/' | prepend: site.url }}" class="icon-facebook-circle" target="_blank"></a></li>
-			<li><a href="https://twitter.com/share?
-				url={{ '/' | prepend: site.url }}&
-				text={{ site.title }}&
-				hashtags={{ site.twitter.hashtag }}&
+			<li><a href="https://twitter.com/share?url={{ '/' | prepend: site.url }}&text={{ site.title }}&hashtags={{ site.twitter.hashtag }}&
 				via={{ site.twitter.id }}" class="icon-twitter-circle" target="_blank"></a></li>
 		</ul>
 	</div>
