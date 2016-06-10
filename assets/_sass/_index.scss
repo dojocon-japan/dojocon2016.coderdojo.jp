@@ -997,7 +997,8 @@
 .sponsor-section {
 	background: linear-gradient(darken($blue, 3) 50%, $yellow 50%);
 	position: relative;
-	transform: skewY(0);
+	margin-bottom: -1px; // CSS hack for FireFox. This is needed when `transform: skewY(0)` is used.
+	transform: skewY(0); // CSS hack for Chrome. To reduce jaggies of the before pseudo element.
 
 	&:before {
 		@include position(absolute, 0);
@@ -1062,7 +1063,7 @@
 				left top,
 				right top,
 				right bottom;
-			background-size: 55% 55%; // CSS hack for Chrome. Properly: `50% 50%`
+			background-size: 55% 55%; // CSS hack for Chrome. The original is `50% 50%`.
 			background-repeat: no-repeat;
 			margin-left: -1px;
 			margin-bottom: -1px;
