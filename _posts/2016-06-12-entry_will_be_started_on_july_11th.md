@@ -2,9 +2,6 @@
 layout: post
 title: 7月11日より参加受付開始します
 date: 2016-06-12
-categories:
-  - jekyll
-  - update
 thumbnail: 
 ---
 
