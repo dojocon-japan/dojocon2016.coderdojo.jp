@@ -8,4 +8,4 @@ DojoCon Japanが正式にCoderDojoファウンデーションよりDojoConの１
 
 We’re happy to announce CoderDojo Foundation will be an official supporter for DojoCon Japan 2016.  
 Thank you CoderDojo Foundation!  
-[https:/.com/coderdojo/](https:/.com/coderdojo/)
+[https://coderdojo.com/](https://coderdojo.com/)
