@@ -19,10 +19,10 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:image" content="{% if page.ogp_image %}{{ site.url }}{{ site.baseurl }}/assets/images/{{ page.ogp_image }}{% else %}{{ site.url }}{{ site.baseurl }}/assets/images/ogp.png{% endif %}">
+<meta property="og:image" content="{% if page.ogp_image %}{{ page.ogp_image | prepend: site.baseurl | prepend: site.url }}{% elsif page.thumbnail %}{{ page.thumbnail | prepend: site.baseurl | prepend: site.url }}{% else %}{{ '/assets/images/ogp.png' | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta name="twitter:image" content="{% if page.ogp_image %}{{ site.url }}{{ site.baseurl }}/assets/images/{{ page.ogp_image }}{% else %}{{ site.url }}{{ site.baseurl }}/assets/images/ogp.png{% endif %}">
+<meta name="twitter:image" content="{% if page.ogp_image %}{{ page.ogp_image | prepend: site.baseurl | prepend: site.url }}{% elsif page.thumbnail %}{{ page.thumbnail | prepend: site.baseurl | prepend: site.url }}{% else %}{{ '/assets/images/ogp.png' | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 </head>
 <body id="pagetop" class="{% if page.url == homeurl %}home{% elsif page.layout == 'post' %}post{% else %}page{% endif %}">
 
