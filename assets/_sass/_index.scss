@@ -1615,6 +1615,14 @@
 			.member-name {
 				font-size: 16px;
 				font-weight: $light;
+
+				a {
+					text-decoration: underline;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
 			}
 		}
 	}
