@@ -15,6 +15,7 @@ $icon-angle-up: "\e90d";
 $icon-close: "\e90e";
 $icon-chevron-left: "\e90f";
 $icon-chevron-right: "\e910";
+$icon-desktop-circle: "\e911";
 
 @mixin dojoicon($icon: false, $position: 'before') {
 
@@ -41,11 +42,11 @@ $icon-chevron-right: "\e910";
 
 @font-face {
 	font-family: 'dojoicon';
-	src: url('../fonts/dojoicon.eot?534bzv');
-	src: url('../fonts/dojoicon.eot?534bzv#iefix') format('embedded-opentype'),
-	     url('../fonts/dojoicon.ttf?534bzv') format('truetype'),
-	     url('../fonts/dojoicon.woff?534bzv') format('woff'),
-	     url('../fonts/dojoicon.svg?534bzv#dojoicon') format('svg');
+	src: url('../fonts/dojoicon.eot?99ypgx');
+	src: url('../fonts/dojoicon.eot?99ypgx#iefix') format('embedded-opentype'),
+	     url('../fonts/dojoicon.ttf?99ypgx') format('truetype'),
+	     url('../fonts/dojoicon.woff?99ypgx') format('woff'),
+	     url('../fonts/dojoicon.svg?99ypgx#dojoicon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -104,4 +105,7 @@ $icon-chevron-right: "\e910";
 }
 .icon-chevron-right:before {
 	content: $icon-chevron-right;
+}
+.icon-desktop-circle:before {
+	content: $icon-desktop-circle;
 }
