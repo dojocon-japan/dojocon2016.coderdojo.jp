@@ -2,7 +2,7 @@
 layout: post
 title: こどもの日1万人プログラミングイベントが各地で開催
 date: 2016-05-05
-thumbnail: /assets/news/images/2016-05-05-thumbnail.jpg
+thumbnail: /assets/images/2016-05-05-thumbnail.jpg
 ---
 世界的子ども向けプログラミング教育推進運動「Hour of Code」 がこどもの日に1万人の子供にプログラミング体験イベントを全国同時開催。  
 たくさんの子供たちが、はじめてのプログラム体験を行いました。  

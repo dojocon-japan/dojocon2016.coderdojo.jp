@@ -2,7 +2,7 @@
 layout: post
 title: DojoCon Japan 2016の開催日時と場所が決定
 date: 2016-03-28
-thumbnail: /assets/news/images/2016-03-28-thumbnail.jpg
+thumbnail: /assets/images/2016-03-28-thumbnail.jpg
 ---
 日本ではじめてのDojoConであるDojoCon Japan 2016の開催日と場所が決定しました。
 
