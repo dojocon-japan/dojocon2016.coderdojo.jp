@@ -1425,11 +1425,16 @@
 				figure {
 					text-align: center;
 					position: relative;
+
 					figcaption{
+						@include position(absolute, auto 0 0 auto);
+						background: $blue;
+						color: #fff;
 						font-size: 11px;
-						@include position(absolute, auto 5px -20px auto);
+						padding: 0 .5em;
 					}
 				}
+
 				&:nth-child(-n+3){
 					height: auto;
 					@include media($s-screen) {
