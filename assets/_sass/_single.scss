@@ -1,4 +1,5 @@
-.post {
+.post,
+.page {
 
 	.menu {
 
@@ -25,7 +26,8 @@
 	}
 }
 
-.post-header {
+.post-header,
+.page-header {
 	@include outer-container;
 	margin-top: 30px;
 	margin-bottom: 40px;
@@ -44,7 +46,8 @@
 		margin-top: 150px;
 	}
 
-	.archive-title {
+	.archive-title,
+	.page-title-en {
 		color: $blue;
 		display: inline-block;
 		margin-bottom: 10px;
@@ -97,7 +100,8 @@
 		}
 	}
 
-	.post-title {
+	.post-title,
+	.page-title {
 		font-size: 24px;
 		font-weight: $regular;
 		line-height: 1.5;
@@ -109,13 +113,19 @@
 		}
 	}
 
-	.post-meta {
+	.page-title-en + .page-title {
+		margin-top: 0;
+	}
+
+	.post-meta,
+	.page-meta {
 		font-size: 15px;
 		font-weight: $light;
 		margin: 1em 0;
 	}
 
-	.post-thumbnail {
+	.post-thumbnail,
+	.page-thumbnail {
 		margin: 40px -20px;
 
 		@include media($m-screen) {
@@ -134,7 +144,8 @@
 }
 
 
-.post-content {
+.post-content,
+.page-content {
 	@include outer-container;
 	padding: 0 20px 100px;
 
