@@ -2,7 +2,7 @@
 layout: post
 title: DojoCon JapanがCoderDojoファウンデーションより正式の承認
 date: 2016-05-06
-thumbnail: /assets/news/images/2016-05-06-thumbnail.jpg
+thumbnail: /assets/images/2016-05-06-thumbnail.jpg
 ---
 DojoCon Japanが正式にCoderDojoファウンデーションよりDojoConの１つとして承認されました。これによりCoderDojoファウンデーションによる正式なアナウンスなどもサポートされます。  
 

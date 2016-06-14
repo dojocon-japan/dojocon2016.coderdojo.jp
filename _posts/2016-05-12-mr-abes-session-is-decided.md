@@ -2,7 +2,7 @@
 layout: post
 title: 『わくプロ』の阿部先生が基調講演に登壇！
 date: 2016-05-12
-thumbnail: /assets/news/images/2016-05-12-thumbnail.jpg
+thumbnail: /assets/images/2016-05-12-thumbnail.jpg
 ---
 日本Scratch界の第一人者であり、『小学生からはじめるわくわくプログラミング』の著者でもある阿部 和広先生にDojoCon Japanの基調講演をしていただくことになりました。  
 2016年3月にはNHK Eテレで『Why!?プログラミング』の監修もされた阿部先生にプログラミング教育についてお話しいただきます。  

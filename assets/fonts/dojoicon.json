@@ -8,43 +8,24 @@
 					"M0 423.808h1024v176.416h-1024v-176.416z",
 					"M0 776.672h1024v176.416h-1024v-176.416z"
 				],
-				"attrs": [
-					{
-						"fill": "rgb(77, 77, 77)"
-					},
-					{
-						"fill": "rgb(77, 77, 77)"
-					},
-					{
-						"fill": "rgb(77, 77, 77)"
-					}
-				],
+				"attrs": [],
 				"isMulticolor": false,
 				"tags": [
 					"bar"
 				],
-				"grid": 0
+				"grid": 0,
+				"colorPermutations": {}
 			},
-			"attrs": [
-				{
-					"fill": "rgb(77, 77, 77)"
-				},
-				{
-					"fill": "rgb(77, 77, 77)"
-				},
-				{
-					"fill": "rgb(77, 77, 77)"
-				}
-			],
+			"attrs": [],
 			"properties": {
-				"order": 18,
+				"order": 89,
 				"id": 0,
 				"prevSize": 24,
 				"code": 59648,
 				"name": "bar"
 			},
-			"setIdx": 3,
-			"setId": 3,
+			"setIdx": 0,
+			"setId": 18,
 			"iconIdx": 0
 		},
 		{
@@ -57,18 +38,19 @@
 				"tags": [
 					"facebook-circle"
 				],
-				"grid": 0
+				"grid": 0,
+				"colorPermutations": {}
 			},
 			"attrs": [],
 			"properties": {
-				"order": 17,
+				"order": 88,
 				"id": 1,
 				"prevSize": 24,
 				"code": 59649,
 				"name": "facebook-circle"
 			},
-			"setIdx": 3,
-			"setId": 3,
+			"setIdx": 0,
+			"setId": 18,
 			"iconIdx": 1
 		},
 		{
@@ -81,18 +63,19 @@
 				"tags": [
 					"twitter-circle"
 				],
-				"grid": 0
+				"grid": 0,
+				"colorPermutations": {}
 			},
 			"attrs": [],
 			"properties": {
-				"order": 16,
+				"order": 87,
 				"id": 2,
 				"prevSize": 24,
 				"code": 59650,
 				"name": "twitter-circle"
 			},
-			"setIdx": 3,
-			"setId": 3,
+			"setIdx": 0,
+			"setId": 18,
 			"iconIdx": 2
 		},
 		{
@@ -105,18 +88,19 @@
 				"tags": [
 					"flag"
 				],
-				"grid": 0
+				"grid": 0,
+				"colorPermutations": {}
 			},
 			"attrs": [],
 			"properties": {
-				"order": 15,
+				"order": 86,
 				"id": 3,
 				"prevSize": 24,
 				"code": 59651,
 				"name": "flag"
 			},
-			"setIdx": 3,
-			"setId": 3,
+			"setIdx": 0,
+			"setId": 18,
 			"iconIdx": 3
 		},
 		{
@@ -129,18 +113,19 @@
 				"tags": [
 					"location"
 				],
-				"grid": 0
+				"grid": 0,
+				"colorPermutations": {}
 			},
 			"attrs": [],
 			"properties": {
-				"order": 14,
+				"order": 85,
 				"id": 4,
 				"prevSize": 24,
 				"code": 59652,
 				"name": "location"
 			},
-			"setIdx": 3,
-			"setId": 3,
+			"setIdx": 0,
+			"setId": 18,
 			"iconIdx": 4
 		},
 		{
@@ -153,18 +138,19 @@
 				"tags": [
 					"o-clock"
 				],
-				"grid": 0
+				"grid": 0,
+				"colorPermutations": {}
 			},
 			"attrs": [],
 			"properties": {
-				"order": 13,
+				"order": 84,
 				"id": 5,
 				"prevSize": 24,
 				"code": 59653,
 				"name": "10-o-clock"
 			},
-			"setIdx": 3,
-			"setId": 3,
+			"setIdx": 0,
+			"setId": 18,
 			"iconIdx": 5
 		},
 		{
@@ -177,18 +163,19 @@
 				"tags": [
 					"o-clock"
 				],
-				"grid": 0
+				"grid": 0,
+				"colorPermutations": {}
 			},
 			"attrs": [],
 			"properties": {
-				"order": 12,
+				"order": 83,
 				"id": 6,
 				"prevSize": 24,
 				"code": 59654,
 				"name": "11-o-clock"
 			},
-			"setIdx": 3,
-			"setId": 3,
+			"setIdx": 0,
+			"setId": 18,
 			"iconIdx": 6
 		},
 		{
@@ -201,18 +188,19 @@
 				"tags": [
 					"o-clock"
 				],
-				"grid": 0
+				"grid": 0,
+				"colorPermutations": {}
 			},
 			"attrs": [],
 			"properties": {
-				"order": 11,
+				"order": 82,
 				"id": 7,
 				"prevSize": 24,
 				"code": 59655,
 				"name": "12-o-clock"
 			},
-			"setIdx": 3,
-			"setId": 3,
+			"setIdx": 0,
+			"setId": 18,
 			"iconIdx": 7
 		},
 		{
@@ -225,18 +213,19 @@
 				"tags": [
 					"o-clock"
 				],
-				"grid": 0
+				"grid": 0,
+				"colorPermutations": {}
 			},
 			"attrs": [],
 			"properties": {
-				"order": 10,
+				"order": 81,
 				"id": 8,
 				"prevSize": 24,
 				"code": 59656,
 				"name": "1-o-clock"
 			},
-			"setIdx": 3,
-			"setId": 3,
+			"setIdx": 0,
+			"setId": 18,
 			"iconIdx": 8
 		},
 		{
@@ -249,18 +238,19 @@
 				"tags": [
 					"o-clock"
 				],
-				"grid": 0
+				"grid": 0,
+				"colorPermutations": {}
 			},
 			"attrs": [],
 			"properties": {
-				"order": 9,
+				"order": 80,
 				"id": 9,
 				"prevSize": 24,
 				"code": 59657,
 				"name": "2-o-clock"
 			},
-			"setIdx": 3,
-			"setId": 3,
+			"setIdx": 0,
+			"setId": 18,
 			"iconIdx": 9
 		},
 		{
@@ -273,18 +263,19 @@
 				"tags": [
 					"o-clock"
 				],
-				"grid": 0
+				"grid": 0,
+				"colorPermutations": {}
 			},
 			"attrs": [],
 			"properties": {
-				"order": 8,
+				"order": 79,
 				"id": 10,
 				"prevSize": 24,
 				"code": 59658,
 				"name": "3-o-clock"
 			},
-			"setIdx": 3,
-			"setId": 3,
+			"setIdx": 0,
+			"setId": 18,
 			"iconIdx": 10
 		},
 		{
@@ -297,18 +288,19 @@
 				"tags": [
 					"o-clock"
 				],
-				"grid": 0
+				"grid": 0,
+				"colorPermutations": {}
 			},
 			"attrs": [],
 			"properties": {
-				"order": 7,
+				"order": 78,
 				"id": 11,
 				"prevSize": 24,
 				"code": 59659,
 				"name": "4-o-clock"
 			},
-			"setIdx": 3,
-			"setId": 3,
+			"setIdx": 0,
+			"setId": 18,
 			"iconIdx": 11
 		},
 		{
@@ -321,18 +313,19 @@
 				"tags": [
 					"share"
 				],
-				"grid": 0
+				"grid": 0,
+				"colorPermutations": {}
 			},
 			"attrs": [],
 			"properties": {
-				"order": 6,
+				"order": 77,
 				"id": 12,
 				"prevSize": 24,
 				"code": 59660,
 				"name": "share"
 			},
-			"setIdx": 3,
-			"setId": 3,
+			"setIdx": 0,
+			"setId": 18,
 			"iconIdx": 12
 		},
 		{
@@ -345,18 +338,19 @@
 				"tags": [
 					"angle-up"
 				],
-				"grid": 0
+				"grid": 0,
+				"colorPermutations": {}
 			},
 			"attrs": [],
 			"properties": {
-				"order": 5,
+				"order": 76,
 				"id": 13,
 				"prevSize": 24,
 				"code": 59661,
 				"name": "angle-up"
 			},
-			"setIdx": 3,
-			"setId": 3,
+			"setIdx": 0,
+			"setId": 18,
 			"iconIdx": 13
 		},
 		{
@@ -369,18 +363,19 @@
 				"tags": [
 					"close"
 				],
-				"grid": 0
+				"grid": 0,
+				"colorPermutations": {}
 			},
 			"attrs": [],
 			"properties": {
-				"order": 4,
+				"order": 75,
 				"id": 14,
 				"prevSize": 24,
 				"code": 59662,
 				"name": "close"
 			},
-			"setIdx": 3,
-			"setId": 3,
+			"setIdx": 0,
+			"setId": 18,
 			"iconIdx": 14
 		},
 		{
@@ -390,21 +385,22 @@
 				],
 				"attrs": [],
 				"isMulticolor": false,
-				"grid": 0,
 				"tags": [
 					"chevron-left"
-				]
+				],
+				"grid": 0,
+				"colorPermutations": {}
 			},
 			"attrs": [],
 			"properties": {
-				"order": 22,
+				"order": 74,
 				"id": 15,
 				"prevSize": 24,
 				"code": 59663,
 				"name": "chevron-left"
 			},
-			"setIdx": 3,
-			"setId": 3,
+			"setIdx": 0,
+			"setId": 18,
 			"iconIdx": 15
 		},
 		{
@@ -414,22 +410,49 @@
 				],
 				"attrs": [],
 				"isMulticolor": false,
-				"grid": 0,
 				"tags": [
 					"chevron-right"
-				]
+				],
+				"grid": 0,
+				"colorPermutations": {}
 			},
 			"attrs": [],
 			"properties": {
-				"order": 23,
+				"order": 73,
 				"id": 16,
 				"prevSize": 24,
 				"code": 59664,
 				"name": "chevron-right"
 			},
-			"setIdx": 3,
-			"setId": 3,
+			"setIdx": 0,
+			"setId": 18,
 			"iconIdx": 16
+		},
+		{
+			"icon": {
+				"paths": [
+					"M760.917 314.283h-497.792c-2.688 0-5.035 0.981-6.997 2.944-2.005 1.963-2.987 4.309-2.987 7.040v258.816c0 2.688 0.981 5.035 2.944 6.997s4.309 2.944 6.997 2.944h497.792c2.645 0 4.992-0.981 6.997-2.944 1.92-1.963 2.901-4.309 2.901-6.997v-258.816c0-2.688-0.981-5.035-2.901-6.997-1.963-1.963-4.309-2.987-6.955-2.987z",
+					"M512 0c-282.752 0-512 229.205-512 512s229.248 512 512 512c282.795 0 512-229.248 512-512s-229.205-512-512-512zM810.667 662.699c0 13.696-4.864 25.429-14.635 35.157-9.728 9.771-21.461 14.592-35.115 14.592h-169.259c0 7.723 1.621 15.744 4.949 24.149 3.285 8.363 6.613 15.744 9.941 22.101 3.328 6.272 4.992 10.837 4.949 13.525 0 5.376-1.963 10.027-5.888 13.995-3.968 3.968-8.619 5.931-13.995 5.931h-159.317c-5.376 0-10.069-2.005-13.995-5.931-3.968-3.968-5.931-8.619-5.931-13.995 0-2.901 1.664-7.509 4.992-13.696s6.656-13.44 9.941-21.803c3.328-8.277 4.992-16.384 4.992-24.277h-169.173c-13.696 0-25.429-4.821-35.157-14.592-9.771-9.728-14.635-21.419-14.635-35.157v-338.432c0-13.696 4.864-25.429 14.592-35.157 9.771-9.728 21.461-14.592 35.157-14.592h497.792c13.653 0 25.429 4.864 35.115 14.592 9.813 9.728 14.677 21.419 14.677 35.157v338.432z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"grid": 0,
+				"tags": [
+					"desktop-circle"
+				],
+				"colorPermutations": {}
+			},
+			"attrs": [],
+			"properties": {
+				"order": 93,
+				"id": 17,
+				"prevSize": 24,
+				"code": 59665,
+				"name": "desktop-circle"
+			},
+			"setIdx": 0,
+			"setId": 18,
+			"iconIdx": 17
 		}
 	],
 	"height": 1024,

@@ -1,5 +1,5 @@
 <footer class="footer">
-	{% if page.url != homeurl %}
+	{% if page.layout == 'post' %}
 		<div class="page-share">
 			<ul class="share-links">
 				<li class="facebook"><a href="https://www.facebook.com/sharer.php?u={{ page.url | prepend: site.url }}" target="_blank">Facebook</a></li>
@@ -16,7 +16,7 @@
 		</ul>
 	</div>
 	<a href="#pagetop" class="goto-pagetop icon-angle-up">Page Top</a>
-	<p class="copyright">© DojoCon Japan 2016</p>
+	<p class="copyright">© DojoCon Japan 2016 / [利用しているScratchのブロック画像] CC BY-SA 2.0 / Scratch is developed by the Lifelong Kindergarten Group at the MIT Media Lab. See <a href="http://scratch.mit.edu" target="_blank">http://scratch.mit.edu</a>. / <a href="{{ '/code-of-conduct/' | prepend: site.baseurl }}">行動規範</a></p>
 </footer>
 
 <script src="https://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
