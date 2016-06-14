@@ -237,10 +237,10 @@
 
 	@include media($s-screen) {
 		font-size: 16px;
-		padding: 80px 40px;
+		padding: 100px 40px;
 	}
 
-	@include media($l-screen) {
+	@include media($m-screen) {
 		padding-top: 180px;
 		padding-bottom: 180px;
 	}
@@ -502,7 +502,7 @@
 		position: relative;
 
 		@include media($s-screen) {
-			@include position(absolute, auto 51% 380px auto);
+			@include position(absolute, auto 51% 400px auto);
 			@include size(360px 270px);
 			margin: 0 40px 0 0;
 			padding-bottom: 0;
@@ -511,7 +511,7 @@
 
 		@include media($m-screen) {
 			@include size(480px 360px);
-			bottom: 350px;
+			bottom: 450px;
 		}
 
 		@include media($l-screen) {
@@ -1207,6 +1207,24 @@
 
 		@include media($s-screen) {
 			text-align-last: left;
+		}
+
+		@include media($m-screen) {
+			@include span-columns(6);
+			margin-bottom: 60px;
+		}
+	}
+
+	.timetable-note {
+		margin-bottom: 30px;
+
+		@include media($s-screen) {
+			margin-bottom: 60px;
+		}
+
+		@include media($m-screen) {
+			@include span-columns(6);
+			margin-top: 20px;
 		}
 	}
 
