@@ -22,7 +22,7 @@ install:
 script:
   - jekyll build
   - npm test
-  - htmlproofer ./_site --check-html --url-ignore "/linkedin\.com/"
+  - htmlproofer ./_site --check-html --url-ignore "/jp\.linkedin\.com\/in\/tomomikosaka/","/mymckok\.tumblr\.com/"
 
 # after_success:
 #   - if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "master" ]; then exit 0; fi
