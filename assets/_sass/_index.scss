@@ -1344,8 +1344,8 @@
 			}
 		}
 
-		.session-line,
-		.workshop-line {
+		.sessions-outer,
+		.workshops-outer {
 
 			.sessions,
 			.workshops {
@@ -1355,6 +1355,30 @@
 
 					@include media($s-screen) {
 						padding-left: 10px;
+					}
+
+					&.opening {
+
+						.session-title,
+						.time {
+							display: inline;
+						}
+
+						.time {
+							margin-left: 1em;
+						}
+
+						@include media($xxs-screen) {
+
+							.session-title,
+							.time {
+								display: block;
+							}
+
+							.time {
+								margin-left: 0;
+							}
+						}
 					}
 
 					.session-title,

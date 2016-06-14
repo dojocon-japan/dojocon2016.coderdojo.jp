@@ -2,13 +2,18 @@
 layout: default
 ---
 
-<header class="post-header">
-	<h1 class="post-title">{{ page.title }}</h1>
+<header class="page-header">
+	{% if page.en_title %}
+		<h1 class="page-title-en"><span class="en">{{ page.en_title }}</span></h1>
+	{% endif %}
+	{% if page.title %}
+		<h1 class="page-title">{{ page.title }}</h1>
+	{% endif %}
 	{% if page.thumbnail %}
-		<p class="post-thumbnail"><img src="{{ page.thumbnail }}" alt="{{ page.title }}"></p>
+		<p class="page-thumbnail"><img src="{{ page.thumbnail }}" alt="{{ page.title }}"></p>
 	{% endif %}
 </header>
 
-<article class="post-content">
+<article class="page-content">
 	{{ content }}
 </article>
