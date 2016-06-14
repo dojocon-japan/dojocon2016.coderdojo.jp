@@ -24,7 +24,7 @@
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:image" content="{% if page.ogp_image %}{{ page.ogp_image | prepend: site.baseurl | prepend: site.url }}{% elsif page.thumbnail %}{{ page.thumbnail | prepend: site.baseurl | prepend: site.url }}{% else %}{{ '/assets/images/ogp.png' | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 </head>
-<body id="pagetop" class="{% if page.url == homeurl %}home{% elsif page.layout == 'post' %}post{% else %}page{% endif %}">
+<body id="pagetop" class="{% if page.url == homeurl %}home{% else %}post{% endif %}">
 
 {% if jekyll.environment == 'production' %}
 <script>
