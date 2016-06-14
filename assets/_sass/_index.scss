@@ -1424,6 +1424,11 @@
 
 				figure {
 					text-align: center;
+					position: relative;
+					figcaption{
+						font-size: 11px;
+						@include position(absolute, auto 5px -20px auto);
+					}
 				}
 				&:nth-child(-n+3){
 					height: auto;
