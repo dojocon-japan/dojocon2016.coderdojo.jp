@@ -200,19 +200,19 @@
 
 	ol, ul {
 		margin-bottom: 1.75em;
+		padding-left: 1em;
 
 		ol, ul {
 			margin-bottom: 0;
-			padding-left: 1em;
 		}
 	}
 
 	ol {
-		list-style: decimal inside;
+		list-style: decimal outside;
 	}
 
 	ul {
-		list-style: square inside;
+		list-style: square outside;
 	}
 
 	table {
