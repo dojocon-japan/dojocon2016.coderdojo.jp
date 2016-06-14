@@ -1414,11 +1414,14 @@
 				margin-bottom: 15px;
 
 				@include media($s-screen) {
-					@include span-columns(4);
-					@include omega(3n);
+					@include span-columns(6);
+					@include omega(2n);
 				}
 
 				@include media($m-screen) {
+					@include span-columns(4);
+					@include omega-reset(2n);
+					@include omega(3n);
 					margin-bottom: 20px;
 				}
 
@@ -1435,21 +1438,10 @@
 					}
 				}
 
-				&:nth-child(-n+3){
-					height: auto;
-					@include media($s-screen) {
-						height: 32em;
-					}
-					@include media($m-screen) {
-						height: 28em;//448px;
-					}
-				}
-				// &:nth-child(n+4):nth-child(-n+6){
-				// }
 				.description {
 					font-size: 14px;
 					font-weight: $regular;
-					padding: 1em 1.5em;
+					padding: 1em 1.5em 2em;
 				}
 
 				.exhibition-title {

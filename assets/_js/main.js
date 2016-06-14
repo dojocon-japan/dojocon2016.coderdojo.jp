@@ -101,6 +101,9 @@ $('.js-photos > li > a')
     }
   });
 
+/**
+ * Ardiuno Tank
+ */
 var timer2 = false;
 var robotTop, robotH, winH, scrollTop;
 $('.js-robot').addClass('start-position');
@@ -117,6 +120,20 @@ $(window).on('load scroll resize', function() {
       $('.js-pipi').addClass('flash');
     }
   }, 100);
+});
+
+/**
+ * Exhibition auto height
+ */
+$(window).on('load resize', function() {
+  var exhibitionH = 0;
+  $('.js-exhibitions > li').css('height', 'auto');
+  if ($(window).width() >= 768) {
+    $('.js-exhibitions > li').each(function() {
+      exhibitionH = exhibitionH < $(this).height() ? $(this).height() : exhibitionH;
+    });
+    $('.js-exhibitions > li').css('height', exhibitionH);
+  }
 });
 
 }); // end $(function(){});
