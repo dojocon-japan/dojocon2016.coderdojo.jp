@@ -1357,6 +1357,30 @@
 						padding-left: 10px;
 					}
 
+					&.opening {
+
+						.session-title,
+						.time {
+							display: inline;
+						}
+
+						.time {
+							margin-left: 1em;
+						}
+
+						@include media($xxs-screen) {
+
+							.session-title,
+							.time {
+								display: block;
+							}
+
+							.time {
+								margin-left: 0;
+							}
+						}
+					}
+
 					.session-title,
 					.workshop-title {
 						font-size: 16px;
