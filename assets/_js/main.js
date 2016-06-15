@@ -127,23 +127,27 @@ $('.js-photos > li > a')
 /**
  * Arduino Tank
  */
-var timer2 = false;
-var robotTop, robotH, winH, scrollTop;
-$('.js-robot').addClass('start-position');
-$(window).on('load scroll resize', function () {
-  winH = $(window).height();
-  robotH = $('.js-robot').height();
-  robotTop = $('.js-robot').offset().top;
-  scrollTop = $(window).scrollTop();
+if ($('.js-robot')[0]) {
+  var timer2 = false;
+  var robotTop, robotH, winH, scrollTop;
 
-  if (timer2) clearTimeout(timer2);
-  timer2 = setTimeout(function() {
-    if (scrollTop > robotTop - winH + robotH) {
-      $('.js-robot').removeClass('start-position');
-      $('.js-pipi').addClass('flash');
-    }
-  }, 100);
-});
+  $('.js-robot').addClass('start-position');
+
+  $(window).on('load scroll resize', function () {
+    winH = $(window).height();
+    robotH = $('.js-robot').height();
+    robotTop = $('.js-robot').offset().top;
+    scrollTop = $(window).scrollTop();
+
+    if (timer2) clearTimeout(timer2);
+    timer2 = setTimeout(function() {
+      if (scrollTop > robotTop - winH + robotH) {
+        $('.js-robot').removeClass('start-position');
+        $('.js-pipi').addClass('flash');
+      }
+    }, 100);
+  });
+}
 
 /**
  * Exhibition auto height
@@ -165,18 +169,20 @@ $(window).on('load resize', function () {
  * Google Maps
  * @require Google Maps API
  */
-google.maps.event.addDomListener(window, 'load', function (){
-  var latlng = new google.maps.LatLng(34.6794953, 135.513265);
-  var options = {
-    zoom: 16,
-    center: latlng,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    scrollwheel: false,
-    // draggable: false,
-  };
-  var map = new google.maps.Map(document.getElementById('map'), options);
-  var marker = new google.maps.Marker({
-    position: latlng,
-    map: map
+if ( document.getElementById('map') != null ) {
+  google.maps.event.addDomListener(window, 'load', function (){
+    var latlng = new google.maps.LatLng(34.6794953, 135.513265);
+    var options = {
+      zoom: 16,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      scrollwheel: false,
+      // draggable: false,
+    };
+    var map = new google.maps.Map(document.getElementById('map'), options);
+    var marker = new google.maps.Marker({
+      position: latlng,
+      map: map
+    });
   });
-});
+}
