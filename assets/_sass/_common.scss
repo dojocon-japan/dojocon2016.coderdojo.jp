@@ -75,6 +75,7 @@ strong {
 		@include media($xl-screen) {
 			overflow: visible;
 			transform: translateY(0);
+			transition: all .1s linear;
 		}
 
 		&.is-visible {
@@ -339,6 +340,7 @@ strong {
 		}
 
 		&.scrolled {
+			z-index: 2000;
 
 			@include media($xl-screen) {
 				background: $clouds;
