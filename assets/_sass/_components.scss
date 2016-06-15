@@ -90,6 +90,13 @@ button,
 	&.button-block {
 		display: block;
 	}
+
+	&.button-disabled {
+		background: $silver;
+		color: #fff;
+		cursor: default;
+		pointer-events: none;
+	}
 }
 
 @mixin ul() {
