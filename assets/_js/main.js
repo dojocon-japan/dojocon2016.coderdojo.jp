@@ -127,23 +127,25 @@ $('.js-photos > li > a')
 /**
  * Arduino Tank
  */
-if ($('.js-robot')[0]) {
+if ($('.js-tank')[0]) {
+  var $tank = $('.js-tank');
+  var $pipi = $('.js-pipi');
   var timer2 = false;
-  var robotTop, robotH, winH, scrollTop;
+  var tankTop, tankH, winH, scrollTop;
 
-  $('.js-robot').addClass('start-position');
+  $tank.addClass('start-position');
 
   $(window).on('load scroll resize', function () {
     winH = $(window).height();
-    robotH = $('.js-robot').height();
-    robotTop = $('.js-robot').offset().top;
+    tankH = $tank.height();
+    tankTop = $tank.offset().top;
     scrollTop = $(window).scrollTop();
 
     if (timer2) clearTimeout(timer2);
     timer2 = setTimeout(function() {
-      if (scrollTop > robotTop - winH + robotH) {
-        $('.js-robot').removeClass('start-position');
-        $('.js-pipi').addClass('flash');
+      if (scrollTop > tankTop - winH + tankH) {
+        $tank.removeClass('start-position');
+        $pipi.addClass('flash');
       }
     }, 100);
   });

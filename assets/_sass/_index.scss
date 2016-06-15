@@ -495,7 +495,7 @@
 		}
 	}
 
-	.arduino-robot {
+	.arduino-tank {
 		margin-left: -20px;
 		margin-right: -20px;
 		padding-bottom: percentage(480 / 640);
@@ -537,7 +537,7 @@
 			}
 		}
 
-		.robot {
+		.tank {
 			@include position(absolute, 35% auto auto 5%);
 			@include size(60% auto);
 			transition: all 5s linear;
