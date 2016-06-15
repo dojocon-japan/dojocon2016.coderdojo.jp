@@ -54,7 +54,7 @@ $(window).on('load scroll', function() {
  */
 $('.js-speaker-profile-box').hide();
 $('.js-speaker-profile-trigger')
-  .each(function (index, el) {
+  .each(function () {
     $(this)
       .attr('data-fancybox-href', $(this).attr('href'))
       .attr('href', '');
@@ -72,7 +72,7 @@ $('.js-speaker-profile-trigger')
  */
 $('.js-session-detail-box').hide();
 $('.js-session-detail-trigger')
-  .each(function (index, el) {
+  .each(function () {
     $(this)
       .attr('data-fancybox-href', $(this).attr('href'))
       .attr('href', '');
