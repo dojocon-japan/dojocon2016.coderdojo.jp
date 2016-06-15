@@ -37,9 +37,9 @@ $('.js-child-menu-trigger').attr('href', '').on('click', function (e) {
  * Global menu on desktops
  */
 var timer = false;
-$(window).on('load scroll', function() {
+$(window).on('load scroll', function () {
   if (timer) clearTimeout(timer);
-  timer = setTimeout(function() {
+  timer = setTimeout(function () {
     if ($(window).scrollTop() > 70) {
       $('.js-menu').addClass('scrolled');
     } else {
@@ -49,12 +49,35 @@ $(window).on('load scroll', function() {
 });
 
 /**
+ * Universal modal window
+ * @use Fancybox
+ */
+$('.js-fancybox-trigger')
+  .each(function () {
+    $(this)
+      .attr('data-fancybox-href', $(this).attr('href'))
+      .attr('href', '');
+  })
+  .fancybox({
+    maxWidth: 940,
+    padding: 0,
+    scrolling: 'visible'
+  })
+  .on('click', function () {
+    var $principal = $('a[rel][data-fancybox-href="' + $(this).attr('data-fancybox-href') + '"').eq(0);
+    if ($principal[0]) {
+      $principal.trigger('click');
+      return false
+    }
+  });
+
+/**
  * Speaker profile modal window
  * @use Fancybox
  */
 $('.js-speaker-profile-box').hide();
 $('.js-speaker-profile-trigger')
-  .each(function (index, el) {
+  .each(function () {
     $(this)
       .attr('data-fancybox-href', $(this).attr('href'))
       .attr('href', '');
@@ -72,7 +95,7 @@ $('.js-speaker-profile-trigger')
  */
 $('.js-session-detail-box').hide();
 $('.js-session-detail-trigger')
-  .each(function (index, el) {
+  .each(function () {
     $(this)
       .attr('data-fancybox-href', $(this).attr('href'))
       .attr('href', '');
@@ -102,12 +125,12 @@ $('.js-photos > li > a')
   });
 
 /**
- * Ardiuno Tank
+ * Arduino Tank
  */
 var timer2 = false;
 var robotTop, robotH, winH, scrollTop;
 $('.js-robot').addClass('start-position');
-$(window).on('load scroll resize', function() {
+$(window).on('load scroll resize', function () {
   winH = $(window).height();
   robotH = $('.js-robot').height();
   robotTop = $('.js-robot').offset().top;
@@ -125,11 +148,11 @@ $(window).on('load scroll resize', function() {
 /**
  * Exhibition auto height
  */
-$(window).on('load resize', function() {
+$(window).on('load resize', function () {
   var exhibitionH = 0;
   $('.js-exhibitions > li').css('height', 'auto');
   if ($(window).width() >= 768) {
-    $('.js-exhibitions > li').each(function() {
+    $('.js-exhibitions > li').each(function () {
       exhibitionH = exhibitionH < $(this).height() ? $(this).height() : exhibitionH;
     });
     $('.js-exhibitions > li').css('height', exhibitionH);
@@ -142,7 +165,7 @@ $(window).on('load resize', function() {
  * Google Maps
  * @require Google Maps API
  */
-google.maps.event.addDomListener(window, 'load', function(){
+google.maps.event.addDomListener(window, 'load', function (){
   var latlng = new google.maps.LatLng(34.6794953, 135.513265);
   var options = {
     zoom: 16,
