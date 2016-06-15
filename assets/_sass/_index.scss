@@ -1053,28 +1053,32 @@
 		margin-bottom: 1px;
 
 		> li {
-			background:
-				linear-gradient(45deg,  transparent 12px, #fff 12px),
-				linear-gradient(135deg, transparent 12px, #fff 12px),
-				linear-gradient(225deg, transparent 12px, #fff 12px),
-				linear-gradient(315deg, transparent 12px, #fff 12px);
-			background-position:
-				left bottom,
-				left top,
-				right top,
-				right bottom;
-			background-size: 55% 55%; // CSS hack for Chrome. The original is `50% 50%`.
-			background-repeat: no-repeat;
+			border: 1px solid $default-font-color;
+			display: inline-block;
 			margin-left: -1px;
 			margin-bottom: -1px;
 			padding: 1px 1px 2px;
 			position: relative;
 
 			&:before {
-				@include position(absolute, 0);
-				border: 1px solid $default-font-color;
+				@include position(absolute, -1px);
+				background:
+					linear-gradient(45deg,  transparent 12px, #fff 12px),
+					linear-gradient(135deg, transparent 12px, #fff 12px),
+					linear-gradient(225deg, transparent 12px, #fff 12px),
+					linear-gradient(315deg, transparent 12px, #fff 12px);
+				background-position:
+					left bottom,
+					left top,
+					right top,
+					right bottom;
+				background-size: 55% 55%; // CSS hack for Chrome. The original is `50% 50%`.
+				background-repeat: no-repeat;
 				content: "";
-				z-index: -1;
+			}
+
+			* {
+				position: relative;
 			}
 		}
 
@@ -1093,20 +1097,10 @@
 
 		.sponsors {
 			@include clearfix;
+			@include sponsor-grid(1);
 
 			@include media($s-screen) {
-				margin-left: 1px;
-				margin-right: -3px;
-			}
-
-			> li {
-				margin-left: 0;
-
-				@include media($s-screen) {
-					float: left;
-					margin-left: -1px;
-					width: percentage(1/3);
-				}
+				@include sponsor-grid(2);
 			}
 		}
 	}
@@ -1115,20 +1109,10 @@
 
 		.sponsors {
 			@include clearfix;
-			margin-left: 1px;
-			margin-right: -2px;
+			@include sponsor-grid(2);
 
 			@include media($s-screen) {
-				margin-right: -4px;
-			}
-
-			> li {
-				float: left;
-				width: percentage(1/2);
-
-				@include media($s-screen) {
-					width: percentage(1/4);
-				}
+				@include sponsor-grid(4);
 			}
 		}
 	}
@@ -1137,20 +1121,10 @@
 
 		.sponsors {
 			@include clearfix;
-			margin-left: 1px;
-			margin-right: -3px;
+			@include sponsor-grid(3);
 
 			@include media($s-screen) {
-				margin-right: -6px;
-			}
-
-			> li {
-				float: left;
-				width: percentage(1/3);
-
-				@include media($s-screen) {
-					width: percentage(1/6);
-				}
+				@include sponsor-grid(6);
 			}
 		}
 	}

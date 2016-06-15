@@ -117,6 +117,27 @@ button,
 	}
 }
 
+@mixin sponsor-grid($num) {
+
+	@if $num > 1 {
+		margin-left: - floor($num / 2) + 1px;
+		margin-right: - ceil($num / 2) + 0px;
+	} @else {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	> li {
+		@if $num > 1 {
+			margin-left: -1px;
+			width: percentage(1 / $num);
+		} @else {
+			margin-left: 0;
+			width: 100%;
+		}
+	}
+}
+
 @keyframes flash {
 	33%, 100% {
 		opacity: 1;
