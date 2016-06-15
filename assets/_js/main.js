@@ -49,6 +49,29 @@ $(window).on('load scroll', function () {
 });
 
 /**
+ * Universal modal window
+ * @use Fancybox
+ */
+$('.js-fancybox-trigger')
+  .each(function () {
+    $(this)
+      .attr('data-fancybox-href', $(this).attr('href'))
+      .attr('href', '');
+  })
+  .fancybox({
+    maxWidth: 940,
+    padding: 0,
+    scrolling: 'visible'
+  })
+  .on('click', function () {
+    var $principal = $('a[rel][data-fancybox-href="' + $(this).attr('data-fancybox-href') + '"').eq(0);
+    if ($principal[0]) {
+      $principal.trigger('click');
+      return false
+    }
+  });
+
+/**
  * Speaker profile modal window
  * @use Fancybox
  */
