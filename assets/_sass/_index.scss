@@ -931,6 +931,13 @@
 	.session-title {
 		font-size: 16px;
 		font-weight: $medium;
+		a {
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
 
 	.session-time {
