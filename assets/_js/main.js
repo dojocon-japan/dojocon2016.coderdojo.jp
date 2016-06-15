@@ -102,7 +102,7 @@ $('.js-photos > li > a')
   });
 
 /**
- * Ardiuno Tank
+ * Arduino Tank
  */
 var timer2 = false;
 var robotTop, robotH, winH, scrollTop;
