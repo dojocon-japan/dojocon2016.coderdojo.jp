@@ -37,9 +37,9 @@ $('.js-child-menu-trigger').attr('href', '').on('click', function (e) {
  * Global menu on desktops
  */
 var timer = false;
-$(window).on('load scroll', function() {
+$(window).on('load scroll', function () {
   if (timer) clearTimeout(timer);
-  timer = setTimeout(function() {
+  timer = setTimeout(function () {
     if ($(window).scrollTop() > 70) {
       $('.js-menu').addClass('scrolled');
     } else {
@@ -107,7 +107,7 @@ $('.js-photos > li > a')
 var timer2 = false;
 var robotTop, robotH, winH, scrollTop;
 $('.js-robot').addClass('start-position');
-$(window).on('load scroll resize', function() {
+$(window).on('load scroll resize', function () {
   winH = $(window).height();
   robotH = $('.js-robot').height();
   robotTop = $('.js-robot').offset().top;
@@ -125,11 +125,11 @@ $(window).on('load scroll resize', function() {
 /**
  * Exhibition auto height
  */
-$(window).on('load resize', function() {
+$(window).on('load resize', function () {
   var exhibitionH = 0;
   $('.js-exhibitions > li').css('height', 'auto');
   if ($(window).width() >= 768) {
-    $('.js-exhibitions > li').each(function() {
+    $('.js-exhibitions > li').each(function () {
       exhibitionH = exhibitionH < $(this).height() ? $(this).height() : exhibitionH;
     });
     $('.js-exhibitions > li').css('height', exhibitionH);
@@ -142,7 +142,7 @@ $(window).on('load resize', function() {
  * Google Maps
  * @require Google Maps API
  */
-google.maps.event.addDomListener(window, 'load', function(){
+google.maps.event.addDomListener(window, 'load', function (){
   var latlng = new google.maps.LatLng(34.6794953, 135.513265);
   var options = {
     zoom: 16,
