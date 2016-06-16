@@ -2,7 +2,7 @@
 layout: post
 title: 7月11日より参加受付開始します
 date: 2016-06-12
-thumbnail:
+thumbnail: /assets/images/2016-06-12-thumbnail.jpg
 ---
 
 今年初めから準備を進めてきた「DojoCon Japan 2016」、いよいよサイトの正式公開を迎えました。
