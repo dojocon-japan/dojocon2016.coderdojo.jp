@@ -831,7 +831,13 @@
 
 			.speaker-name {
 				font-size: 16px;
+				a {
+					text-decoration: underline;
 
+					&:hover {
+						text-decoration: none;
+					}
+				}
 				@include media($s-screen) {
 					font-size: 19px;
 					font-weight: $medium;
