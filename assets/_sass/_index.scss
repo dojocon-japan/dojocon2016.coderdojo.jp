@@ -1565,7 +1565,11 @@
 	.speaker-avator {
 		margin-top: 30px;
 		text-align: right;
-
+		a {
+			+ a {
+				margin-left: 20px;
+			}
+		}
 		img {
 			@include size(100px);
 			border-radius: 100px;
