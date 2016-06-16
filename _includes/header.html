@@ -15,7 +15,7 @@
 <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | prepend: site.baseurl }}">
 
 <meta property="og:locale" content="ja_JP">
-<meta property="og:type" content="{% if page.url == homeurl %}website{% else %}article{% endif %}">
+<meta property="og:type" content="{% if is_home %}website{% else %}article{% endif %}">
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
@@ -24,7 +24,7 @@
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:image" content="{% if page.ogp_image %}{{ page.ogp_image | prepend: site.baseurl | prepend: site.url }}{% elsif page.thumbnail %}{{ page.thumbnail | prepend: site.baseurl | prepend: site.url }}{% else %}{{ '/assets/images/ogp.png' | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 </head>
-<body id="pagetop" class="{% if page.url == homeurl %}home{% else %}post{% endif %}">
+<body id="pagetop" class="{% if is_home %}home{% else %}post{% endif %}">
 
 {% if jekyll.environment == 'production' %}
 <script>
@@ -56,7 +56,7 @@
 		</div>
 		<nav class="nav">
 			<ul><!--
-			 --><li><a href="{{ '/' | prepend: site.baseurl }}{% if page.url == homeurl %}#pagetop{% endif %}">Home</a></li><!--
+			 --><li><a href="{{ '/' | prepend: site.baseurl }}{% if is_home %}#pagetop{% endif %}">Home</a></li><!--
 			 --><li><a href="{{ '/' | prepend: site.baseurl }}#about" class="child-menu-trigger js-child-menu-trigger" data-icon="＋">About</a>
 						<ul class="child-menu js-child-menu">
 							<li><a href="{{ '/' | prepend: site.baseurl }}#about">About</a></li>

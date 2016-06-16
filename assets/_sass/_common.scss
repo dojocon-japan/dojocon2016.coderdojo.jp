@@ -185,25 +185,25 @@ strong {
 						width: auto;
 					}
 
-					// &:hover {
+					&:hover {
 
-					// 	.child-menu-trigger {
+						// .child-menu-trigger {
 
-					// 		&:after {
+						// 	&:after {
 
-					// 			@include media($xl-screen) {
-					// 				content: "−";
-					// 			}
-					// 		}
-					// 	}
+						// 		@include media($xl-screen) {
+						// 			content: "−";
+						// 		}
+						// 	}
+						// }
 
-					// 	.child-menu {
+						.child-menu {
 
-					// 		@include media($xl-screen) {
-					// 			display: block;
-					// 		}
-					// 	}
-					// }
+							@include media($xl-screen) {
+								display: block;
+							}
+						}
+					}
 
 					> a {
 						border-left: 1px solid $default-font-color;
@@ -257,6 +257,10 @@ strong {
 							@include position(absolute, 100% auto auto 0);
 							color: $default-font-color;
 							width: $xl-screen / 2;
+						}
+
+						&.active {
+							display: block;
 						}
 
 						> li {
