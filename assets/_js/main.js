@@ -29,7 +29,7 @@ var icon;
 $('.js-child-menu-trigger').attr('href', '').on('click', function (e) {
   icon = $(this).attr('data-icon');
   $(this).attr('data-icon', icon == '＋' ? '−' : '＋');
-  $(this).siblings('.js-child-menu').slideToggle('fast');
+  $(this).siblings('.js-child-menu').toggleClass('active');
   e.preventDefault();
 });
 
