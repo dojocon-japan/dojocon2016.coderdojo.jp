@@ -831,7 +831,13 @@
 
 			.speaker-name {
 				font-size: 16px;
+				a {
+					text-decoration: underline;
 
+					&:hover {
+						text-decoration: none;
+					}
+				}
 				@include media($s-screen) {
 					font-size: 19px;
 					font-weight: $medium;
@@ -1559,7 +1565,11 @@
 	.speaker-avator {
 		margin-top: 30px;
 		text-align: right;
-
+		a {
+			+ a {
+				margin-left: 20px;
+			}
+		}
 		img {
 			@include size(100px);
 			border-radius: 100px;
