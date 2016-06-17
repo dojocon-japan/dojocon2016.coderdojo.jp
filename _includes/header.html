@@ -24,7 +24,15 @@
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:image" content="{% if page.ogp_image %}{{ page.ogp_image | prepend: site.baseurl | prepend: site.url }}{% elsif page.thumbnail %}{{ page.thumbnail | prepend: site.baseurl | prepend: site.url }}{% else %}{{ '/assets/images/ogp.png' | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 </head>
-<body id="pagetop" class="{% if is_home %}home{% else %}post{% endif %}">
+<body id="pagetop" class="
+	{% if is_home %}
+		home
+	{% elsif page.layout == 'post' %}
+		post {{ page.url | remove: 'index.html' | remove: '.html' | slugify | prepend: 'post-'}}
+	{% elsif page.layout == 'page' %}
+		page {{ page.url | remove: 'index.html' | remove: '.html' | slugify | prepend: 'page-'}}
+	{% endif %}
+">
 
 {% if jekyll.environment == 'production' %}
 <script>
