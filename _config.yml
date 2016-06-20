@@ -1,7 +1,7 @@
 # Site settings
 title: DojoCon Japan 2016 - The more dojos, the more cool coders. -
 description: あなたも子供がプログラミングで創りたいものをサポートしてみませんか？DojoConは、子供のプログラミングをサポートしてみたいエンジニアや、教育者が集まるカンファレンスです。
-url: test
+url: https://dojocon-japan.github.io
 baseurl: ''
 
 entryurl: ''
