@@ -246,6 +246,36 @@
 	td {
 		background: $clouds;
 	}
+
+	pre, code, kbd, samp, tt{
+		font-family: monospace, monospace;
+	}
+
+	code {
+		background: $code-bg-color;
+		border-radius: 4px;
+		color: $code-font-color;
+		font-family: $inconsolata;
+		padding: 0.15em 0.4em;
+	}
+
+	p, li, dt, dd {
+
+		code {
+			white-space: nowrap;
+		}
+	}
+
+	pre {
+
+		code {
+			display: block;
+			margin: $line-height-px 0;
+			padding: 1em;
+			overflow: auto;
+			line-height: 1.25;
+		}
+	}
 }
 
 body.page-sponsor,
