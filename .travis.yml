@@ -2,15 +2,19 @@ language: node_js
 node_js:
   - '5'
 
-branches:
-  only:
-    - master
-    - release
-
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-    - GITHUB_REPO: 'dojocon-japan/dojocon-japan.github.io'
+    - CNAME: dojocon.coderdojo.jp
+    - GIT_USER: Kite
+    - GIT_EMAIL: ixkaito@gmail.com
+    - GITHUB_RELEASE_REPO: dojocon-japan/dojocon.coderdojo.jp
+    - RELEASE_BRANCH: &release_branch release
+
+branches:
+  only:
+    - master
+    - *release_branch
 
 before_install:
   - rvm install 2.1
@@ -23,9 +27,14 @@ script:
   - jekyll build
   - npm test
   - htmlproofer ./_site --check-html --url-ignore "/jp\.linkedin\.com\/in\/tomomikosaka/","/mymckok\.tumblr\.com/"
+  - if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$RELEASE_BRANCH" ]; then exit 0; fi
+  - if [ ! -f CNAME ]; then touch CNAME; fi
+  - echo $CNAME > CNAME
 
-# after_success:
-#   - if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "master" ]; then exit 0; fi
-#   - git push -f -q "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" master:gh-pages > /dev/null 2>&1
+after_success:
+  - git config user.name "${GIT_USER}"
+  - git config user.email "${GIT_EMAIL}"
+  - git add --all && git commit -m "Deploy from Travis CI"
+  - git push -f -q "https://${GITHUB_TOKEN}@github.com/${GITHUB_RELEASE_REPO}.git" HEAD:gh-pages > /dev/null 2>&1
 
 sudo: false
