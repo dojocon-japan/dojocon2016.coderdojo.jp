@@ -12,27 +12,27 @@ DojoCon Japan 2016のバナーをご用意しました。ブログやサイト�
 ### 234 x 60
 ![234 x 60]({{ '/assets/images/banner-234-60.jpg' | prepend: site.baseurl}})
 
-```
-<a href="{{'/' | prepend: site.baseurl}}"><img src="{{ '/assets/images/banner-234-60.jpg' | prepend: site.baseurl}}" alt="DojoCon Japan 2016"></a>
+```html
+<a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}"><img src="{{ '/assets/images/banner-234-60.jpg' | prepend: site.baseurl | prepend: site.url }}" alt="DojoCon Japan 2016"></a>
 ```
 
 ### 250 x 250
-![250 x 250]({{ '/assets/images/banner-250-250.jpg' | prepend: site.baseurl}})
+![250 x 250]({{ '/assets/images/banner-250-250.jpg' | prepend: site.baseurl | prepend: site.url }})
 
-```
-<a href="{{'/' | prepend: site.baseurl}}"><img src="{{ '/assets/images/banner-250-250.jpg' | prepend: site.baseurl}}" alt="DojoCon Japan 2016"></a>
+```html
+<a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}"><img src="{{ '/assets/images/banner-250-250.jpg' | prepend: site.baseurl | prepend: site.url }}" alt="DojoCon Japan 2016"></a>
 ```
 
 ### 468 x 60
-![468 x 60]({{ '/assets/images/banner-468-60.jpg' | prepend: site.baseurl}})
+![468 x 60]({{ '/assets/images/banner-468-60.jpg' | prepend: site.baseurl | prepend: site.url }})
 
-```
-<a href="{{'/' | prepend: site.baseurl}}"><img src="{{ '/assets/images/banner-468-60.jpg' | prepend: site.baseurl}}" alt="DojoCon Japan 2016"></a>
+```html
+<a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}"><img src="{{ '/assets/images/banner-468-60.jpg' | prepend: site.baseurl | prepend: site.url }}" alt="DojoCon Japan 2016"></a>
 ```
 
 ## プレス用アイキャッチ
-![プレス用アイキャッチ]({{ '/assets/images/eyecatch.jpg' | prepend: site.baseurl}})
+![プレス用アイキャッチ]({{ '/assets/images/eyecatch.jpg' | prepend: site.baseurl | prepend: site.url }})
 
-```
-<a href="{{'/' | prepend: site.baseurl}}"><img src="{{ '/assets/images/eyecatch.jpg' | prepend: site.baseurl}}" alt="DojoCon Japan 2016"></a>
+```html
+<a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}"><img src="{{ '/assets/images/eyecatch.jpg' | prepend: site.baseurl | prepend: site.url }}" alt="DojoCon Japan 2016"></a>
 ```

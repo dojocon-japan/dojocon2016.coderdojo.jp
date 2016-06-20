@@ -18,6 +18,7 @@ $xxs-screen: 480px;
 $hiragino: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 $noto: "Noto Sans CJK JP", $hiragino;
 $oswald: "Oswald", sans-serif;
+$inconsolata: "Inconsolata", monospace;
 
 $thin: 100;
 $light: 200;
@@ -45,6 +46,9 @@ $silver-dark: #aab2bd;
 
 $gray: #656d78;
 $gray-dark: #434a54;
+
+$code-font-color: #f8f8f2;
+$code-bg-color: #282822;
 
 $facebook_brand_color: #4963a1;
 $twitter_brand_color: #58abe8;
