@@ -17,21 +17,21 @@ DojoCon Japan 2016のバナーをご用意しました。ブログやサイト�
 ```
 
 ### 250 x 250
-![250 x 250]({{ '/assets/images/banner-250-250.jpg' | prepend: site.baseurl | prepend: site.url }})
+![250 x 250]({{ '/assets/images/banner-250-250.jpg' | prepend: site.baseurl}})
 
 ```html
 <a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}"><img src="{{ '/assets/images/banner-250-250.jpg' | prepend: site.baseurl | prepend: site.url }}" alt="DojoCon Japan 2016"></a>
 ```
 
 ### 468 x 60
-![468 x 60]({{ '/assets/images/banner-468-60.jpg' | prepend: site.baseurl | prepend: site.url }})
+![468 x 60]({{ '/assets/images/banner-468-60.jpg' | prepend: site.baseurl}})
 
 ```html
 <a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}"><img src="{{ '/assets/images/banner-468-60.jpg' | prepend: site.baseurl | prepend: site.url }}" alt="DojoCon Japan 2016"></a>
 ```
 
 ## プレス用アイキャッチ
-![プレス用アイキャッチ]({{ '/assets/images/eyecatch.jpg' | prepend: site.baseurl | prepend: site.url }})
+![プレス用アイキャッチ]({{ '/assets/images/eyecatch.jpg' | prepend: site.baseurl}})
 
 ```html
 <a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}"><img src="{{ '/assets/images/eyecatch.jpg' | prepend: site.baseurl | prepend: site.url }}" alt="DojoCon Japan 2016"></a>
