@@ -5,7 +5,7 @@ date: 2016-06-27
 thumbnail: /assets/images/2016-06-27-thumbnail.jpg
 ---
 ## DojoCon Japan2016の個人支援をFAAVOでクラウドファウンディングで募集。
-DojoConの支援を企業などの大口スポンサー以外にも個人でご支援頂く方法を検討しました。今回地域を盛り上げるプロジェクトを多く取り扱う[https://faavo.jp/](FAAVO “FAAVO”)
+DojoConの支援を企業などの大口スポンサー以外にも個人でご支援頂く方法を検討しました。今回地域を盛り上げるプロジェクトを多く取り扱う[FAAVO](https://faavo.jp/)
 でプロジェクトを立ち上げて募集をしてみようという結論に至りました。目標金額は20万円。いざ募集を開始してみるまで、本当に集まるだろうか？と不安になっていました。
 
 [https://faavo.jp/osaka/project/1395](https://faavo.jp/osaka/project/1395)
