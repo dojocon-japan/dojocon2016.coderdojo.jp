@@ -9,4 +9,4 @@ thumbnail: /assets/images/2016-06-24-thumbnail.jpg
 早速問い合わせが何件も来て、メディアに取り上げられることで拡散される事を期待します。
 ひいてはCoderDojoに興味を持つ人が増え、CoderDojoが増える事を期待します。
 
-[http://mainichi.jp/articles/20160624/ddl/k27/100/409000c](http://mainichi.jp/articles/20160624/ddl/k27/100/409000c)
+<a href="http://mainichi.jp/articles/20160624/ddl/k27/100/409000c" target="_blank">http://mainichi.jp/articles/20160624/ddl/k27/100/409000c</a>
