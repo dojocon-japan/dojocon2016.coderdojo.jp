@@ -1378,6 +1378,12 @@
 						}
 					}
 
+					.description{
+						margin-top: 10px;
+						font-size: 14px;
+						font-weight: $light;
+					}
+
 					.time {
 						font-size: 14px;
 						font-weight: $light;
@@ -1548,6 +1554,7 @@
 	}
 
 	.session-detail {
+		@include outer-container;
 		font-size: 14px;
 		font-weight: $light;
 		margin-top: 1em;
@@ -1560,6 +1567,24 @@
 				margin-bottom: 0;
 			}
 		}
+
+		.session-detail-text {
+
+			@include media($s-screen) {
+				@include span-columns(8);
+			}
+
+			+ .session-detail-image {
+				margin-top: $line-height * 1em;
+
+				@include media($s-screen) {
+					@include span-columns(4);
+					@include omega;
+					margin-top: 0;
+				}
+			}
+		}
+
 	}
 
 	.speaker-avator {
