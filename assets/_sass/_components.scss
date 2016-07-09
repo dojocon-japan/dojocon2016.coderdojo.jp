@@ -126,13 +126,18 @@ button,
 
 @mixin sponsor-grid($num) {
 
-	@if $num > 1 {
-		margin-left: - floor($num / 2) + 1px;
-		margin-right: - ceil($num / 2) + 0px;
-	} @else {
-		margin-left: 0;
-		margin-right: 0;
-	}
+	// if `text-align: left:`
+	margin-left: 1px;
+	margin-right: - $num * 1px;
+
+	// // if `text-align: center;`
+	// @if $num > 1 {
+	// 	margin-left: - floor($num / 2) + 1px;
+	// 	margin-right: - ceil($num / 2) + 0px;
+	// } @else {
+	// 	margin-left: 0;
+	// 	margin-right: 0;
+	// }
 
 	> li {
 		@if $num > 1 {
