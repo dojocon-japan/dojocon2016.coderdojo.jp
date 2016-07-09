@@ -1125,7 +1125,7 @@
 			@include sponsor-grid(2);
 
 			@include media($s-screen) {
-				@include sponsor-grid(4);
+				@include sponsor-grid(5);
 			}
 		}
 	}
