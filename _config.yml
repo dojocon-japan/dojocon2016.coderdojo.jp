@@ -4,7 +4,10 @@ description: あなたも子供がプログラミングで創りたいものを�
 url: https://dojocon-japan.github.io
 baseurl: ''
 
-entryurl: ''
+entryurl: http://eventregist.com/e/DojoConJapan2016
+workshop_entryurl_1: http://eventregist.com/e/Scratch1
+workshop_entryurl_2: http://eventregist.com/e/Scratch2
+workshop_entryurl_3: http://eventregist.com/e/Scratch3
 venueurl: http://www.uchida.co.jp/company/showroom/canvas/osaka/
 
 sponsorform_url: https://docs.google.com/forms/d/1mXQ45DxPV9le-_cGRSXaMbF5eSHDt1ipM_duBuUwwJg/viewform
