@@ -1055,9 +1055,7 @@
 		}
 	}
 
-	.gold-sponsors,
-	.silver-sponsors,
-	.bronze-sponsors {
+	.sponsor-container {
 		@include outer-container;
 	}
 
@@ -1138,6 +1136,25 @@
 
 			@include media($s-screen) {
 				@include sponsor-grid(6);
+			}
+		}
+	}
+
+	.in-kind-sponsors {
+
+		.sponsors {
+			@include clearfix;
+			@include sponsor-grid(4);
+
+			@include media($s-screen) {
+				@include sponsor-grid(7);
+				text-align: center;
+				margin-left: -3px;
+				margin-right: -4px;
+
+				> li {
+					display: inline-block;
+				}
 			}
 		}
 	}
