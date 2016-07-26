@@ -1148,14 +1148,25 @@
 
 			@include media($s-screen) {
 				@include sponsor-grid(7);
-				text-align: center;
-				margin-left: -3px;
-				margin-right: -4px;
+				// // text-align: center;
+				// // margin-left: -3px;
+				// // margin-right: -4px;
 
-				> li {
-					display: inline-block;
-				}
+				// > li {
+				// 	display: inline-block;
+				// }
 			}
+		}
+	}
+
+	.supports {
+		margin-right: -1em;
+
+		> li {
+			display: inline-block;
+			margin-right: 1em;
+			font-size: 16px;
+			font-weight: $light;
 		}
 	}
 
