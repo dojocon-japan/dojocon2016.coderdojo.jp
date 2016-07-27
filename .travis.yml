@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - '5'
+  - '6'
 
 env:
   global:
@@ -28,7 +28,7 @@ install:
 script:
   - jekyll build
   - npm test
-  - htmlproofer ./_site --check-html --url-ignore "/jp\.linkedin\.com\/in\/tomomikosaka/","/mymckok\.tumblr\.com/"
+  - htmlproofer ./_site --check-html --url-ignore "/jp\.linkedin\.com\/in\/tomomikosaka/","/mymckok\.tumblr\.com/","/facebook\.com/"
   - if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$RELEASE_BRANCH" ]; then exit 0; fi
   - if [ ! -f CNAME ]; then touch CNAME; fi
   - echo $CNAME > CNAME
