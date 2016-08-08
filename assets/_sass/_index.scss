@@ -229,86 +229,89 @@
 	}
 }
 
-[class$="-section"],
-[class*="-section "]{
-	font-size: 14px;
-	font-weight: $medium;
-	padding: 60px 20px;
+.home {
 
-	@include media($s-screen) {
-		font-size: 16px;
-		padding: 100px 40px;
-	}
-
-	@include media($m-screen) {
-		padding-top: 180px;
-		padding-bottom: 180px;
-	}
-
-	.section-title {
-		@include outer-container;
-		font-size: 46px;
-		line-height: 1.5;
-		margin-bottom: 40px;
-		text-align: center;
+	[class$="-section"],
+	[class*="-section "]{
+		font-size: 14px;
+		font-weight: $medium;
+		padding: 60px 20px;
 
 		@include media($s-screen) {
-			font-size: 72px;
+			font-size: 16px;
+			padding: 100px 40px;
 		}
 
-		.section-title-inner {
-			display: inline-block;
-			position: relative;
-
-			@include blockly-divider(begin, before) {
-				@include position(absolute, 58px auto auto -10px);
-				font-size: 81px;
-
-				@include media($s-screen) {
-					top: 96px;
-				}
-			}
-
-			@include blockly-divider(end, after) {
-				@include position(absolute, 58px -10px auto auto);
-				font-size: 81px;
-
-				@include media($s-screen) {
-					top: 96px;
-				}
-			}
+		@include media($m-screen) {
+			padding-top: 180px;
+			padding-bottom: 180px;
 		}
 
-		.en {
-			display: block;
-			font-family: $oswald;
-			font-weight: bold;
-			overflow: hidden;
-			padding: 0 10px;
-			position: relative;
-			text-transform: uppercase;
-
-			@include blockly-divider(middle, before) {
-				@include position(absolute, 58px auto auto 71px);
-				font-size: 81px;
-
-				@include media($s-screen) {
-					top: 96px;
-				}
-			}
-		}
-
-		.ja,
-		.copy {
-			display: block;
-			font-size: 21px;
-			font-weight: $thin;
-			margin-top: 20px;
-			padding: 0 10px;
+		.section-title {
+			@include outer-container;
+			font-size: 46px;
+			line-height: 1.5;
+			margin-bottom: 40px;
+			text-align: center;
 
 			@include media($s-screen) {
-				font-size: 30px;
-				margin-top: 30px;
+				font-size: 72px;
+			}
+
+			.section-title-inner {
+				display: inline-block;
+				position: relative;
+
+				@include blockly-divider(begin, before) {
+					@include position(absolute, 58px auto auto -10px);
+					font-size: 81px;
+
+					@include media($s-screen) {
+						top: 96px;
+					}
+				}
+
+				@include blockly-divider(end, after) {
+					@include position(absolute, 58px -10px auto auto);
+					font-size: 81px;
+
+					@include media($s-screen) {
+						top: 96px;
+					}
+				}
+			}
+
+			.en {
+				display: block;
+				font-family: $oswald;
+				font-weight: bold;
+				overflow: hidden;
+				padding: 0 10px;
+				position: relative;
+				text-transform: uppercase;
+
+				@include blockly-divider(middle, before) {
+					@include position(absolute, 58px auto auto 71px);
+					font-size: 81px;
+
+					@include media($s-screen) {
+						top: 96px;
+					}
+				}
+			}
+
+			.ja,
+			.copy {
+				display: block;
+				font-size: 21px;
+				font-weight: $thin;
+				margin-top: 20px;
+				padding: 0 10px;
+
+				@include media($s-screen) {
+					font-size: 30px;
+					margin-top: 30px;
+				}
 			}
 		}
 	}
@@ -1007,61 +1010,70 @@
 	}
 }
 
-.sponsor-section {
-	background: linear-gradient(darken($blue, 3) 50%, $yellow 50%);
-	position: relative;
-	margin-bottom: -1px; // CSS hack for FireFox. This is needed when `transform: skewY(0)` is used.
-	transform: skewY(0); // CSS hack for Chrome. To reduce jaggies of the before pseudo element.
+.home {
 
-	&:before {
-		@include position(absolute, 0);
-		background: #fff;
-		content: "";
-		display: block;
-		transform: skewY(-7deg);
-		z-index: 0;
-	}
-
-	@include yin-yang-ornament(after, yin, gray) {
-		@include position(absolute, auto auto -190px 50%);
-		margin-left: 420px;
-		z-index: 2;
-	}
-
-	.sponsor-section-inner {
+	.sponsor-section {
+		background: linear-gradient(darken($blue, 3) 50%, $yellow 50%);
 		position: relative;
-		z-index: 1;
-	}
+		margin-bottom: -1px; // CSS hack for FireFox. This is needed when `transform: skewY(0)` is used.
+		transform: skewY(0); // CSS hack for Chrome. To reduce jaggies of the before pseudo element.
 
-	h2 {
-		@include outer-container;
-		border: 1px solid $default-font-color;
-		font-size: 18px;
-		font-weight: $demilight;
-		line-height: 1.5;
-		margin-top: 15px;
-		margin-bottom: 15px;
-		text-align: center;
-
-		@include media($s-screen) {
-			margin-top: 20px;
-			margin-bottom: 20px;
+		&:before {
+			@include position(absolute, 0);
+			background: #fff;
+			content: "";
+			display: block;
+			transform: skewY(-7deg);
+			z-index: 0;
 		}
 
-		@include media($m-screen) {
-			font-size: 20px;
-			margin-top: 30px;
-			margin-bottom: 30px;
+		@include yin-yang-ornament(after, yin, gray) {
+			@include position(absolute, auto auto -190px 50%);
+			margin-left: 420px;
+			z-index: 2;
+		}
+
+		.sponsor-section-inner {
+			position: relative;
+			z-index: 1;
 		}
 	}
+}
+
+.sponsor-section {
 
 	.sponsor-container {
 		@include outer-container;
+
+		h2,
+		.sponsor-rank-title {
+			@include outer-container;
+			border: 1px solid $default-font-color;
+			font-size: 18px;
+			font-weight: $demilight;
+			line-height: 1.5;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			padding: 0;
+			text-align: center;
+
+			@include media($s-screen) {
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+
+			@include media($m-screen) {
+				font-size: 20px;
+				margin-top: 30px;
+				margin-bottom: 30px;
+			}
+		}
 	}
 
 	.sponsors {
 		// text-align: center;
 		margin-bottom: 1px;
+		padding: 0;
 
 		> li {
 			border: 1px solid $default-font-color;
@@ -1622,6 +1634,9 @@
 			+ a {
 				margin-left: 20px;
 			}
+			+ img {
+				margin-left: 20px;
+			}
 		}
 		img {
 			@include size(100px);
@@ -1629,6 +1644,9 @@
 			overflow: hidden;
 
 			+ img {
+				margin-left: 20px;
+			}
+			+ a {
 				margin-left: 20px;
 			}
 		}
