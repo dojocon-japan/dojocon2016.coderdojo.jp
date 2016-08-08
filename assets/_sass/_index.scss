@@ -1622,6 +1622,9 @@
 			+ a {
 				margin-left: 20px;
 			}
+			+ img {
+				margin-left: 20px;
+			}
 		}
 		img {
 			@include size(100px);
@@ -1629,6 +1632,9 @@
 			overflow: hidden;
 
 			+ img {
+				margin-left: 20px;
+			}
+			+ a {
 				margin-left: 20px;
 			}
 		}
