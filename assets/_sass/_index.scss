@@ -1766,6 +1766,34 @@
 		}
 	}
 
+	.supporter-banner{
+		@include outer-container;
+		text-align: center;
+		h2{
+			margin: 40px auto 20px;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: $thin;
+			span{
+				padding-left: 10px;
+				letter-spacing: 10px;
+			}
+		}
+		.banner{
+			display: block;
+			margin: 20px auto 80px;
+			width: 240px;
+			img{
+				max-width: 100%;
+			}
+			&:hover{
+				img{
+				 	opacity: .7;
+				 }
+			}
+		}
+	}
+
 	.photo-gallery {
 		margin: 20px -20px 0 -21px;
 
