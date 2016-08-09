@@ -1769,8 +1769,14 @@
 	.supporter-banner{
 		@include outer-container;
 		text-align: center;
+		margin: 60px auto 80px;
+
+		@include media($s-screen) {
+			margin: 40px auto 40px;
+		}
+
 		h2{
-			margin: 40px auto 20px;
+			margin-bottom: 20px;
 			font-size: 20px;
 			font-style: normal;
 			font-weight: $thin;
@@ -1780,8 +1786,7 @@
 			}
 		}
 		.banner{
-			display: block;
-			margin: 20px auto 80px;
+			display: inline-block;
 			width: 240px;
 			img{
 				max-width: 100%;
