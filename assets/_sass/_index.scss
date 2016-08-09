@@ -1769,10 +1769,10 @@
 	.supporter-banner{
 		@include outer-container;
 		text-align: center;
-		margin: 60px auto 80px;
+		margin: 70px auto 0;
 
 		@include media($s-screen) {
-			margin: 40px auto 40px;
+			margin: 100px auto 0;
 		}
 
 		h2{
