@@ -1740,13 +1740,23 @@
 		}
 	}
 }
+.home{
+	.sns-section {
+		@include media($s-screen) {
+			padding-bottom: 80px;
+		}
+
+		@include media($m-screen) {
+			padding-bottom: 80px;
+		}
+	}
+}
 
 .sns-section {
 	background: $blue;
 	color: #fff;
 	padding-bottom: 0;
 	position: relative;
-
 	@include yin-yang-ornament(before, yang, gray) {
 		@include position(absolute, -180px 50% auto auto);
 		margin-right: 440px;
@@ -1762,6 +1772,39 @@
 			@include media($s-screen) {
 				@include span-columns(6);
 				@include omega(2n);
+			}
+		}
+	}
+
+	.supporter-banner{
+		@include outer-container;
+		text-align: center;
+		margin: 70px auto 0;
+
+		@include media($s-screen) {
+			margin: 100px auto 0;
+		}
+
+		h2{
+			margin-bottom: 20px;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: $thin;
+			span{
+				padding-left: 10px;
+				letter-spacing: 10px;
+			}
+		}
+		.banner{
+			display: inline-block;
+			width: 240px;
+			img{
+				max-width: 100%;
+			}
+			&:hover{
+				img{
+				 	opacity: .7;
+				 }
 			}
 		}
 	}
