@@ -1489,6 +1489,18 @@
 						@include media(380px) {
 							min-height: 0;
 						}
+
+						@include media($m-screen) {
+
+							.session-title,
+							.time {
+								display: block;
+							}
+
+							.session-title {
+								margin-right: 0;
+							}
+						}
 					}
 
 					&.digitalcube {
