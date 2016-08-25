@@ -1408,6 +1408,18 @@
 						}
 					}
 
+					&.digitalcube {
+
+						.session-title,
+						.time {
+							display: inline;
+						}
+
+						.time {
+							margin-left: 1em;
+						}
+					}
+
 					.session-title,
 					.workshop-title {
 						font-size: 16px;
