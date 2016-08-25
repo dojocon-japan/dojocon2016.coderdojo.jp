@@ -1311,7 +1311,7 @@
 				}
 
 				> li {
-					height: 12 * 30px;
+					height: 12 * $timetable-5min-height;
 					width: $clock-width-xs;
 
 					@include media($s-screen) {
@@ -1356,6 +1356,41 @@
 				@include media($m-screen) {
 					margin-left: - $clock-width-m;
 				}
+
+				/**
+				 * Hack for long titles
+				 */
+				> li {
+
+					&.icon-1-o-clock {
+						min-height: 16 * $timetable-5min-height;
+
+						@include media(380px) {
+							min-height: 14 * $timetable-5min-height;
+						}
+
+						@include media(410px) {
+							min-height: 13 * $timetable-5min-height;
+						}
+
+						@include media($xxs-screen) {
+							min-height: 0;
+						}
+
+						@include media($s-screen) {
+							min-height: 14 * $timetable-5min-height;
+						}
+
+						@include media(800px) {
+							min-height: 13 * $timetable-5min-height;
+						}
+
+						@include media($m-screen) {
+							min-height: 0;
+						}
+					}
+				}
+				// Hack for long title end
 			}
 		}
 
@@ -1368,6 +1403,28 @@
 					overflow: hidden;
 					width: 0;
 				}
+
+				/**
+				 * Hack for long titles
+				 */
+				> li {
+
+					&.icon-1-o-clock {
+
+						@include media($s-screen) {
+							min-height: 14 * $timetable-5min-height;
+						}
+
+						@include media(800px) {
+							min-height: 13 * $timetable-5min-height;
+						}
+
+						@include media($m-screen) {
+							min-height: 0;
+						}
+					}
+				}
+				// Hack for long title end
 			}
 		}
 
@@ -1384,15 +1441,20 @@
 						padding-left: 10px;
 					}
 
-					&.opening {
+					/**
+					 * Hack for long titles
+					 */
+					&.opening,
+					&.uchida,
+					&.programming-schools-discussion {
 
 						.session-title,
 						.time {
 							display: inline;
 						}
 
-						.time {
-							margin-left: 1em;
+						.session-title {
+							margin-right: 1em;
 						}
 
 						@include media($xxs-screen) {
@@ -1402,11 +1464,75 @@
 								display: block;
 							}
 
-							.time {
-								margin-left: 0;
+							.session-title {
+								margin-right: 0;
 							}
 						}
 					}
+
+					&.renesas,
+					&.digitalcube {
+
+						.session-title,
+						.time {
+							display: inline;
+						}
+
+						.session-title {
+							margin-right: 1em;
+						}
+					}
+
+					&.renesas {
+						min-height: 4 * $timetable-5min-height;
+
+						@include media(380px) {
+							min-height: 0;
+						}
+					}
+
+					&.digitalcube {
+						min-height: 6 * $timetable-5min-height;
+
+						@include media(380px) {
+							min-height: 5 * $timetable-5min-height;
+						}
+
+						@include media(410px) {
+							min-height: 4 * $timetable-5min-height;
+						}
+
+						@include media($xxs-screen) {
+							min-height: 0;
+						}
+
+						@include media($s-screen) {
+							min-height: 5 * $timetable-5min-height;
+						}
+
+						@include media(800px) {
+							min-height: 4 * $timetable-5min-height;
+						}
+
+						@include media($m-screen) {
+							min-height: 0;
+						}
+					}
+
+					&.workshop-2 {
+						@include media($s-screen) {
+							min-height: 20 * $timetable-5min-height;
+						}
+
+						@include media(800px) {
+							min-height: 19 * $timetable-5min-height;
+						}
+
+						@include media($m-screen) {
+							min-height: 0;
+						}
+					}
+					// Hack for long title end
 
 					.session-title,
 					.workshop-title {
@@ -1449,11 +1575,11 @@
 					$interval: 5;
 
 					.duration-#{$i * $interval}min {
-						height: $i * 30px;
+						height: $i * $timetable-5min-height;
 					}
 
 					.break-#{$i * $interval}min {
-						margin-bottom: $i * 30px;
+						margin-bottom: $i * $timetable-5min-height;
 					}
 				}
 			}
