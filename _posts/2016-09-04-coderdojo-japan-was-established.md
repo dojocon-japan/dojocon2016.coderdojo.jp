@@ -16,5 +16,5 @@ thumbnail: /assets/images/2016-09-04-thumbnail.jpg
 一般社団法人 CoderDojo Japan  
   
 担当: 安川 要平  
-メール: [info@coderdojo.jp](info@coderdojo.jp)  
+メール: [info@coderdojo.jp](mailto:info@coderdojo.jp)  
 Web: [http://coderdojo.jp/](http://coderdojo.jp/)  
