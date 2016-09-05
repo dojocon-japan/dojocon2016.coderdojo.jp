@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 一般社団法人 CoderDojo Japanが設立されました！
+title: 一般社団法人 CoderDojo Japan が設立されました
 date: 2016-09-04
 thumbnail: /assets/images/2016-09-04-thumbnail.jpg
 ---
