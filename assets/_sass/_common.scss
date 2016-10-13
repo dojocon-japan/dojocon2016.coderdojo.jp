@@ -597,3 +597,17 @@ strong {
 
 	@include dojoicon(chevron-right);
 }
+
+.youtube {
+	padding-top: 56.25%;
+	position: relative;
+	width: 100%;
+
+	iframe {
+		height: 100%;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
+	}
+}
